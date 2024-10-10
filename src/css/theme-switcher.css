@@ -3,9 +3,17 @@
   --text-color: #292929;
 }
 
+:root .common-span {
+  color: #00b068;
+}
+
 .dark-theme {
   --bg-color: #1e2023;
   --text-color: #f0f0f0;
+}
+
+.dark-theme .common-span {
+  color: #14c57c;
 }
 
 body {

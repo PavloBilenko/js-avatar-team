@@ -14,7 +14,7 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.theme-toggle {
+/* .theme-toggle {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -51,4 +51,4 @@ body.dark-theme .theme-toggle span {
 
 body.dark-theme #toggle-icon::before {
   content: '🌙';
-}
+} */

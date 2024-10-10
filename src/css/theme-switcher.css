@@ -1,0 +1,54 @@
+:root {
+  --bg-color: #f0f0f0;
+  --text-color: #292929;
+}
+
+.dark-theme {
+  --bg-color: #1e2023;
+  --text-color: #f0f0f0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 25px;
+  background-color: var(--bg-color);
+  border: 1px solid var(--text-color);
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.theme-toggle span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+body.dark-theme .theme-toggle span {
+  transform: translateX(25px);
+}
+
+#toggle-icon::before {
+  content: '☀️';
+  font-size: 20px;
+}
+
+body.dark-theme #toggle-icon::before {
+  content: '🌙';
+}

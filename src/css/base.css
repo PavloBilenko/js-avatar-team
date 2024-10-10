@@ -6,8 +6,19 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  :root {
+    --font-family: 'Poppins', sans-serif;
+    --second-family: 'Impact', sans-serif;
+    --third-family: 'Montserrat', sans-serif;
+  }
+
+  @font-face {
+    font-family: 'Impact Regular';
+    src: url('../fonts/impact.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

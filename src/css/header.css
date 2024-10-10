@@ -1,44 +1,91 @@
 .header {
-  padding: 20px 0;
+  border-bottom: 1px solid #0c0c0c1a;
+  position: sticky;
+  z-index: 99;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: background-color 0.3s ease;
 }
-.nav {
+
+.header.scrolled {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.header-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  padding: 32px 32px;
 }
-.nav-logo {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-.nav-list {
+
+.header-nav {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  margin-left: auto;
 }
-.nav-link {
-  position: relative;
-  display: block;
-  font-weight: 500;
+
+.header-logo {
+  font-family: Poppins Medium;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+.header-logo-span {
+  color: #00b068;
+}
+
+.header-list {
+  display: none;
+}
+
+.header-item {
+  font-family: Poppins Medium;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
   letter-spacing: 0.02em;
-  transition: 200ms ease-in;
+  color: #292929;
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+
+.header-item:hover,
+.header-item:focus {
+  color: #00b068;
+  transition: color 0.3s ease-in-out;
 }
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(100%);
-  width: 110%;
-  height: 4px;
-  border-radius: 4px;
-  transform-origin: center;
-  animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
+
+.header-button {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  width: 32px;
 }
-.nav-link.active::after {
-  background: #747bff;
+
+@media screen and (min-width: 360px) {
+}
+
+@media screen and (max-width: 360px) {
+}
+
+@media screen and (min-width: 768px) {
+  .header-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .header-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
 }

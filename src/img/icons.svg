@@ -3,16 +3,16 @@
     <symbol id="icon-arrow-under-load-more" viewBox="0 0 32 32">
       <path d="M.271 15.729c-.15 0-.271.121-.271.271s.121.271.271.271v-.542zm0 .542H32v-.542H.271v.542z"/>
     </symbol>
-    <symbol id="icon-header-btn-moon" viewBox="0 0 32 32">
+    <symbol id="icon-moon" viewBox="0 0 32 32">
       <path d="M4.8 30.669C10.451 28.2 14.4 22.561 14.4 16S10.451 3.8 4.8 1.331C6.76.475 8.924 0 11.2 0c8.837 0 16 7.163 16 16s-7.163 16-16 16c-2.276 0-4.44-.475-6.4-1.331z"/>
     </symbol>
-    <symbol id="icon-header-btn-sun" viewBox="0 0 32 32">
+    <symbol id="icon-sun" viewBox="0 0 32 32">
       <path d="M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0s16 7.163 16 16z"/>
     </symbol>
     <symbol id="icon-x-burger-mobile" viewBox="0 0 32 32">
       <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" d="M24 8 8 24M8 8l16 16"/>
     </symbol>
-    <symbol id="icon-burger-btn" viewBox="0 0 32 32">
+    <symbol id="icon-menu" viewBox="0 0 32 32">
       <path d="M.486 26.221v-1.939h31.03v1.939H.486zm0-9.251v-1.939h31.03v1.939H.486zm0-9.251V5.78h31.03v1.939H.486z"/>
     </symbol>
     <symbol id="icon-work-together-map" viewBox="0 0 32 32">

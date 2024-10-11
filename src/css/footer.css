@@ -1,4 +1,9 @@
 /* ----------------------------COMMON STYLES */
+.container-footer{
+  padding-top: 40px;
+  padding-bottom: 24px;
+}
+
 .footer-logo {
   font-family: "Impact", sans-serif;
   display: block;
@@ -22,13 +27,6 @@
   letter-spacing: 0.03em;
 }
 
-.footer-item {
-  transition: transform 0.3s ease;
-}
-
-.footer-item:hover{
-  transform: scale(1.1);
-}
 /*2 ----------------------------MOBILE MEDIA*/
 
 @media screen and (max-width: 767px) {
@@ -76,3 +74,41 @@
     justify-content: space-between;
   }
 }
+
+.footer-item-link:focus{
+  outline: none;
+}
+
+.footer-item {
+  transition: transform 0.3s ease;
+}
+
+.footer-item:hover, .footer-item:focus-within {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.line {
+  position: relative;
+}
+
+.line:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 2px;
+  width: 0%;
+  display: block;
+  background: #00b068;
+  transition: width 0.3s;
+}
+
+.line:hover:after, 
+.line:focus-within:after
+{
+  content: '';
+  cursor: pointer;
+  width: 100%;
+}
+

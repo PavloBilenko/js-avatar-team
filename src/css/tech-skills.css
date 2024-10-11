@@ -1,19 +1,84 @@
-.badges-list {
+:root {
+  --black: #292929;
+  --accent-green: #00b068;
+  --white: #f0f0f0;
+  --light-grey: #e4e5e6;
+  --light-accent: #bcdfd1;
+  --hover-green: #009156;
+  --error: #e74a3b;
+  --hover-grey: #bbbbbb;
+}
+
+.container {
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+.marquee {
+  overflow: hidden;
+  font-family: 'Pridi', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  min-height: 600px;
+  text-transform: uppercase;
+}
+
+.marquee__inner {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 32px;
 }
-.badges-link {
-  display: block;
-  padding: 8px 16px;
-  border: 1px solid;
-  border-radius: 8px;
-  transition: 200ms ease-in;
+
+.marquee__line {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 40px;
+  /* min-width: 100%; */
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
-.badges-link:hover,
-.badges-link:focus {
-  transform: scale(1.06);
-  color: #747bff;
+.upper {
+  background-color: var(--light-accent);
+  color: var(--black);
+}
+.lower {
+  background-color: var(--light-grey);
+  color: var(--accent-green);
+}
+.another-color-green {
+  color: var(--accent-green);
+}
+.another-color-black {
+  color: var(--black);
+}
+.rotated {
+  transform: rotate(2deg);
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .marquee {
+    font-size: 40px;
+  }
 }

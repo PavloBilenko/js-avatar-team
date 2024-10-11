@@ -1,4 +1,4 @@
-@keyframes slide {
+/* @keyframes slide {
   from {
     transform: translateX(-140%) translateY(-50%);
   }
@@ -15,4 +15,70 @@
     opacity: 1;
     transform: translateX(-50%) translateY(100%) scale(1);
   }
+} */
+
+.hero {
+  padding-top: 112px;
+  padding-bottom: 72px;
+  width: 100%;
+  background-image: url('../img/hero-background-img-mobile.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  block-size: auto;
+  background-size: cover;
+  margin: 0 auto;
+  max-width: 360px;
+}
+
+.container-hero {
+}
+
+.container-hero-caption {
+}
+
+.hero-caption {
+  font-family: Impact Regular;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1.25;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  width: 320px;
+  height: 240px;
+  margin-bottom: 40px;
+}
+
+.hero-green-color {
+  color: #00B068;
+}
+
+.hero-order-link {
+}
+
+.container-hero-img {
+}
+
+.is-hidden{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.hero-img {
+  
+}
+
+.hero-text {
+}
+
+.container-link {
+}
+
+.hero-list {
+}
+
+.hero-iteam {
+}
+
+.hero-iteam-social-link {
 }

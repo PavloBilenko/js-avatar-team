@@ -82,3 +82,15 @@
 
 .hero-iteam-social-link {
 }
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: red;
+  fill: red;
+}
+.icon-Arrow {
+  width: 1.875em;
+}

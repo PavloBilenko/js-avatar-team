@@ -24,7 +24,7 @@
 }
 
 .header-logo {
-  font-family: Poppins Medium;
+  font-family: Impact, sans-serif;
   font-weight: 400;
   font-size: 32px;
   line-height: 40px;
@@ -42,7 +42,7 @@
 }
 
 .header-item {
-  font-family: Poppins Medium;
+  font-family: Poppins Light, sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
@@ -61,6 +61,20 @@
   align-items: center;
   height: 32px;
   width: 32px;
+  border: none;
+}
+
+.theme-toggle {
+  display: none;
+}
+
+.theme-toggle-icon {
+}
+
+.icon-sun {
+}
+
+.icon-moon {
 }
 
 @media screen and (min-width: 360px) {
@@ -83,6 +97,16 @@
 
   .header-button {
     display: none;
+  }
+
+  .theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    width: 48px;
+    height: 24px;
+    margin-right: 40px;
   }
 }
 

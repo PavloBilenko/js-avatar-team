@@ -11,31 +11,34 @@
 
 h1 {
   font-family: Impact Regular;
+  font-weight: 400;
   font-size: 136px;
-  letter-spacing: 1.8px;
-  line-height: 156px;
+  line-height: 115%;
+  letter-spacing: 0.01em;
 }
 
 h2 {
   font-family: Impact Regular;
-  font-size: 108 px;
-  letter-spacing: 1.8 px;
-  line-height: 124 px;
+  font-weight: 400;
+  font-size: 108px;
+  line-height: 115%;
+  letter-spacing: 0.02em;
 }
 
 h3 {
   font-family: Poppins Medium;
-  font-size: 36 px;
-  letter-spacing: 0.5 px;
-  line-height: 48 px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 133%;
+  letter-spacing: 0.01em;
 }
 
 body {
   font-family: Poppins Light;
   font-weight: 300;
-  font-size: 16 px;
-  letter-spacing: 0.2 px;
-  line-height: 24 px;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;

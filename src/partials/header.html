@@ -1,19 +1,26 @@
-<header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+<header class="header" id="header"></header>
+    <div class="header-container container">
+      <a class="header-logo" href="./index.html">Lloyd<span class="common-span">Jefferson.</span></a>
+      <nav class="header-nav">
+        <button id="theme-toggle" class="theme-toggle">
+          <svg class="icon-sun" width="20" height="20">
+            <use href="./img/icons.svg#icon-sun"></use>
+          </svg>
+          <svg class="icon-moon" width="14" height="20">
+            <use href="./img/icons.svg#icon-moon"></use>
+          </svg>
+        </button>
+        <ul class="header-list">
+          <li class="header-item" href="#about-me">About me</li>
+          <li class="header-item" href="#projects">Projects</li>
+          <li class="header-item" href="#contacts">Contacts</li>
+        </ul>
+        <button type="button" class="header-button">
+          <svg class="header-button-icon" width="32" height="32">
+            <use href="./img/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </nav>
+    </div>
+    <script type="module" src="./js/header.js"></script>
+    </header>

@@ -12,8 +12,6 @@ let Visible = function (target) {
     let computedStyle = window.getComputedStyle(elementFooter);
     let animationDuration = computedStyle.animationDuration;
 
-
-console.log(parseFloat(parseFloat(animationDuration) * (animationDuration.includes('s') ? 1000 : 1)) );
     setTimeout(() => {
     elementFooter.classList.remove('footer-animation');
     }, parseFloat(animationDuration) * (animationDuration.includes('s') ? 1000 : 1));

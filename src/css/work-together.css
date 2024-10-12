@@ -1,3 +1,23 @@
+/*-----------head--------------*/
+.head-work {
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  margin-bottom: 40px;
+  text-align: left;
+  /* line-height: 64px; */
+  line-height: 123%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #00b068;
+}
+
+.span-work {
+  color: #292929;
+}
+
+/*-----------end head--------------*/
+
 /*-----------text--------------*/
 .text-idea {
   width: 320px;
@@ -16,6 +36,11 @@
 /*-----------end text--------------*/
 
 /*-----------contacts--------------*/
+
+.address {
+  margin-top: 32px;
+}
+
 .address-menu {
   display: flex;
   flex-direction: column;

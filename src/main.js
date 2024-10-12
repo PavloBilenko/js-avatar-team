@@ -7,3 +7,6 @@ import { setupFAQ } from './js/faq';
 document.addEventListener('DOMContentLoaded', () => {
   setupFAQ();
 });
+
+import './js/footer.js';
+

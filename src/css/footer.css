@@ -59,9 +59,14 @@ footer {
     display: block;
   }
 
-    .footer-copyright {
-      animation: footer-copyright 4000ms ease infinite;
-    }
+  .footer-animation {
+    animation-name: footer-copyright;
+  }
+
+  .footer-copyright {
+    animation-duration: 4000ms;
+    animation-timing-function: ease;
+  }
 }
 
 /*2 ----------------------------TABLET MEDIA*/
@@ -85,8 +90,17 @@ footer {
   .break {
     display: inline;
   }
+  /* .footer-animation {
+  animation: footer-copyright 5000ms ease;
+  } */
+
+  .footer-animation {
+    animation-name: footer-copyright;
+  }
+
   .footer-copyright {
-  animation: footer-copyright 5000ms ease infinite;
+    animation-duration: 5000ms;
+    animation-timing-function: ease;
   }
 }
         
@@ -99,8 +113,17 @@ footer {
     justify-content: space-between;
   }
 
+  /* .footer-animation {
+    animation: footer-copyright 6500ms ease;
+  } */
+
+  .footer-animation {
+    animation-name: footer-copyright;
+  }
+
   .footer-copyright {
-    animation: footer-copyright 6500ms ease infinite;
+    animation-duration: 6.5s;
+    animation-timing-function: ease;
   }
 }
 
@@ -108,29 +131,13 @@ footer {
   overflow: hidden;
 }
 
-.footer-copyright:hover {
-  animation-play-state: paused;
-}
-
 @keyframes footer-copyright {
   from {
     transform: translateX(-100%);
   }
 
-  30% {
-    transform: translateX(0);
-  }
-
-  50% {
-   transform: translateX(0);
-  }
-
-  70% {
-   transform: translateX(0);
-  }
-
   to {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
 }
 

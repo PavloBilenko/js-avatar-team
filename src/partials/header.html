@@ -11,16 +11,30 @@
           </svg>
         </button>
         <ul class="header-list">
-          <li class="header-item" href="#about-me">About me</li>
-          <li class="header-item" href="#projects">Projects</li>
-          <li class="header-item" href="#contacts">Contacts</li>
+          <li class="header-item"><a href="#about-me">About me</a></li>
+        <li class="header-item"><a href="#projects">Projects</a></li>
+        <li class="header-item"><a href="#contacts">Contacts</a></li>
         </ul>
-        <button type="button" class="header-button">
+        <button type="button" id="header-button" class="header-button">
           <svg class="header-button-icon" width="32" height="32">
             <use href="./img/icons.svg#icon-menu"></use>
           </svg>
+          <svg class="header-close-icon" width="32" height="32">
+              <use href="./img/header.svg#icon-close"></use>
+            </svg>
         </button>
       </nav>
     </div>
+
+    <div class="modal-container" id="modal-container">
+      <div class="mobile-menu">
+          <ul class="header-list-mobile">
+            <li class="header-item"><a href="#about-me">About me</a></li>
+        <li class="header-item"><a href="#projects">Projects</a></li>
+        <li class="header-item"><a href="#contacts">Contacts</a></li>
+          </ul>
+      </div>
+    </div>
+
     <script type="module" src="./js/header.js"></script>
     </header>

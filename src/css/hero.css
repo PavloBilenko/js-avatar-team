@@ -16,24 +16,36 @@
     transform: translateX(-50%) translateY(100%) scale(1);
   }
 } */
+ 
 
 .hero {
   padding-top: 112px;
   padding-bottom: 72px;
   width: 100%;
-  background-image: url('../img/hero-img/hero-background-img-mobile.jpg');
+  background-image: url('../img/hero-img/bg-hero-mobile.png');
   background-repeat: no-repeat;
   background-position: center;
   block-size: auto;
   background-size: cover;
   margin: 0 auto;
   max-width: 360px;
+  @media screen and (min-width: 768px) {
+    background-image: url('../img/hero-img/bg-hero-tab.png');
+    max-width: 768px;
+    padding-top: 72px;
+    padding-bottom: 104px;
+  }
 }
+
+
 
 .container-hero {
 }
 
 .container-hero-caption {
+  position: relative;
+  width: 100%;
+  margin-bottom: 40px;
 }
 
 .hero-caption {
@@ -43,9 +55,16 @@
   line-height: 1.25;
   letter-spacing: 1.8px;
   text-transform: uppercase;
-  width: 320px;
+  width: 100%;
   height: 240px;
   margin-bottom: 40px;
+}
+
+.hero-container-order{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 92px;
 }
 
 .hero-green-color {
@@ -53,15 +72,46 @@
 }
 
 .hero-order-link {
+  font-family: Poppins Regular;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.5px;
+  text-align: left;
+  text-transform: uppercase;
+ 
+  color: #292929;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  position: absolute;
+}
+
+.rectangle{
+  background-color: #bcdfd1;
+  border-radius: 16px;
+  width: 165px;
+  height: 92px;
+  position: absolute;
+  top: 281px;
+  left: 145px;
 }
 
 .container-hero-img {
 }
 
 .is-hidden{
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .hero-img {
@@ -69,28 +119,59 @@
 }
 
 .hero-text {
+  font-family: Poppins Regular;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.5px;
+  text-align: left;
+  text-transform: uppercase;
 }
 
-.container-link {
-}
 
-.hero-list {
-}
-
-.hero-iteam {
-}
-
-.hero-iteam-social-link {
-}
 
 .icon {
   display: inline-block;
   width: 1em;
   height: 1em;
   stroke-width: 0;
-  stroke: red;
-  fill: red;
+  stroke: #00B068;
+  fill: #ffff;
 }
 .icon-Arrow {
   width: 1.875em;
+}
+
+.hero-link-section{
+  background-color: #E4E5E6;
+  margin: 0 auto;
+  max-width: 360px;
+  width: 100%;
+}
+
+.container-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.hero-list {
+}
+
+
+.hero-iteam {
+}
+
+.hero-iteam-social-link {
+  font-family: Poppins Light;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+.hero-iteam-social-link:not(:last-child){
+  margin-bottom: 24px;
 }

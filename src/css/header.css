@@ -1,9 +1,8 @@
 .header {
-  position: sticky;
+  position: fixed;
   z-index: 99;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.8);
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .header.scrolled {
@@ -14,7 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 32px 32px;
+  padding: 32px 0;
 }
 
 .header-nav {
@@ -24,13 +23,12 @@
 }
 
 .header-logo {
-  font-family: Poppins Medium;
+  font-family: Impact, sans-serif;
   font-weight: 400;
   font-size: 32px;
   line-height: 40px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #292929;
 }
 
 .header-logo-span {
@@ -42,12 +40,11 @@
 }
 
 .header-item {
-  font-family: Poppins Medium;
+  font-family: Poppins Light, sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #292929;
 }
 
 .header-item:hover,
@@ -61,12 +58,11 @@
   align-items: center;
   height: 32px;
   width: 32px;
+  border: none;
 }
 
-@media screen and (min-width: 360px) {
-}
-
-@media screen and (max-width: 360px) {
+.theme-toggle {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -84,7 +80,56 @@
   .header-button {
     display: none;
   }
-}
 
-@media screen and (min-width: 1280px) {
+  .theme-toggle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    width: 48px;
+    height: 24px;
+    margin-right: 40px;
+    border: none;
+    background-color: #e4e5e6;
+    overflow: hidden;
+  }
+
+  .icon-sun {
+    width: 20px;
+    height: 20px;
+    fill: #00b068;
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    transition: left 0.4s ease, opacity 0.5s ease;
+    opacity: 1;
+  }
+
+  .icon-moon {
+    width: 20px;
+    height: 20px;
+    fill: #00b068;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    transition: right 0.4s ease, opacity 0.5s ease;
+    opacity: 0;
+  }
+
+  body.dark-theme .icon-sun {
+    left: 100%;
+    opacity: 0;
+    background-color: #204136;
+  }
+
+  body.dark-theme .theme-toggle {
+    background-color: #2a2d32;
+  }
+
+  body.dark-theme .icon-moon {
+    opacity: 1;
+  }
 }

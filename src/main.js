@@ -7,3 +7,4 @@ import { setupFAQ } from './js/faq';
 document.addEventListener('DOMContentLoaded', () => {
   setupFAQ();
 });
+

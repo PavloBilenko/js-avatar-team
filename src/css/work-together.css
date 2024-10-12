@@ -138,9 +138,10 @@ marginBottom = '8px'; */
 }
 
 .modal {
-  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 320px;
-  border-radius: 4px;
   min-height: 328px;
   background-color: #f0f0f0;
   border: 1px solid #e4e5e6;
@@ -181,10 +182,10 @@ marginBottom = '8px'; */
 .modal-title {
   font-family: 'Poppins', sans-serif;
   width: 256px;
-  /* font-weight: 400; */
+  font-weight: 400;
   font-size: 20px;
-  /* line-height: 160%;
-  letter-spacing: 0.03em; */
+  line-height: 160%;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
   color: #00b068;
@@ -224,5 +225,33 @@ marginBottom = '8px'; */
 
   .btn {
     width: 183px;
+  }
+
+  .modal {
+    width: 492px;
+    min-height: 280px;
+    padding: 64px;
+  }
+
+  .modal-title {
+    width: 364px;
+  }
+}
+
+/* ----------------------------DESKTOP MEDIA----------------------------*/
+
+@media only screen and (min-width: 1280px) {
+  .head-work {
+    width: 507px;
+    font-size: 108px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+  }
+
+  .text-idea {
+    width: 488px;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 0.03em;
   }
 }

@@ -1,3 +1,4 @@
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -25,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// Простейшая анимация при прокрутке для блока "биография"
 window.addEventListener('scroll', function() {
     const bioSection = document.querySelector('.bio');
     const bioPosition = bioSection.getBoundingClientRect().top;

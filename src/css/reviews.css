@@ -25,6 +25,7 @@
     border-radius: 16px;
     background-color: #E4E5E6;
     padding: 32px;
+    margin-right: 32px;
 }
 
 .comment-user {
@@ -72,6 +73,12 @@
 
 .comment-prev-btn {
     fill: black;
+}
+
+.swiper-button-prev.disabled,
+.swiper-button-next.disabled {
+    opacity: 0.5;
+    pointer-events: none;
 }
 
 

@@ -1,68 +1,137 @@
 <section class="container">
   <div>
-    <h2 class="head-work">
-      let’s
-      <span class="span-work">work together</span>
-    </h2>
-    <ul>
-      <li>
-        <p class="text-idea">
-          Contact me to transform your ideas into exceptional solutions.
-        </p>
-      </li>
-      <li>
-        <address class="address">
-          <ul class="address-menu">
-            <li>
-              <a class="link-address" href="tel:+380503247690" target="_blank"
-                >+38 050 324 76 90</a
-              >
-            </li>
-            <li>
-              <a class="link-address" href="mailto:info@goit.ua" target="_blank"
-                >info@goit.ua</a
-              >
-            </li>
-            <li>
-              <a
-                class="link-address"
-                href="https://www.google.com/maps/search/?api=1&query=Київ+Ю.Іллєнка+12"
-                target="_blank"
-              >
-                м. Київ, вул. Ю. Іллєнка, 12
-              </a>
-            </li>
-          </ul>
-        </address>
-      </li>
-      <li>
-        <form class="feedback-form" autocomplete="off">
+    <div class="head-decor">
+      <h2 class="head-work">
+        let’s
+        <span class="common-span">work together</span>
+      </h2>
+      <picture>
+        <source
+          srcset="
+            ../img/work-together-img/wt-decor_1x_t.png 1x,
+            ../img/work-together-img/wt-decor_2x_t.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ../img/work-together-img/wt-decor_1x_d.png 1x,
+            ../img/work-together-img/wt-decor_2x_d.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <img
+          src="../img/work-together-img/wt-decor_1x_d.png"
+          alt="Decor"
+          class="wt-decor"
+        />
+      </picture>
+    </div>
+    <div class="form-wrap">
+      <ul class="form-colomn">
+        <li>
+          <p class="text-idea">
+            Contact me to transform your ideas into exceptional solutions.
+          </p>
+        </li>
+        <li>
+          <addresses class="address">
+            <ul class="address-menu">
+              <li>
+                <div class="icon-text">
+                  <svg class="title-icon" width="24" height="24">
+                    <use
+                      href="../img/work-together-img/symbol-defs.svg#icon-phone"
+                    ></use>
+                  </svg>
+                  <a
+                    class="link-address"
+                    href="tel:+380503247690"
+                    target="_blank"
+                    >+38 050 324 76 90</a
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="icon-text">
+                  <svg class="title-icon" width="24" height="24">
+                    <use
+                      href="../img/work-together-img/symbol-defs.svg#icon-e-mail"
+                    ></use>
+                  </svg>
+                  <a
+                    class="link-address"
+                    href="mailto:info@goit.ua"
+                    target="_blank"
+                    >info@goit.ua</a
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="icon-text">
+                  <svg class="title-icon" width="24" height="24">
+                    <use
+                      href="../img/work-together-img/symbol-defs.svg#icon-adress"
+                    ></use>
+                  </svg>
+                  <a
+                    class="link-address"
+                    href="https://www.google.com/maps/search/?api=1&query=Київ+Ю.Іллєнка+12"
+                    target="_blank"
+                  >
+                    м. Київ, вул. Ю. Іллєнка, 12
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </addresses>
+        </li>
+      </ul>
+      <div class="form-div">
+        <form class="feedback-form" id="contactForm" autocomplete="off">
+          <label for="email" class="visualy-hidden"></label>
           <input
             class="input"
+            id="email"
             type="email"
             placeholder="Your email*"
             name="email"
-            autofocus
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            autocomplete="email"
           />
+          <label for="message" class="visually-hidden"></label>
           <textarea
             class="input txt-ar"
+            id="message"
             placeholder="Message"
             name="message"
             rows="8"
+            autocomplete="off"
           ></textarea>
-          <button class="btn" type="submit">SEND MESSAGE</button>
+          <button class="btn" type="submit" id="sendMessage">
+            SEND MESSAGE
+          </button>
         </form>
-      </li>
-    </ul>
-  </div>
-  <div class="backdrop">
-    <div class="modal">
-      <button type="button" class="modal-close">
-        <svg class="modal-icon" width="8" height="8">
-          <use href="./images/icons.svg#icon-modal-close"></use>
-        </svg>
-      </button>
-      <p class="modal-title">Thank you for your interest in cooperation!</p>
+      </div>
     </div>
   </div>
+  <!-- Модальне вікно -->
+  <div class="backdrop" id="backdrop">
+    <div class="modal" id="successModal">
+      <button type="button" class="modal-close" id="closeModal">
+        <svg class="modal-icon" width="12" height="12">
+          <use
+            href="../img/work-together-img/symbol-defs.svg#icon-modal-close"
+          ></use>
+        </svg>
+      </button>
+      <h2 class="modalTitle common-span" id="jsTitle"></h2>
+      <p class="modalText" id="jsText"></p>
+    </div>
+    <!-- Вспливаюче повідомлення для помилки -->
+    <div id="errorNotification" style="display: none">
+      <p>There was an error sending your message. Please try again.</p>
+    </div>
+  </div>
+  <!-- <script type="module" src="../js/work-together.js"></script> -->
 </section>

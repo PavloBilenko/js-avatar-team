@@ -31,10 +31,20 @@
   color: var(--text-color);
   margin-bottom: 7px;
 }
+
+.dark-theme .upper {
+  background-color: #204136;
+}
+
 .lower {
   background-color: #e4e5e6;
   margin-bottom: 29px;
 }
+
+.dark-theme .lower {
+  background-color: #2A2D32;
+}
+
 .another-color-black {
   color: var(--text-color);
 }

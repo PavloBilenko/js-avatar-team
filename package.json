@@ -19,6 +19,7 @@
   "dependencies": {
     "accordion": "^3.0.2",
     "express": "^4.21.1",
+    "path": "^0.12.7",
     "swiper": "^11.1.14",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"

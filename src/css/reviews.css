@@ -1,31 +1,43 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+
 .reviews-section {
     margin-top: 80px;
 }
 
-.reviews-titel {
+.reviews-title {
     text-align: center;
 }
 
-.swipper-wrapper {
-    display: flex;
+.swiper {
     overflow: hidden;
+
+}
+
+ .swiper-wrapper {
+    display: flex;
+    
 }
 
 .swiper-slide {
-    flex: 0 0 100%;
-    box-sizing: border-box;
-    
+    flex: 0 0 calc(50% - 32px);
+    justify-content: space-between;
+    display: flex;
+    gap: 32px;
     
 }
 
 .comment-container {
     margin-top: 60px;
     margin-bottom: 64px;
-    max-width: 1216px;
+    width: 100%;
     border-radius: 16px;
     background-color: #E4E5E6;
     padding: 32px;
-    margin-right: 32px;
+    
 }
 
 .comment-user {
@@ -40,7 +52,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: solid 1px black;
+    
 }
 
 .comment-user-name {
@@ -75,8 +87,7 @@
     fill: black;
 }
 
-.swiper-button-prev.disabled,
-.swiper-button-next.disabled {
+.swiper-button-disabled {
     opacity: 0.5;
     pointer-events: none;
 }

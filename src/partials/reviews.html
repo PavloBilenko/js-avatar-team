@@ -1,12 +1,6 @@
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-
-
-<body>
-
 <section class="reviews-section">
     <div class="container">
-        <h2 class="reviews-titel">REVIEWS</h2>
+        <h2 class="reviews-title">REVIEWS</h2>
         <!-- Slider main container -->
         <div class="swiper">
             <!-- Additional required wrapper -->
@@ -16,10 +10,12 @@
 
             <div class="reviews-buttons">
                 <div class="swiper-button-prev">
-                    <img class="comment-prev-btn" src="./img/icons.svg#icon-arrow-left" alt="Previous" />
+                    <svg class="comment-prev-btn" width="24" height="24">
+                        <use href="/src/img/icons.svg#icon-arrow-left" fill="black"></use>
+                    </svg>
                 </div>
                 <div class="swiper-button-next">
-                    <img class="comment-next-btn" src="./img/icons.svg#icon-arrow-right" alt="Next" />
+                    <img class="comment-next-btn" src="./img/icons.svg#icon-arrow-left" alt="Next" />
                 </div>
             </div>
         </div>
@@ -29,4 +25,5 @@
 <div id="error-message" style="display: none;">Not found</div>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
    

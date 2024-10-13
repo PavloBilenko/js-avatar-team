@@ -1,44 +1,29 @@
-// import express from 'express';
-// import path from 'path';
-// import { fileURLToPath } from 'url';
+const express = require('express');
+const path = require('path');
+
+const app = express();
+const PORT = process.env.PORT || 3000;
 
 
-// const app = express();
-// const port = 3000;
+// Роздача статичних файлів з папки 'public'
+app.use(express.static(path.join(__dirname, 'public')));
 
-// const __filename = fileURLToPath(import.meta.url);
-// const __dirname = path.dirname(__filename);
+// Роздача файлів зі стилями, скриптами та HTML з 'partials'
+app.use('/html', express.static(path.join(__dirname, '/src/partials/reviews.html')));
+app.use('/js', express.static(path.join(__dirname, '/src/js/reviews.js')));
+app.use('/css', express.static(path.join(__dirname, '/src/css/reviews.css'))); // Додаємо обслуговування CSS
 
-// app.use(express.static(path.join(__dirname, 'src')));
+// Маршрут для головної сторінки (index.html)
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
+// Маршрут для сторінки відгуків (reviews.html)
+app.get('/reviews', (req, res) => {
+    res.sendFile(path.join(__dirname, '/src/partials/reviews.html'));
+});
 
-// const comments = [
-//   {
-//     id: 1,
-//     userName: 'Natalia Shevchenko',
-//     userPhoto: '/src/img/reviews-img/photo1.png', 
-//     text: 'Work with was extraordinary! He turned out to be a very competent and responsible specialist. The projects were completed on time and the result exceeded my expectations.'
-//   },
-//   {
-//     id: 2,
-//     userName: 'Dmytro Nazarenko',
-//     userPhoto: '/src/img/reviews-img/photo2.png', 
-//     text: 'I have the honor to recommend him as an exceptional professional in his field. His knowledge and expertise are undeniable. Cooperation with him always brings impressive results.'
-//   }
-// ];
-
-
-
-// app.get('/comments', (req, res) => {
-//   res.json(comments);
-// });
-
-// // Endpoint to serve reviews.html
-// app.get('/reviews.html', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'src', 'partials', 'reviews.html'));
-// });
-
-// // Start the server
-// app.listen(port, () => {
-//   console.log(`Server running at http://localhost:${port}`);
-// });
+// Запуск сервера
+app.listen(PORT, () => {
+    console.log(`Running ${PORT}`);
+});

@@ -1,9 +1,19 @@
 let swiper;
 
-
 const initializeSwiper = () => {
     swiper = new Swiper('.swiper', {
         loop: false,
+        slidesPerView: 1, 
+        
+
+        breakpoints: {
+            768: { 
+                slidesPerView: 2,
+                spaceBetween: 12,
+                
+                
+            },
+        },
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -32,7 +42,7 @@ const initializeSwiper = () => {
 };
 
 const loadComments = () => {
-    fetch('/comments')
+    fetch('https://portfolio-js.b.goit.study/api/reviews') 
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -56,10 +66,10 @@ const loadComments = () => {
 
                 slide.innerHTML = `
                     <div class="comment-container">
-                        <p class="review-comment">${comment.text}</p>
+                        <p class="review-comment">${comment.review}</p> 
                         <div class="comment-user">
-                            <img class="comment-user-photo" src="${comment.userPhoto}" alt="${comment.userName} Photo">
-                            <p class="comment-user-name">${comment.userName}</p>
+                            <img class="comment-user-photo" src="${comment.avatar_url}" alt="${comment.author} Photo"> 
+                            <p class="comment-user-name">${comment.author}</p> 
                         </div>
                     </div>
                 `;
@@ -95,5 +105,4 @@ window.onload = () => {
     initializeSwiper(); 
     loadComments(); 
 };
-
 

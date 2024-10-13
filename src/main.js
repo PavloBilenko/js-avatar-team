@@ -9,3 +9,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 import './js/footer.js';
+
+import './js/my-projects.js';

@@ -1,127 +1,165 @@
+.about-section {
+  font-size: 16px;
+  align-items: center;
+  margin: 32px auto;
+  max-width: 1216px;
+}
+
+.text-content {
+  display: flex;
+  margin: 0;
+}
+
+.about-content {
+  font-weight: 900;
+  font-size: 80px;
+  margin: 0;
+  letter-spacing: 1.8px;
+  line-height: 1.2;
+  color: #292929;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  word-spacing: 10px;
+}
+
+.highlight {
+  color: #00b068;
+}
+
+.bio-attachment {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.bio-text {
+  max-width: 550px;
+  margin-bottom: 200px;
+  overflow: hidden;
+}
+
+.img-man-bio {
+  text-align: center;
+}
+
+.text {
+  font-size: 16px;
+  color: #292929;
+  line-height: 24px;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.education-column {
+  flex: 1;
+  max-width: 400px;
+}
+
+.education {
+  display: flex;
+  margin-top: 40px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.about-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-list li {
+  position: relative;
+  margin-bottom: 8px;
+  line-height: 1.2;
+  padding-left: 20px;
+}
+
+.about-list li::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  background-color: #00b068;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 24px;
+  color: #292929;
+  margin-bottom: 32px;
+}
+
+.img-man-about {
+  display: flex;
+  flex: 1;
+  margin-top: 20px;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+.education,
+.roles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.decor {
+  max-width: 100%;
+  height: auto;
+}
+
+.decor-element {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
 @media screen and (min-width: 1280px) {
   .about-section {
-    font-size: 16px;
-    align-items: center;
-    margin: 32px auto;
-    max-width: 1216px;
     margin-bottom: 164px;
   }
 
-  .text-content {
-    display: flex;
-    margin: 0;
-  }
-
   .about-content {
-    font-weight: 900;
     font-size: 80px;
-    margin: 0;
-    letter-spacing: 1, 8;
-    line-height: 1, 2;
-    color: #292929;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    word-spacing: 10px;
-  }
-
-  .highlight {
-    color: #00b068;
-  }
-
-  .bio-attachment {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  .bio-text {
-    max-width: 550px;
-    margin-bottom: 200px;
-    overflow: hidden;
-    margin-bottom: 0;
-  }
-
-  .img-man-bio {
-    text-align: center;
-  }
-
-  .text {
-    font-size: 16px;
-    color: #292929;
-    line-height: 24px;
-    width: 488px;
-    height: 216px;
-  }
-
-  .education-column {
-    flex: 1;
-    max-width: 400px;
-  }
-
-  .education {
-    display: flex;
-    margin-top: 40px;
-    width: 100%;
-    justify-content: space-between;
-    gap: 10px;
-    justify-content: center;
   }
 
   .about-list {
-    list-style-type: none;
-    padding-left: 0;
+    margin: 0; 
   }
 
   .about-list li {
-    position: relative;
+    margin-bottom: 16px; 
+  line-height: 1.4; 
   }
 
   .about-list li::before {
-    content: '';
-    width: 4px;
-    height: 4px;
-    background-color: #00b068;
-    border-radius: 1px;
-    position: absolute;
-    left: -25px;
-    top: 5px;
+    top: 50%;
   }
 
-  .title {
-    font-weight: 500;
-    font-size: 24px;
-    color: #292929;
-    margin-bottom: 32px;
+  .text {
+    margin-bottom: 10px; 
+    line-height: 1.4; 
+    font-size: 16px;
   }
 
-  .img-man-about {
-    display: flex;
-    flex: 1;
-    margin-top: 20px;
-    border-radius: 8px;
-    max-width: 100%;
+  .bio-text {
+    margin-bottom: 200px;
   }
 
-  .education,
-  .roles {
-    display: flex;
+  .text {
+    width: 488px;
+  }
+
+  .education {
     justify-content: space-between;
-  }
-
-  .decor {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .decor-element {
-    display: flex;
-    justify-content: center;
-    width: 100;
-    margin-top: 40px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .about-section {
+    flex-direction: column;
     margin-bottom: 124px;
   }
 }
@@ -129,10 +167,77 @@
 @media (max-width: 320px) {
   .about-section {
     margin-bottom: 80px;
+    padding: 0 10px;
   }
 
-  .about-content {
-    width: 400;
-    font-size: 52px;
+  .text-content {
+    flex-direction: column;
+    align-items: center;
   }
+
+.about-content {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  
+}
+
+.bio-attachment {
+  flex-direction: column;
+  align-items: center;
+}
+
+.bio-text {
+  max-width: 100%;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.img-man-bio {
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.img-man-about {
+  max-width: 100%;
+  height: auto;
+}
+
+.education {
+  align-items: center;
+  
+}
+
+.education-column {
+  text-align: center;
+  max-width: 100%;
+}
+
+.about-list {
+  flex-direction: column;
+}
+
+.about-list li {
+  margin-bottom: 8px; 
+  font-size: 14px; 
+  padding-left: 10px;
+}
+
+.about-list li::before {
+  top: 50%;
+  left: -10px; 
+}
+
+.title {
+  text-align: left; 
+  margin-bottom: 16px;
+  font-size: 20px; 
+}
+
+.text {
+  font-size: 16px;
+}
+
 }

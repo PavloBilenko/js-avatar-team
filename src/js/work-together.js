@@ -40,6 +40,10 @@ form.addEventListener('submit', function (event) {
     .then(data => {
       // Успішний запит
       console.log('Success:', data);
+
+      //виведення даних в модалку-----------------------------------------------------------------
+      sendMessage(data); // Передаємо дані у функцію для обробки
+
       backdrop.classList.add('is-open'); // Показуємо фон
       form.reset(); // Очищуємо форму
     })
@@ -51,6 +55,30 @@ form.addEventListener('submit', function (event) {
       }, 3000);
     });
 });
+
+// Функція для виведення даних у модальне вікно
+function sendMessage(data) {
+  const modalTitleJs = document.getElementById('jsTitle');
+  const modalTextJs = document.getElementById('jsText');
+
+  if (modalTitleJs) {
+    // Створюємо повідомлення на основі отриманих даних
+    const message = `${data.title}`;
+    // Виводимо повідомлення в модальному вікні
+    modalTitleJs.textContent = message;
+  } else {
+    console.error('Element with id "jsTitle" not found.');
+  }
+
+  if (modalTextJs) {
+    // Створюємо повідомлення на основі отриманих даних
+    const messageText = `${data.message}`;
+    // Виводимо повідомлення в модальному вікні
+    modalTextJs.textContent = messageText;
+  } else {
+    console.error('Element with id "jsText" not found.');
+  }
+}
 
 // Функція для закриття модального вікна
 function closeModal() {

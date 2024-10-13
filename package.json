@@ -24,6 +24,7 @@
     "server.js": "^1.0.0",
     "swiper": "^11.1.14",
     "vite-plugin-full-reload": "^1.2.0",
-    "vite-plugin-html-inject": "^1.1.2"
+    "vite-plugin-html-inject": "^1.1.2",
+    "vite-plugin-node": "^4.0.0"
   }
 }

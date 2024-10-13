@@ -1,38 +1,25 @@
-/* :root {
-  --black: #292929;
-  --accent-green: #00b068;
-  --white: #f0f0f0;
-  --light-grey: #e4e5e6;
-  --light-accent: #bcdfd1;
-  --hover-green: #009156;
-  --error: #e74a3b;
-  --hover-grey: #bbbbbb;
-} */
-
-.container {
-  width: 360px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-}
 .marquee {
   overflow: hidden;
-  font-family: 'Pridi', sans-serif;
-  font-weight: 600;
-  font-size: 48px;
-  min-height: 600px;
-  text-transform: uppercase;
+  margin-bottom: 80px;
+  padding: 0;
 }
 
 .marquee__inner {
   display: flex;
+  min-height: 104px;
 }
 
 .marquee__line {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  height: 104px;
   flex-shrink: 0;
   margin: 0;
   padding: 40px;
-  /* min-width: 100%; */
   white-space: nowrap;
   animation-name: marqueeLine;
   animation-duration: 5s;
@@ -42,19 +29,17 @@
 .upper {
   background-color: #bcdfd1;
   color: var(--text-color);
+  margin-bottom: 7px;
 }
 .lower {
   background-color: #e4e5e6;
-  /* color: var(--accent-green); */
-}
-.another-color-green {
-  /* color: var(--accent-green); */
+  margin-bottom: 29px;
 }
 .another-color-black {
   color: var(--text-color);
 }
 .rotated {
-  transform: rotate(2deg);
+  transform: rotate(2.5deg);
 }
 
 @keyframes marqueeLine {
@@ -68,13 +53,29 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .marquee {
     width: 720px;
+  }
+  .marquee {
+    margin-bottom: 124px;
+  }
+  .marquee__inner {
+    min-height: 128px;
+  }
+  .upper {
+    margin-bottom: 0;
+  }
+  .lower {
+    margin-bottom: 24px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .container {
+  .marquee {
     width: 1200px;
+  }
+  .marquee {
+    margin-bottom: 164px;
+    width: 1280px;
   }
 }
 @media screen and (max-width: 767px) {

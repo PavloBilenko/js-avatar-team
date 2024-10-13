@@ -88,36 +88,50 @@
         </li>
       </ul>
       <div class="form-div">
-        <form class="feedback-form" autocomplete="off">
+        <form class="feedback-form" id="contactForm" autocomplete="off">
           <label for="email" class="visualy-hidden"></label>
           <input
             class="input"
+            id="email"
             type="email"
             placeholder="Your email*"
             name="email"
             pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            autocomplete="email"
           />
+          <label for="message" class="visually-hidden"></label>
           <textarea
             class="input txt-ar"
+            id="message"
             placeholder="Message"
             name="message"
             rows="8"
+            autocomplete="off"
           ></textarea>
-          <button class="btn" type="submit">SEND MESSAGE</button>
+          <button class="btn" type="submit" id="sendMessage">
+            SEND MESSAGE
+          </button>
         </form>
       </div>
     </div>
   </div>
-  <div class="backdrop">
-    <div class="modal">
-      <button type="button" class="modal-close">
+  <!-- Модальне вікно -->
+  <div class="backdrop" id="backdrop">
+    <div class="modal" id="successModal">
+      <button type="button" class="modal-close" id="closeModal">
         <svg class="modal-icon" width="12" height="12">
-          <use href="../img/work-together-img/symbol-defs.svg№icon-x"></use>
+          <use
+            href="../img/work-together-img/symbol-defs.svg#icon-modal-close"
+          ></use>
         </svg>
       </button>
-      <p class="modal-title common-span">
-        Thank you for your interest in cooperation!
-      </p>
+      <h2 class="modalTitle common-span" id="jsTitle"></h2>
+      <p class="modalText" id="jsText"></p>
+    </div>
+    <!-- Вспливаюче повідомлення для помилки -->
+    <div id="errorNotification" style="display: none">
+      <p>There was an error sending your message. Please try again.</p>
     </div>
   </div>
+  <script type="module" src="../js/work-together.js"></script>
 </section>

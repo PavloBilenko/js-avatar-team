@@ -15,3 +15,5 @@ import './js/footer.js';
 
 import './js/my-projects.js';
 
+import './js/work-together.js';
+

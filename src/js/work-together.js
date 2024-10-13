@@ -41,7 +41,6 @@ form.addEventListener('submit', function (event) {
       // Успішний запит
       console.log('Success:', data);
 
-      //виведення даних в модалку-----------------------------------------------------------------
       sendMessage(data); // Передаємо дані у функцію для обробки
 
       backdrop.classList.add('is-open'); // Показуємо фон

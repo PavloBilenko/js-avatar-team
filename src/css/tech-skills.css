@@ -1,19 +1,85 @@
-.badges-list {
+.marquee {
+  overflow: hidden;
+  margin-bottom: 80px;
+  padding: 0;
+}
+
+.marquee__inner {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 32px;
+  min-height: 104px;
 }
-.badges-link {
-  display: block;
-  padding: 8px 16px;
-  border: 1px solid;
-  border-radius: 8px;
-  transition: 200ms ease-in;
+
+.marquee__line {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  height: 104px;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 40px;
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
-.badges-link:hover,
-.badges-link:focus {
-  transform: scale(1.06);
-  color: #747bff;
+.upper {
+  background-color: #bcdfd1;
+  color: var(--text-color);
+  margin-bottom: 7px;
+}
+.lower {
+  background-color: #e4e5e6;
+  margin-bottom: 29px;
+}
+.another-color-black {
+  color: var(--text-color);
+}
+.rotated {
+  transform: rotate(2.5deg);
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .marquee {
+    width: 720px;
+  }
+  .marquee {
+    margin-bottom: 124px;
+  }
+  .marquee__inner {
+    min-height: 128px;
+  }
+  .upper {
+    margin-bottom: 0;
+  }
+  .lower {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .marquee {
+    width: 1200px;
+  }
+  .marquee {
+    margin-bottom: 164px;
+    width: 1280px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .marquee {
+    font-size: 40px;
+  }
 }

@@ -4,6 +4,7 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+
 // Роздача статичних файлів з папки 'public'
 app.use(express.static(path.join(__dirname, 'public')));
 

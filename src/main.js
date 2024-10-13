@@ -2,13 +2,14 @@ import { setupThemeSwitcher } from './js/theme-switcher';
 
 setupThemeSwitcher();
 
-import './js/my-projects.js';
 
-import { setupFAQ } from './js/faq';
+import { setupFAQ } from './js/faq.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   setupFAQ();
 });
+
+import './js/my-projects.js';
 
 import './js/reviews.js';
 import '../server.js';

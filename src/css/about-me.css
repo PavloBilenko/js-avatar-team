@@ -1,26 +1,29 @@
-.body {
-  font-family: Arial, sans-serif;
-  background-color: #F0F0F0;
-  margin: 0;
-  padding: 0;
-}
 
 .about-section {
-  display: flex;
-  flex-direction: column;
+  font-size: 48px;
   align-items: center;
   margin: 32px auto;
   max-width: 1216px;
 }
 
+.text-content {
+  display: flex;
+  align-items: flex-start;
+}
+
 .about-content {
-  font-size: 48px;
+  font-weight: 900;
+  font-size: 80px;
+  margin: 0;
+  letter-spacing: 1,8;
+  line-height: 1,2;
   color: #292929;
-  text-align: center;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ word-spacing: 10px;
 }
 
 .highlight {
-  color: #00B068;
+  color: #00b068;
 }
 
 .bio-container {
@@ -39,9 +42,10 @@
 }
 
 .text {
+  width: 300;
   font-size: 16px;
   color: #292929;
-  line-height: 1.6;
+  line-height: 24px;
   margin-bottom: 24px;
 }
 
@@ -51,40 +55,31 @@
 }
 
 .about-list {
-  list-style-type: none; 
-  padding-left: 0; 
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .about-list li {
-  position: relative; 
-  font-size: 18px;
-  margin-bottom: 15px;
-  color: #333;
+  position: relative;
 }
 
 .about-list li::before {
-  content: ''; 
-  width: 4px; 
-  height: 4px; 
-  background-color: #00B068; 
-  border-radius: 1px; 
+  content: '';
+  width: 4px;
+  height: 4px;
+  background-color: #00b068;
+  border-radius: 1px;
   position: absolute;
-  left: -25px; 
-  top: 5px; 
+  left: -25px;
+  top: 5px;
 }
 
 .title {
+  font-weight: 500;
   font-size: 24px;
   color: #292929;
-  margin-bottom: 10px;
 }
 
-
-.about-info {
-  font-size: 16px;
-  color: #292929;
-  margin-bottom: 10px;
-}
 
 .img-man-about {
   display: block;
@@ -93,20 +88,10 @@
   max-width: 100%;
 }
 
-.about-info {
-  font-size: 16px;
-  color: #292929;
-  margin-bottom: 10px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
 .education,
-.role {
-  margin-top: 20px;
+.roles {
+  display: flex;
+  justify-content: space-between;
 }
 
 .decor {
@@ -118,4 +103,5 @@ ul {
 .decoration {
   animation: moveDots 5s infinite linear;
 }
+
 

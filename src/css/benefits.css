@@ -1,0 +1,88 @@
+.benefits {
+    margin-bottom: 80px;
+    margin-top: 80px;
+    min-width: 360px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 124px;
+        margin-top: 124px;
+        min-width: 768px;
+    }
+}
+
+/* .container-benefits{
+    width: 704px;
+    height: 372px;
+
+} */
+
+.wrap{
+
+}
+
+
+.benefits-caption {
+    font-family: Impact Regular;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.23;
+    letter-spacing: 1.8px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+        white-space: normal;
+        font-size: 108px;
+        line-height: 1.14px;
+    }
+}
+
+
+.benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+.benefits-iteam {
+}
+.benefits-iteam-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bcdfd1;
+    border-radius: 8px;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+    color: #bcdfd1;
+}
+.dark-theme .benefits-iteam-wrap{
+    background-color: #204136;
+    color: #204136;
+}
+
+.benefits-iteam-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: #00B068;
+    fill: currentColor;
+}
+.benefits-iteam-caption {
+    font-family: Poppins Regular;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+.benefits-iteam-text {
+    font-family: Poppins Light;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}

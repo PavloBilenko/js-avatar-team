@@ -139,6 +139,11 @@ transition: background-color 0.3s ease;
   margin: auto;
 }
 
+.dark-theme .load-more-btn {
+  color: white;
+  transition: color 0.3s ease, color 0.3s ease;
+}
+
 .load-more-btn::after {
   content: "";
   display: block;

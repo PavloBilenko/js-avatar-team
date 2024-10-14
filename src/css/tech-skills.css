@@ -1,14 +1,19 @@
 .marquee {
-  overflow: hidden;
   margin-bottom: 80px;
   padding: 0;
+  max-width: none;
 }
-
+.text-wrapper {
+  height: 244px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
 .marquee__inner {
   display: flex;
   min-height: 104px;
+  width: 100%;
 }
-
 .marquee__line {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
@@ -20,7 +25,6 @@
   flex-shrink: 0;
   margin: 0;
   padding: 40px;
-  white-space: nowrap;
   animation-name: marqueeLine;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
@@ -30,6 +34,9 @@
   background-color: #bcdfd1;
   color: var(--text-color);
   margin-bottom: 7px;
+  align-items: center;
+  z-index: 2;
+  position: relative;
 }
 
 .dark-theme .upper {
@@ -39,6 +46,9 @@
 .lower {
   background-color: #e4e5e6;
   margin-bottom: 29px;
+  align-items: center;
+  z-index: 1;
+  position: relative;
 }
 
 .dark-theme .lower {
@@ -49,7 +59,7 @@
   color: var(--text-color);
 }
 .rotated {
-  transform: rotate(2.5deg);
+  transform: rotate(2deg);
 }
 
 @keyframes marqueeLine {
@@ -64,10 +74,10 @@
 
 @media screen and (min-width: 768px) {
   .marquee {
-    width: 720px;
-  }
-  .marquee {
     margin-bottom: 124px;
+  }
+  .text-wrapper {
+    height: 280px;
   }
   .marquee__inner {
     min-height: 128px;
@@ -81,11 +91,7 @@
 }
 @media screen and (min-width: 1200px) {
   .marquee {
-    width: 1200px;
-  }
-  .marquee {
     margin-bottom: 164px;
-    width: 1280px;
   }
 }
 @media screen and (max-width: 767px) {

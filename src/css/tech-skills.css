@@ -1,5 +1,3 @@
-.tech-skills {
-}
 .marquee {
   margin-bottom: 80px;
   padding: 0;
@@ -11,17 +9,11 @@
   display: flex;
   flex-wrap: wrap;
 }
-
 .marquee__inner {
   display: flex;
   min-height: 104px;
   width: 100%;
-  /* animation-name: marqueeLine;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite; */
 }
-
 .marquee__line {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
@@ -38,17 +30,20 @@
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
-
 .upper {
   background-color: #bcdfd1;
   color: var(--text-color);
   margin-bottom: 7px;
   align-items: center;
+  z-index: 2;
+  position: relative;
 }
 .lower {
   background-color: #e4e5e6;
   margin-bottom: 29px;
   align-items: center;
+  z-index: 1;
+  position: relative;
 }
 .another-color-black {
   color: var(--text-color);
@@ -69,7 +64,6 @@
 
 @media screen and (min-width: 768px) {
   .marquee {
-    /* width: 720px; */
     margin-bottom: 124px;
   }
   .text-wrapper {
@@ -90,7 +84,6 @@
     margin-bottom: 164px;
   }
 }
-
 @media screen and (max-width: 767px) {
   .marquee {
     font-size: 40px;

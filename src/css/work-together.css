@@ -167,7 +167,7 @@
 
 .dark-theme .backdrop {
   background-color: #1e2023;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .is-open {
@@ -202,24 +202,35 @@
 
 .dark-theme .modal {
   background-color: #2a2d32;
+  opacity: 1;
 }
 
 .modal-close {
+  /* width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 26px;
+  right: 26px; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* padding: 0; */
+  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.modal-icon {
+  fill: #292929;
   width: 12px;
   height: 12px;
   position: absolute;
   top: 26px;
   right: 26px;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* padding: 0; */
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
-.modal-icon {
-  fill: #292929;
+.dark-theme .modal-icon {
+  fill: #ffffff;
   /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 

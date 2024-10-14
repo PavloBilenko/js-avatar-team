@@ -1,3 +1,6 @@
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
+
 const form = document.getElementById('contactForm');
 const successModal = document.getElementById('successModal');
 const closeModalButton = document.getElementById('closeModal');
@@ -47,11 +50,11 @@ form.addEventListener('submit', function (event) {
       form.reset(); // Очищуємо форму
     })
     .catch(error => {
-      // Помилка при відправці запиту
-      errorNotification.style.display = 'block'; // Показуємо вспливаюче повідомлення про помилку
-      setTimeout(() => {
-        errorNotification.style.display = 'none'; // Ховаємо повідомлення через 3 секунди
-      }, 3000);
+      //   console.error(error);
+      iziToast.error({
+        title: 'Error',
+        message: 'Something went wrong. Please try again later!',
+      });
     });
 });
 

@@ -35,26 +35,3 @@ export function setupFAQ() {
   }
 }
 
-// document.querySelectorAll('.question').forEach(question => {
-//   question.addEventListener('click', () => {
-//     const parent = question.parentElement; // Отримуємо батьківський елемент li
-//     const answer = question.nextElementSibling; // Відповідний блок відповіді
-
-//     // Закриваємо всі інші відкриті питання
-//     document.querySelectorAll('.question-element').forEach(item => {
-//       if (item !== parent) {
-//         item.classList.remove('open');
-//         item.querySelector('.answer').style.display = 'none';
-//       }
-//     });
-
-//     // Відкриваємо/закриваємо поточне запитання
-//     if (parent.classList.contains('open')) {
-//       parent.classList.remove('open');
-//       answer.style.display = 'none';
-//     } else {
-//       parent.classList.add('open');
-//       answer.style.display = 'block';
-//     }
-//   });
-// });

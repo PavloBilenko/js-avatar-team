@@ -9,7 +9,7 @@ body{
 }
 
 /* Стилі для темної теми */
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {с
   .open .question-box {
     background-color: #204136; 
   }
@@ -28,71 +28,35 @@ body{
   fill: #f1f1f1;
 }
 
-/* Styles for Desktop devices */
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
 
-.faq-container{
-  position: relative;
-  margin-bottom: 139px;
+/* COMMON */
+.faq-title{
+  font-size: 52px;
 }
-
 .faq-title-container{
 top: 0;
-width: 520px;
-}
 
-
-.faq-decor{
-  max-width: 526px;
-  height: 408px;
-  margin-top: 240px;
-  filter: blur(3px);
-}
-
-
-
-.question-container {
-  width: 592px;
-  height: 744px;
-  display: flex;
-  position: absolute;
-  right: 32px;
-  top: 276px; 
-}
-
-
-
-
-.accordion {
-  list-style: none;
-  padding: 0;
-  height: 744px;
 }
 
 .question-element {
   overflow: hidden;
 }
 .question-box{
-  width: 592px;
+  max-width: 100%;
   border-bottom: 1px solid #E4E5E6;
   margin: 0;
   padding-bottom: 28px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   cursor: pointer;
+  align-items: center;
 }
 
 .question {
+font-family: Poppins Regular;
 justify-content: center;
-font-family: var(--font-family);
 font-weight: 400;
 font-size: 20px;
-width: 488px;
 line-height: 32px; 
 line-height: 1.6;
 letter-spacing: 0.03em;
@@ -110,7 +74,6 @@ margin: 0;
 font-size: 16px;
 clip-path: inset(0 0 100% 0); /* Повністю приховано */
   transition: clip-path 0.7s ease, padding 0.7s ease;
-
 font-weight: 300;
  line-height: 1.5;
 letter-spacing: 0.03em;
@@ -119,7 +82,7 @@ color: black;
   padding: 24px 24px 28px 24px;
   background-color: #f1f1f1; /* Сірий фон по замовчуванню */
   border-radius: 0 0 5px 5px;
-  width: 592px;
+
   
 }
 
@@ -136,7 +99,7 @@ color: black;
   border-radius: 0 0 10px 10px;
   border-bottom: none;
   clip-path: inset(0 0 0 0); /* Видно повністю */
-  padding: 24px;
+  padding: 24px 24px 28px 24px; 
   /* transition-duration: 1000ms; */
 
 
@@ -145,34 +108,26 @@ color: black;
 }
 
 .arrow {
-  font-size: 18px;
-  color: #aaa;
-  transition: transform 0.3s;
   display: none;
-}
-
-.open .arrow {
-  transform: rotate(180deg); /* Поворот стрілки при відкритті */
-  color: #333; /* Зміна кольору стрілки при відкритті */
 }
 
 .answer-text{
   margin: 0;
-  width: 544px;
+ 
 }
 .arrow-icon {
   margin-left: 24px; /* Відступ між текстом та іконкою */
   margin-right: 24px;
   margin-top: 28px;
+ 
   width: 32px;
   height: 32px;
   fill: black; /* Колір іконки */
 }
+
 .open .arrow-icon {
   transform: rotate(180deg);
 }
-
-
 
 .faq-question {
   display: flex;
@@ -181,25 +136,24 @@ color: black;
   padding: 10px;
 }
 
-.arrow-icon {
-  margin-left: 24px; /* Відступ між текстом та іконкою */
-  width: 24px;
-  height: 24px;
-  fill: black; /* Колір іконки */
-}
+
+
+
+
 
 
 /* Styles for Mobile devices */
 @media only screen and (min-width: 320px) and (max-width: 360px) {
  .faq-container{
-  padding: 0px 20px;
-width: 360px;
-height: 1320px;
+padding: 0px 20px;
+
+min-height: 1320px;
 margin-bottom: 80px;
  }
 
  .faq-title{
-  font-size: 52px;;
+  font-size: 52px;
+  font-weight: 400;
  }
 
   .faq-title-container {
@@ -208,49 +162,42 @@ margin-bottom: 80px;
     margin-bottom: 40px;
   }
 
-  .faq-decor {
-    max-width: 100%;
-    height: auto;
-    margin-top: 120px; /* Скорочуємо для мобільної версії */
-  }
-
   .question-container {
-    width: 100%; /* Ширина на всю ширину екрану */
+    max-width: 320px; /* Ширина на всю ширину екрану */
     height: auto; /* Автоматична висота */
-    position: relative; /* Відносне позиціонування для мобільної версії */
+    
     right: 0; /* Вирівняно по ширині */
     top: 0; /* Без відступу зверху для спрощення */
   }
 
   .question-box {
-    width: 320px; /* Повна ширина для мобільних пристроїв */
+    max-width: 320px; /* Повна ширина для мобільних пристроїв */
     
   }
 
   .question {
     font-size: 18px; /* Менший розмір шрифту для мобільних */
-    width: 224px;
+    max-width: 224px;
     
    
   }
 
+
   .answer {
     padding: 24px 24px 28px 24px; /* Менший padding */
-    width: 320px;
+    max-width: 320px;
   }
   .answer-text{
     font-size: 16px;
-    width: 100%;
+    max-width: 272px;
   }
 
   .arrow-icon {
     width: 32px; /* Зменшена іконка */
     height: 32px;
     margin-left: 16px; /* Менший відступ між текстом та іконкою */
-    margin-right: 24px;
-    margin-top: 28px;
     margin-bottom: 80px;
-    fill: black;
+   
   }
 
   
@@ -259,19 +206,23 @@ margin-bottom: 80px;
   }
 }
 
+
+
+
+
+
+
+
 /* Styles for Tablet devices (min-width: 768px) */
-@media screen and (width: 768px)  {
+@media screen and (min-width: 768px)  {
 
   .faq-container{
     width: 768px;
    margin-bottom: 124px;
-  
-  
+   min-height: 1120px;
     
    }
    
-   
-  
    .faq-title{
     font-size: 108px;
    }
@@ -286,15 +237,13 @@ margin-bottom: 80px;
     .question-container {
       width: 100%; /* Ширина на всю ширину екрану */
       height: auto; /* Автоматична висота */
-      position: relative; /* Відносне позиціонування для мобільної версії */
-      right: 0; /* Вирівняно по ширині */
-      top: 60px; /* Без відступу зверху для спрощення */
+      margin-top: 60px; /* Без відступу зверху для спрощення */
       padding: 0;
-      margin-bottom: 124px;
+     
     }
 
   .question-box {
-    width: 704px; /* Повна ширина для зручного перегляду */
+    max-width: 100%; /* Повна ширина для зручного перегляду */
     padding-bottom: 0;
   }
 
@@ -322,9 +271,12 @@ margin-bottom: 80px;
   .arrow-icon {
     width: 32px; /* Збільшуємо іконку для зручності на планшеті */
     height: 32px;
-   margin: 28px 24px 28px 24px;
-    fill: black;
+    margin-top: 28px;
+    margin-left: 24px; /* Менший відступ між текстом та іконкою */
+    margin-bottom: 32px;
   }
+
+  
 
   
   .faq-decor{
@@ -334,5 +286,68 @@ margin-bottom: 80px;
 }
 
 
+/* Styles for Desktop devices */
+@media screen and (min-width: 1280px) {
+  .faq-container {
+    width: 1280px;
+  }
+  .container{
+    max-width: 1280px;
+  }
+
+  .faq-title-container{
+    width: 520px;
+  }
+
+  .faq-title{
+    font-size: 108px;
+  }
+
+  .accordion {
+    padding: 0;
+    min-height: 744px;
+  }
+
+  .faq-container{
+   display: flex;
+   gap: 104px;
+   margin-bottom: 139px;
+   min-height: 1020px;
+  }
+
+.question-container {
+  width: 592px;
+  height: 744px;
+align-self: flex-end;
+margin-top: 276px;
+}
+
+.faq-decor{
+  display: flex;
+  max-width: 526px;
+  height: 408px;
+  margin-top: 240px;
+  filter: blur(3px);
+}
+.question{
+  width: 488px;
+}
+
+.answer {
+
+    width: 592px;
+    
+  }
+.answer-text{
+  width: 544px;
+}
+
+}
 
 
+@media screen and (min-width: 300px) and (max-width: 1279px){
+  .faq-decor{
+    display: none;
+  }
+
+}

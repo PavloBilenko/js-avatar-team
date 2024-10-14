@@ -159,7 +159,7 @@
   display: flex;
   justify-content: space-between; 
   align-items: center;            
-  gap: 5px;                      /* Отступ между изображением и текстом */
+  gap: 5px;                     
 }
 
 .img-man-bio {
@@ -167,7 +167,7 @@
 }
 
 .img-man-bio img {
-  border-radius: 10px; /* Сглаживаем углы изображения, как на примере */
+  border-radius: 10px; 
 }
 
 .bio-text {

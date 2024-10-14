@@ -37,7 +37,7 @@ const initializeSwiper = () => {
             resize: () => {
                 if (window.innerWidth >= 768) {
                     document.querySelectorAll('.swiper-slide').forEach(slide => {
-                        slide.style.width = 'calc((100% -32px) /2)';  // Adjust width for 3 slides on resize
+                        slide.style.width = 'calc((100% -32px) /2)';   
                     });
                 }
             }

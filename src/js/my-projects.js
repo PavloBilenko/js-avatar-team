@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (currentIndex >= totalProjects) {
             loadMoreBtn.style.display = "none";
         }
+        loadMoreBtn.blur();
+        loadMoreBtn.classList.remove("hover", "focus");
     }
 
     projects.forEach((project) => {

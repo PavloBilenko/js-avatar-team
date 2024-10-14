@@ -142,6 +142,7 @@
 
 .comment-prev-btn {
     stroke: #292929;
+    fill: none;
     display: flex;
     justify-self: center;
     align-items: center;

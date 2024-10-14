@@ -2,10 +2,7 @@ import { setupThemeSwitcher } from './js/theme-switcher';
 
 setupThemeSwitcher();
 
-
-
-
-
+import './js/header.js';
 
 import { setupFAQ } from './js/faq.js';
 

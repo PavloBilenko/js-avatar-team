@@ -7,10 +7,9 @@ const initializeSwiper = () => {
         
 
         breakpoints: {
-            768: { 
+            1280: { 
                 slidesPerView: 2,
-                spaceBetween: 12,
-                
+                spaceBetween: 32,
                 
             },
         },
@@ -35,11 +34,19 @@ const initializeSwiper = () => {
             slideChange: () => {
                 switchNavigationButtons();
             },
+            resize: () => {
+                if (window.innerWidth >= 768) {
+                    document.querySelectorAll('.swiper-slide').forEach(slide => {
+                        slide.style.width = 'calc((100% -32px) /2)';   
+                    });
+                }
+            }
         },
     });
 
     switchNavigationButtons(); 
 };
+    
 
 const loadComments = () => {
     fetch('https://portfolio-js.b.goit.study/api/reviews') 

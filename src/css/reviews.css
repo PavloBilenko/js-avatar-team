@@ -6,10 +6,13 @@
 
 .reviews-section {
     margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .reviews-title {
     text-align: center;
+    font-size: 52px;
+    margin-bottom: 40px;
 }
 
 .swiper {
@@ -23,16 +26,17 @@
 }
 
 .swiper-slide {
-    flex: 0 0 calc(50% - 32px);
+    flex: 0 0 100%;
     justify-content: space-between;
     display: flex;
     gap: 32px;
+    box-sizing: border-box;
+    margin: 0;
     
 }
 
 .comment-container {
-    margin-top: 60px;
-    margin-bottom: 64px;
+    margin-bottom: 24px;
     width: 100%;
     border-radius: 16px;
     background-color: #E4E5E6;
@@ -45,6 +49,7 @@
     display: flex;
     justify-content: flex-start;
     gap: 16px;
+    align-items: center;
 
 }
 
@@ -56,7 +61,7 @@
 }
 
 .comment-user-name {
-    font-weight: 500;
+    font-family: Poppins Medium;
 }
 
 .hidden-comment {
@@ -80,11 +85,11 @@
     width: 40px;
     height: 40px;
     border-radius: 8px;
-    border: solid 1px black;
+    border: solid 1px #292929;
 }
 
 .comment-prev-btn {
-    fill: black;
+    fill: #292929;
 }
 
 .swiper-button-disabled {
@@ -93,8 +98,46 @@
 }
 
 
+.reviews-btn-svg {
+    fill: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (min-width: 768px) {
+    .reviews-section {
+        margin-top: 124px;
+        margin-bottom: 124px;
+    }
+  
+
+    .reviews-section {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .reviews-title {
+        text-align: center;
+        font-size: 108px;
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 1280px) {
     .swiper-slide {
-        flex: 0 0 50%;
+        flex: 0 0 calc(50% - 16px);
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+    }
+
+    .reviews-section {
+        margin-top: 164px;
+        margin-bottom: 164px;
+    }
+
+    .reviews-title {
+        margin-bottom: 80px;
     }
 }

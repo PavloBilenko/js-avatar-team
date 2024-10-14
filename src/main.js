@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
 import './js/my-projects.js';
 
 import './js/reviews.js';
-import '../server.js';
 
 import './js/work-together.js';
 

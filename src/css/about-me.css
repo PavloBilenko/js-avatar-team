@@ -161,8 +161,6 @@
     padding: 0 10px;
     display: flex;
     flex-direction: column;
-    
-
   }
 
   .text-content {
@@ -213,6 +211,7 @@
 
   .education {
     align-items: center;
+    margin-top: 40px;
   }
 
   .education-column {
@@ -259,6 +258,11 @@
     font-size: 16px;
     color: #292929;
     text-align: left;
+    margin-bottom: 24px;
+  }
+
+  .decor-element {
+    display: none;
   }
   
 }

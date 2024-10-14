@@ -97,10 +97,10 @@ transition: background-color 0.3s ease;
   margin-bottom: 40px;
 }
 .icon-visit {
-  display: flex;
+  /* display: flex; */
   stroke: #00b068;
   position: absolute;
-  right: 24px;
+  /* right: 24px; */
   left: 77px;
   top: 32%;
 }
@@ -151,7 +151,7 @@ transition: background-color 0.3s ease;
   height: 2px;
   background-color: #00b068; 
   position: absolute;
-  bottom: 0;
+  bottom: 12px;
   left: 50%; 
   transform: translateX(-50%);
   transition: width 0.3s ease, background-color 0.3s ease;

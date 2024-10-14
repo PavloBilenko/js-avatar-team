@@ -147,3 +147,10 @@
         margin-bottom: 80px;
     }
 }
+
+.comment-prev-btn {
+    stroke: #292929;
+}
+.dark-theme .comment-prev-btn {
+    stroke: #F0F0F0;
+}

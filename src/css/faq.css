@@ -9,7 +9,7 @@ body{
 }
 
 /* Стилі для темної теми */
-@media (prefers-color-scheme: dark) {с
+@media (prefers-color-scheme: dark) {
   .open .question-box {
     background-color: #204136; 
   }
@@ -49,17 +49,15 @@ top: 0;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  align-items: center;
+
 }
 
 .question {
 font-family: Poppins Regular;
 justify-content: center;
 font-weight: 400;
-font-size: 20px;
 line-height: 32px; 
 line-height: 1.6;
-letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--black);
   border-radius: 5px;
@@ -67,6 +65,10 @@ color: var(--black);
   box-sizing: content-box;
 padding: 28px 0 0 24px;
 margin: 0;
+width: 224px;
+font-size: 18px;
+letter-spacing: 0.5px;
+line-height: 28px;
 }
 
 
@@ -116,12 +118,12 @@ color: black;
  
 }
 .arrow-icon {
-  margin-left: 24px; /* Відступ між текстом та іконкою */
-  margin-right: 24px;
-  margin-top: 28px;
+  margin-left: 28px; /* Відступ між текстом та іконкою */
+  margin-right: 28px;
+  margin-top: 32px;
  
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   fill: black; /* Колір іконки */
 }
 
@@ -175,12 +177,7 @@ margin-bottom: 80px;
     
   }
 
-  .question {
-    font-size: 18px; /* Менший розмір шрифту для мобільних */
-    max-width: 224px;
-    
-   
-  }
+
 
 
   .answer {
@@ -193,10 +190,10 @@ margin-bottom: 80px;
   }
 
   .arrow-icon {
-    width: 32px; /* Зменшена іконка */
-    height: 32px;
-    margin-left: 16px; /* Менший відступ між текстом та іконкою */
-    margin-bottom: 80px;
+    width: 24px; /* Зменшена іконка */
+    height: 24px;
+    margin-left: 20px; /* Менший відступ між текстом та іконкою */
+    margin-bottom: 84px;
    
   }
 
@@ -230,6 +227,7 @@ margin-bottom: 80px;
     .faq-title-container {
       width: 592px;
       height: 372px; 
+      margin-bottom: 60px;
      
     }
 
@@ -251,6 +249,9 @@ margin-bottom: 80px;
     font-size: 20px; /* Шрифт трохи більший, але менший, ніж на десктопах */
     width: 600px;
     padding-bottom: 24px;
+  
+letter-spacing: 0.5px;
+line-height: 32px;
    
     
   }
@@ -269,11 +270,11 @@ margin-bottom: 80px;
   }
 
   .arrow-icon {
-    width: 32px; /* Збільшуємо іконку для зручності на планшеті */
-    height: 32px;
-    margin-top: 28px;
-    margin-left: 24px; /* Менший відступ між текстом та іконкою */
-    margin-bottom: 32px;
+    width: 24px; /* Збільшуємо іконку для зручності на планшеті */
+    height: 24px;
+    margin-top: 32px;
+    margin-left: 28px; /* Менший відступ між текстом та іконкою */
+    margin-bottom: 36px;
   }
 
   
@@ -297,6 +298,7 @@ margin-bottom: 80px;
 
   .faq-title-container{
     width: 520px;
+
   }
 
   .faq-title{
@@ -331,6 +333,9 @@ margin-top: 276px;
 }
 .question{
   width: 488px;
+font-size: 20px;
+letter-spacing: 0.5px;
+line-height: 32px;
 }
 
 .answer {
@@ -349,5 +354,8 @@ margin-top: 276px;
   .faq-decor{
     display: none;
   }
+ .faq-title-container{
+  margin-bottom: 40px;
+ }
 
 }

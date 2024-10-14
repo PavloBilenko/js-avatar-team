@@ -1,4 +1,17 @@
 /* ----------------------------COMMON STYLES */
+:root footer{
+  border-top: 1px solid #e4e5e6;
+}
+
+.dark-theme footer{
+  border-top: 1px solid #f0f0f0;
+}
+
+
+footer {
+  border-top: 1px solid #000;
+}
+
 .container-footer{
   padding-top: 40px;
   padding-bottom: 24px;
@@ -12,10 +25,6 @@
   line-height: 1;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-}
-
-.footer-logo-part {
- 
 }
 
 .footer-copyright,
@@ -45,6 +54,19 @@
   .footer-copyright {
     text-align: center;
   }
+
+  .break{
+    display: block;
+  }
+
+  .footer-animation {
+    animation-name: footer-copyright;
+  }
+
+  .footer-copyright {
+    animation-duration: 4000ms;
+    animation-timing-function: ease;
+  }
 }
 
 /*2 ----------------------------TABLET MEDIA*/
@@ -64,7 +86,24 @@
   .footer-copyright {
     text-align: right;
   }
+
+  .break {
+    display: inline;
+  }
+  /* .footer-animation {
+  animation: footer-copyright 5000ms ease;
+  } */
+
+  .footer-animation {
+    animation-name: footer-copyright;
+  }
+
+  .footer-copyright {
+    animation-duration: 5000ms;
+    animation-timing-function: ease;
+  }
 }
+        
 
 /*2 ----------------------------_DESKTOP MEDIA*/
 
@@ -73,23 +112,49 @@
     display: flex;
     justify-content: space-between;
   }
+
+  /* .footer-animation {
+    animation: footer-copyright 6500ms ease;
+  } */
+
+  .footer-animation {
+    animation-name: footer-copyright;
+  }
+
+  .footer-copyright {
+    animation-duration: 6.5s;
+    animation-timing-function: ease;
+  }
+}
+
+.wrap-animation {
+  overflow: hidden;
+}
+
+@keyframes footer-copyright {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
 }
 
 .footer-item-link:focus{
   outline: none;
 }
 
-.footer-item {
+.line {
+  position: relative;
+  display: inline-block;
   transition: transform 0.3s ease;
 }
 
-.footer-item:hover, .footer-item:focus-within {
+.line:hover,
+.line:focus-within {
   cursor: pointer;
   transform: scale(1.1);
-}
-
-.line {
-  position: relative;
 }
 
 .line:after{
@@ -99,7 +164,7 @@
   bottom: -1px;
   height: 2px;
   width: 0%;
-  display: block;
+  display: inline-block;
   background: #00b068;
   transition: width 0.3s;
 }

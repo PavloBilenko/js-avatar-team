@@ -8,18 +8,20 @@
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 .marquee__inner {
   display: flex;
   min-height: 104px;
   width: 100%;
+  position: relative;
 }
 .marquee__line {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 32px;
-  line-height: 40px;
-  letter-spacing: 0.5px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   height: 104px;
   flex-shrink: 0;
@@ -34,22 +36,19 @@
   background-color: #bcdfd1;
   color: var(--text-color);
   margin-bottom: 7px;
-  align-items: center;
   z-index: 2;
   position: relative;
 }
 .lower {
   background-color: #e4e5e6;
   margin-bottom: 29px;
-  align-items: center;
   z-index: 1;
   position: relative;
+  transform: skewY(2deg);
+  overflow: hidden;
 }
 .another-color-black {
   color: var(--text-color);
-}
-.rotated {
-  transform: rotate(2deg);
 }
 
 @keyframes marqueeLine {
@@ -65,6 +64,11 @@
 @media screen and (min-width: 768px) {
   .marquee {
     margin-bottom: 124px;
+  }
+  .marquee__line {
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: 0.01em;
   }
   .text-wrapper {
     height: 280px;

@@ -172,8 +172,8 @@
 }
 
 .dark-theme .backdrop {
-  background-color: #1e2023;
-  opacity: 0.8;
+  background-color: rgba(30, 32, 35, 0.8);
+  opacity: 1;
 }
 
 .is-open {

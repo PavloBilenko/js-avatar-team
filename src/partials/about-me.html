@@ -3,18 +3,22 @@
     <h2 class="about-content">ABOUT <span class="highlight">ME</span></h2>
   </div>
   <div class="bio-attachment">
-    
     <div class="img-man-bio">
       <img
-        class="img-man-about"
-        src="./img/about.img/img-desk.jpg"
-        alt="image-man"
-
-        srcset="./img/about.img/img-mob.jpg 320px"
-        sizes="(max-width: 320px)
-        (max-width: 768px)"
-        alt="image-man"
-      />
+      class="img-man-about"
+      src="./img/about.img/img-desk.jpg"
+      alt="image-man"
+      srcset="
+        ./img/about.img/img-mob.jpg,  
+        ./img/about.img/img-desk.jpg
+      "
+      sizes="
+        (max-width: 320px) 320px,
+        (max-width: 768px) 768px,
+        100vw
+      "
+    />
+    
     </div>
     <div class="bio-text">
       <h3 class="title">BIO</h3>
@@ -37,37 +41,39 @@
       </p>
 
       <div class="decor-element">
-        <img src="./img/about.img/decor-ab.png" alt="decoration" class="decor" />
+        <img
+          src="./img/about.img/decor-ab.png"
+          alt="decoration"
+          class="decor"
+        />
       </div>
-
     </div>
   </div>
 
-
   <div class="education">
-   <div class="education-column">
-    <h3 class="title">EDUCATION</h3>
-    <ul class="about-list">
-      <li class="text">
-        2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
-      </li>
-      <li class="text">
-        2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New
-        York
-      </li>
-      <li class="text">
-        2020 - 2022 / Advanced Blender Animation Techniques, Udemy
-      </li>
-    </ul>
-   </div>
+    <div class="education-column">
+      <h3 class="title">EDUCATION</h3>
+      <ul class="about-list">
+        <li class="text">
+          2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
+        </li>
+        <li class="text">
+          2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
+          New York
+        </li>
+        <li class="text">
+          2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+        </li>
+      </ul>
+    </div>
 
-   <div class="education-column">
-    <h3 class="title">ROLE</h3>
-    <ul class="about-list">
-      <li class="text">Frontend development</li>
-      <li class="text">HeadlessCMS, Wordpress</li>
-      <li class="text">Blender (enjoy)</li>
-    </ul>
-   </div>
+    <div class="education-column">
+      <h3 class="title">ROLE</h3>
+      <ul class="about-list">
+        <li class="text">Frontend development</li>
+        <li class="text">HeadlessCMS, Wordpress</li>
+        <li class="text">Blender (enjoy)</li>
+      </ul>
+    </div>
   </div>
 </section>

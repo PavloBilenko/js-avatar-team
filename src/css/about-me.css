@@ -96,7 +96,6 @@
   flex: 1;
   margin-top: 20px;
   border-radius: 8px;
-  max-width: 100%;
 }
 
 .education,
@@ -155,6 +154,27 @@
   .education {
     justify-content: space-between;
   }
+
+.bio-attachment {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+  gap: 5px;                      /* Отступ между изображением и текстом */
+}
+
+.img-man-bio {
+  flex: 2; 
+}
+
+.img-man-bio img {
+  border-radius: 10px; /* Сглаживаем углы изображения, как на примере */
+}
+
+.bio-text {
+  flex: 1.5; 
+  line-height: 1.8;
+}
+
 }
 
 @media screen and (min-width: 768px) {
@@ -183,12 +203,13 @@
 }
 
 .bio-attachment {
+  display: block;
   flex-direction: column;
   align-items: center;
 }
 
 .bio-text {
-  max-width: 100%;
+  width: 100%;
   font-size: 16px;
   text-align: center;
   margin-bottom: 40px;
@@ -198,6 +219,8 @@
   width: 100%;
   margin-top: 20px;
   margin-left: 20px;
+  position: relative;
+  display: inline-block;
 }
 
 .img-man-about {

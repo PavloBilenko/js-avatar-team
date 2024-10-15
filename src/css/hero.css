@@ -71,7 +71,7 @@
     width: 555px;
   }
   @media screen and (min-width: 1280px) {
-    margin-bottom: 96px;
+    margin-bottom: 0;
   }
 }
 
@@ -335,3 +335,9 @@
 }
 
 /* hero-link-section dark-theme */
+
+.container-height{
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 96px;
+  }
+}

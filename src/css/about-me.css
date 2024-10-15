@@ -21,8 +21,14 @@
   margin-bottom: 40px;
   @media screen and (min-width: 768px) {
     display: flex;
+/* about/me-section
+    position: relative; 
+    justify-content: space-between;
+    align-items: flex-start; */ */
+
     gap: 32px;
     margin-bottom: 60px;
+
   }
   @media screen and (min-width: 1280px) {
     margin-bottom: 80px;
@@ -30,6 +36,28 @@
   }
 }
 
+/* about/me-section */
+/*   .bio-text {
+    max-width: 550px;
+    margin-left: auto;
+    text-align: left;
+    margin-right: 30px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-man-about {
+    width: 50%;
+    margin-left: 32px;
+    position: relative;
+    transform: translate(50px, 50px);
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 1.4;
+} */
 .bio-text {
   margin-bottom: 40px;
   line-height: 24px;

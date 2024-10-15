@@ -9,7 +9,9 @@
       href="/js-avatar-team/assets/favicon-light-NwuzRbAj.svg"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/accordion-js/dist/accordion.js"></script>
     <title>Avatar</title>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -17,99 +19,131 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    
     <script type="module" crossorigin src="/js-avatar-team/index.js"></script>
     <link rel="modulepreload" crossorigin href="/js-avatar-team/assets/vendor-I1I71QQ2.js">
     <link rel="stylesheet" crossorigin href="/js-avatar-team/assets/vendor-DnveWo0P.css">
-    <link rel="stylesheet" crossorigin href="/js-avatar-team/assets/index-Bjht-Dna.css">
+    <link rel="stylesheet" crossorigin href="/js-avatar-team/assets/index-Cw8cHww_.css">
   </head>
   <body>
-    <header class="header" id="header"></header>
-    <div class="header-wrapper">
-      <div class="header-container container">
-        <a class="header-logo" href="./index.html">Lloyd<span class="common-span">Jefferson.</span></a>
-        <nav class="header-nav">
-          <button id="theme-toggle" class="theme-toggle">
-            <svg class="icon-sun" width="20" height="20">
-              <use href="/js-avatar-team/assets/icons-BN3pAbgA.svg#icon-sun"></use>
-            </svg>
-            <svg class="icon-moon" width="14" height="20">
-              <use href="/js-avatar-team/assets/icons-BN3pAbgA.svg#icon-moon"></use>
-            </svg>
-          </button>
-          <ul class="header-list">
-            <li class="header-item"><a href="#about-me">About me</a></li>
-          <li class="header-item"><a href="#projects">Projects</a></li>
-          <li class="header-item"><a href="#contacts">Contacts</a></li>
-          </ul>
-          <button type="button" id="header-button" class="header-button">
-            <svg class="header-button-icon" width="32" height="32">
-              <use href="/js-avatar-team/assets/icons-BN3pAbgA.svg#icon-menu"></use>
-            </svg>
-            <svg class="header-close-icon" width="32" height="32">
-                <use href="/js-avatar-team/assets/header-BhjBOUg9.svg#icon-close"></use>
-              </svg>
-          </button>
-        </nav>
-      </div>
-    </div>
-
-    <div class="modal-container" id="modal-container">
-      <div class="mobile-menu">
-          <ul class="header-list-mobile">
-            <li class="header-item"><a href="#about-me">About me</a></li>
+    <header class="header" id="header">
+  <div class="header-container container">
+    <a class="header-logo" href="./index.html"
+      >Lloyd<span class="common-span">Jefferson.</span></a
+    >
+    <nav class="header-nav">
+      <button id="theme-toggle" class="theme-toggle">
+        <svg class="icon-sun" width="20" height="20">
+          <use href="/js-avatar-team/assets/icons-BN3pAbgA.svg#icon-sun"></use>
+        </svg>
+        <svg class="icon-moon" width="14" height="20">
+          <use href="/js-avatar-team/assets/icons-BN3pAbgA.svg#icon-moon"></use>
+        </svg>
+      </button>
+      <ul class="header-list">
+        <li class="header-item"><a href="#about-me">About me</a></li>
         <li class="header-item"><a href="#projects">Projects</a></li>
         <li class="header-item"><a href="#contacts">Contacts</a></li>
-          </ul>
-      </div>
+      </ul>
+      <button type="button" id="header-button" class="header-button">
+        <svg class="header-button-icon" width="32" height="32">
+          <use href="/js-avatar-team/assets/icons-BN3pAbgA.svg#icon-menu"></use>
+        </svg>
+        <svg class="header-close-icon" width="32" height="32">
+          <use href="/js-avatar-team/assets/header-BhjBOUg9.svg#icon-close"></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
+
+  <div class="modal-container" id="modal-container">
+    <div class="mobile-menu">
+      <ul class="header-list-mobile">
+        <li class="header-item"><a href="#about-me">About me</a></li>
+        <li class="header-item"><a href="#projects">Projects</a></li>
+        <li class="header-item"><a href="#contacts">Contacts</a></li>
+      </ul>
     </div>
-    </header>
+  </div>
+</header>
 
 
     <main>
       <!-- Loads the specified .html file -->
       <section class="hero">
-    <div class="container">
-        <div class="container-hero">
-            <div class="container-hero-caption">
-                <h1 class="hero-caption">Hello, I am <span class="common-span">Fullstack developer</span></h1>
-                <div class="hero-container-order">
-                    <a class="hero-order-link" href="./work-together.html">
-                        <svg class="hero-link-icon" width="28" height="13">
-                            <use href="/js-avatar-team/assets/symbol-defs-DiEKd6o_.svg#icon-Arrow-order"></use>
-                        </svg>Order the project
-                        <div class="rectangle dark-theme"></div>
-                    </a>
-                    
-                </div>
-                
-            </div>
-            <div class="container-hero-img">
-                <img class="hero-img is-hidden" srcset="/js-avatar-team/assets/hero-imgx1-BGvyQwmO.jpg 1x, /js-avatar-team/assets/hero-imgx2-DwS-h9xX.jpg 2x" src="./img/hero-img/hero-img.jpg" alt="Our hero" with="592" height="444">
-                <p class="hero-text">I work with people all over the world to create <span class="common-span">impressive</span> and <span class="common-span">functional websites</span> that reflect each client’s unique personality. </p>
-            </div>
+  <div class="container">
+    <div class="container-hero">
+      <div class="container-hero-caption">
+        <h1 class="hero-caption">
+          Hello, I am <span class="common-span">Fullstack developer</span>
+        </h1>
+        <div class="hero-container-order">
+          <a class="hero-order-link" href="./work-together.html">
+            <svg class="hero-link-icon" width="28" height="13">
+              <use
+                href="/js-avatar-team/assets/symbol-defs-DiEKd6o_.svg#icon-Arrow-order"
+              ></use></svg
+            >Order the project
+            <div class="rectangle dark-theme"></div>
+          </a>
         </div>
+      </div>
+      <div class="container-hero-img">
+        <img
+          class="hero-img is-hidden"
+          srcset="/js-avatar-team/assets/hero-imgx1-BGvyQwmO.jpg 1x, /js-avatar-team/assets/hero-imgx2-DwS-h9xX.jpg 2x"
+          src="./img/hero-img/hero-img.jpg"
+          alt="Our hero"
+          with="592"
+          height="444"
+        />
+        <p class="hero-text">
+          I work with people all over the world to create
+          <span class="common-span">impressive</span> and
+          <span class="common-span">functional websites</span> that reflect each
+          client’s unique personality.
+        </p>
+      </div>
     </div>
-</section>
-
-<section class="hero-link-section dark-theme">
-    <div class="container">
-        <div class="container-link">
-            <ul class="hero-list">
-                <li class="hero-iteam">
-                    <a target="_blank" class="hero-iteam-social-link" href="https://www.instagram.com/goitclub/">Insragram</a>
-                </li>
-                <li class="hero-iteam">
-                    <a target="_blank" class="hero-iteam-social-link" href="https://www.facebook.com/goITclub/">Facebook</a>
-                </li>
-                <li class="hero-iteam">
-                    <a target="_blank" class="hero-iteam-social-link" href="https://www.linkedin.com/school/goit-start-your-career-in-it">Linkedin</a>
-                </li>
-                <li class="hero-iteam">
-                    <a target="_blank" class="hero-iteam-social-link" href="https://pavlobilenko.github.io/js-avatar-team/">GitHub</a>
-                </li>
-            </ul>
-        </div>
+  </div>
+  <div class="container container-bg-color dark-theme">
+    <div class="container-link dark-theme">
+      <ul class="hero-list">
+        <li class="hero-iteam">
+          <a
+            target="_blank"
+            class="hero-iteam-social-link"
+            href="https://www.instagram.com/goitclub/"
+            >Insragram</a
+          >
+        </li>
+        <li class="hero-iteam">
+          <a
+            target="_blank"
+            class="hero-iteam-social-link"
+            href="https://www.facebook.com/goITclub/"
+            >Facebook</a
+          >
+        </li>
+        <li class="hero-iteam">
+          <a
+            target="_blank"
+            class="hero-iteam-social-link"
+            href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+            >Linkedin</a
+          >
+        </li>
+        <li class="hero-iteam">
+          <a
+            target="_blank"
+            class="hero-iteam-social-link"
+            href="https://pavlobilenko.github.io/js-avatar-team/"
+            >GitHub</a
+          >
+        </li>
+      </ul>
     </div>
+  </div>
 </section>
 
       <section class="about-section container" id="about-me">
@@ -448,94 +482,96 @@
   </div>
 </section>
 
-      <section id="faq" class="container faq-container">
-    <div class="faq-title-container"> 
-      <h2 class="faq-title">FREQUENTLY ASKED <span class="common-span">QUESTIONS</span></h2>
-      <img
-      src="/js-avatar-team/assets/FAQ-decor_1x-C5sx1pk0.png"
-      srcset="/js-avatar-team/assets/FAQ-decor_1x-C5sx1pk0.png 1x, /js-avatar-team/assets/FAQ-decor_2x-De2Zjw86.png 2x"
-      alt="FAQ Decor"
-      class="faq-decor"
-    >
-    
-    </div>
-    <div class="question-container">
-      <ul class="accordion">
-        <li class="question-element">
-          <div class="question-box">
-            <p class="question expanded" id="first-question">What programming languages are most often used in your project?</p>
-            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <path d="M12 16.5l6-6-1.41-1.41L12 13.67l-4.59-4.59L6 10.5l6 6z"/>
-            </svg>
-            <span class="arrow">▼</span>
-          </div>
-          <div class="answer">
-            <p class="answer-text">In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</p>
-          </div>
-        </li>
-        <li class="question-element">
-          <div class="question-box">
-            <h3 class="question">What are the deadlines for the project?</h3>
-            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <path d="M12 16.5l6-6-1.41-1.41L12 13.67l-4.59-4.59L6 10.5l6 6z"/>
-            </svg>
-               
+      <section id="faq">
+  <div class="container faq-container">
+  <div class="faq-title-container"> 
+    <h2 class="faq-title">FREQUENTLY ASKED <span class="common-span">QUESTIONS</span></h2>
+    <img
+    src="/js-avatar-team/assets/FAQ-decor_1x-C5sx1pk0.png"
+    srcset="/js-avatar-team/assets/FAQ-decor_1x-C5sx1pk0.png 1x, /js-avatar-team/assets/FAQ-decor_2x-De2Zjw86.png 2x"
+    alt="FAQ Decor"
+    class="faq-decor"
+  >
+  
+  </div>
+  <div class="question-container">
+    <ul class="accordion">
+      <li class="question-element">
+        <div class="question-box">
+          <p class="question expanded" id="first-question">What programming languages are most often used in your project?</p>
+          <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12 16.5l6-6-1.41-1.41L12 13.67l-4.59-4.59L6 10.5l6 6z"/>
+          </svg>
           <span class="arrow">▼</span>
-          </div>
-          <div class="answer">
-            <p class="answer-text">The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project.</p>
-          </div>
-        </li>
-        <li class="question-element">
-          <div class="question-box">
-            <h3 class="question">What payment methods do you accept?</h3>
-            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <path d="M12 16.5l6-6-1.41-1.41L12 13.67l-4.59-4.59L6 10.5l6 6z"/>
-            </svg>
-          </div>
-          <div class="answer">
-            <p class="answer-text">Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.</p>
-          </div>
-        </li>
-        <li class="question-element">
-          <div class="question-box">
-            <h3 class="question">How can I contact you?</h3>
-            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <path d="M12 16.5l6-6-1.41-1.41L12 13.67l-4.59-4.59L6 10.5l6 6z"/>
-            </svg>
-            <span class="arrow">▼</span>
-          </div>
-          <div class="answer">
-            <p class="answer-text">In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</p>
-          </div>
-        </li>
-        <li class="question-element">
-          <div class="question-box">
-            <h3 class="question">Do you provide advice or support?</h3>
-            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <path d="M12 16.5l6-6-1.41-1.41L12 13.67l-4.59-4.59L6 10.5l6 6z"/>
-            </svg>
-            <span class="arrow">▼</span>
-          </div>
-          <div class="answer">
-            <p class="answer-text">The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project.</p>
-          </div>
-        </li>
-        <li class="question-element">
-          <div class="question-box">
-            <h3 class="question">What does the process of developing a software product look like from idea to implementation?</h3>
-            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <path d="M12 16.5l6-6-1.41-1.41L12 13.67l-4.59-4.59L6 10.5l6 6z"/>
-            </svg>
-            <span class="arrow">▼</span>
-          </div>
-          <div class="answer">
-            <p class="answer-text">Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section> 
+        </div>
+        <div class="answer">
+          <p class="answer-text">In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</p>
+        </div>
+      </li>
+      <li class="question-element">
+        <div class="question-box">
+          <h3 class="question">What are the deadlines for the project?</h3>
+          <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12 16.5l6-6-1.41-1.41L12 13.67l-4.59-4.59L6 10.5l6 6z"/>
+          </svg>
+             
+        <span class="arrow">▼</span>
+        </div>
+        <div class="answer">
+          <p class="answer-text">The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project.</p>
+        </div>
+      </li>
+      <li class="question-element">
+        <div class="question-box">
+          <h3 class="question">What payment methods do you accept?</h3>
+          <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12 16.5l6-6-1.41-1.41L12 13.67l-4.59-4.59L6 10.5l6 6z"/>
+          </svg>
+        </div>
+        <div class="answer">
+          <p class="answer-text">Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.</p>
+        </div>
+      </li>
+      <li class="question-element">
+        <div class="question-box">
+          <h3 class="question">How can I contact you?</h3>
+          <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12 16.5l6-6-1.41-1.41L12 13.67l-4.59-4.59L6 10.5l6 6z"/>
+          </svg>
+          <span class="arrow">▼</span>
+        </div>
+        <div class="answer">
+          <p class="answer-text">In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</p>
+        </div>
+      </li>
+      <li class="question-element">
+        <div class="question-box">
+          <h3 class="question">Do you provide advice or support?</h3>
+          <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12 16.5l6-6-1.41-1.41L12 13.67l-4.59-4.59L6 10.5l6 6z"/>
+          </svg>
+          <span class="arrow">▼</span>
+        </div>
+        <div class="answer">
+          <p class="answer-text">The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project.</p>
+        </div>
+      </li>
+      <li class="question-element">
+        <div class="question-box">
+          <h3 class="question">What does the process of developing a software product look like from idea to implementation?</h3>
+          <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12 16.5l6-6-1.41-1.41L12 13.67l-4.59-4.59L6 10.5l6 6z"/>
+          </svg>
+          <span class="arrow">▼</span>
+        </div>
+        <div class="answer">
+          <p class="answer-text">Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+</section> 
 
 
 

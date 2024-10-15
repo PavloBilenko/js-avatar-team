@@ -4,10 +4,6 @@
 }
 
 
-.reviews-section {
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
 
 .reviews-title {
     text-align: center;
@@ -104,16 +100,9 @@
 }
 
 @media (min-width: 768px) {
-    .reviews-section {
-        margin-top: 124px;
-        margin-bottom: 124px;
-    }
+ 
 
 
-    .reviews-section {
-        margin-top: 80px;
-        margin-bottom: 80px;
-    }
 
     .reviews-title {
         text-align: center;
@@ -130,10 +119,7 @@
         gap: 32px;
     }
 
-    .reviews-section {
-        margin-top: 164px;
-        margin-bottom: 164px;
-    }
+
 
     .reviews-title {
         margin-bottom: 80px;

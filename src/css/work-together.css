@@ -127,6 +127,7 @@
 .txt-ar {
   height: 120px;
   resize: none;
+  padding: 16px;
 }
 
 .btn {

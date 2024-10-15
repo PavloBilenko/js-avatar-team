@@ -22,6 +22,7 @@
   --bgcolor-rectangle-dark-them: #14c57c;
   --bgcolor-rectangle: #bcdfd1;
   --bgcolor-social-link: #E4E5E6;
+  --bgcolor-iteam-icon: #204136;
 }
 
 .hero {
@@ -276,7 +277,6 @@
   display: flex;
   text-align: center;
   justify-content: center;
-
 }
 
 
@@ -285,6 +285,12 @@
   @media screen and (min-width: 768px) {
     display: flex;
     gap: 40px;
+  }
+}
+.hero-iteam:not(:last-child){
+  
+  @media screen and (max-width: 768px) {
+    margin-bottom: 24px;
   }
 }
 
@@ -296,12 +302,12 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.03em;
 }
 
-.hero-iteam-social-link:not(:last-child){
-  margin-bottom: 24px;
-}
+/* .hero-iteam-social-link:not(:last-child){
+  
+} */
 
 .hero-iteam-social-link:hover, .hero-iteam-social-link:focus{
   color: var(--accet-greeen);

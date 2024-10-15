@@ -201,7 +201,7 @@
       text-transform: uppercase;
       margin-bottom: 40px;
   }
-  .bio-container {
+  .bio-attachment {
       width: 100%;
       height: 100%;
   }
@@ -222,7 +222,7 @@
   .decor-element {
       display: none;
   }
-  .bio-container {
+  .bio-attachmentn {
       margin-bottom: 40px;
   }
   .education-column {

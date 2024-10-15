@@ -38,6 +38,10 @@ top: 0;
 
 }
 
+.faq-container{
+  padding-bottom: 80px;
+}
+
 .question-element {
   overflow: hidden;
 }
@@ -312,7 +316,7 @@ line-height: 32px;
   .faq-container{
    display: flex;
    gap: 104px;
-   padding-bottom: 139px;
+   padding-bottom: 164px;
    min-height: 1020px;
   }
 
@@ -356,7 +360,6 @@ line-height: 32px;
  .faq-title-container{
   margin-bottom: 40px;
  }
-.faq-container{
-  padding-bottom: 80px;
+
 }
-}
+

@@ -1,82 +1,97 @@
 @media screen and (min-width: 1280px) {
   .about-section {
+    max-width: 1280px;
+    padding: 40px 20px;
     display: flex;
-    align-items: flex-start;
-    margin-bottom: 164px;
-    max-width: 1216px;
-    justify-content: space-between;
+    flex-direction: column;
   }
-
+  
   .about-content {
-    display: flex;
-    width: 400px;
     font-size: 108px;
-    margin: 0;
-    letter-spacing: 0.02em;
-    line-height: 1.4;
+    text-transform: uppercase;
     color: #292929;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    word-spacing: 10px;
+    margin-bottom: 40px;
+    margin-left: 32px;
+   
   }
- 
+  
+  .common-span {
+    color: #00b068; /* Зелёный цвет для выделения слова "ME" */
+  }
+  
   .bio-attachment {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap; /* Для адаптивности */
+    gap: 40px;
   }
-
+  
   .bio-text {
-    max-width: 550px;
-    margin-left: auto;
-    text-align: left;
-    margin-right: 30px;
-    gap: 20px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
   }
-
-  .img-man-about {
-    width: 50%;
-    margin-left: 32px;
-    position: relative;
-    transform: translate(50px, 50px);
+  
+  .title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #292929;
+    margin-bottom: 20px;
+    text-transform: uppercase;
   }
-
+  
   .text {
     font-size: 16px;
+    line-height: 1.6;
     color: #292929;
-    line-height: 1.4;
   }
-
+  
   .text-gap {
     margin-bottom: 24px;
-}
-
-  .education-column {
-    width: 336px;
   }
-
+  
+  .img-man-about {
+    width: 320px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 312px;
+    margin-left: 240px;
+    margin-right: 136px;
+  }
+  
+  .decor-element {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .decor {
+    max-width: 100%;
+    height: auto;
+  }
+  
   .education {
     display: flex;
-    margin-top: 40px;
     justify-content: space-between;
-    gap: 16px;
-    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
   }
-
+  
+  
   .about-list {
-    list-style-type: none;
-    padding-left: 0;
-    position: relative;
-    margin-bottom: 16px;
+    list-style: none;
+   
   }
-
+  
   .about-list li {
-    margin-bottom: 0;
-    line-height: 1.2;
+    font-size: 16px;
+    margin-bottom: 10px;
     padding-left: 20px;
+    position: relative;
+    color: #292929;
   }
-
+  
   .about-list li::before {
     content: '';
     width: 6px;
@@ -84,34 +99,11 @@
     background-color: #00b068;
     border-radius: 50%;
     position: absolute;
-    left: -18px;
+    left: 0;
     top: 50%;
+    transform: translateY(-50%);
   }
 
-  .title {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    color: #292929;
-    margin-bottom: 32px;
-    text-transform: uppercase;
-  }
-
-  .img-man-about {
-    display: flex;
-    border-radius: 16px;
-    margin-top: 312px;
-  }
-
-  .decor {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .decor-element {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-  }
   }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -191,7 +183,7 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .about-section {
     margin-right: 20px;
     padding: 0 10px;
@@ -217,13 +209,6 @@
     width: 100%;
     font-size: 16px;
     text-align: center;
-  }
-
-  .img-man-bio {
-    width: 100%;
-    margin-top: 20px;
-    margin-left: 0;
-    display: inline-block;
   }
 
   .img-man-about {

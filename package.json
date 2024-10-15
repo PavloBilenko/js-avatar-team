@@ -18,6 +18,11 @@
   "license": "ISC",
   "dependencies": {
     "accordion": "^3.0.2",
+
+    "express": "^4.21.1",
+    "izitoast": "^1.4.0",
+    "node": "^20.18.0",
+
     "accordion-js": "^3.3.4",
 
     "izitoast": "^1.4.0",

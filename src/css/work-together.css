@@ -278,17 +278,15 @@
   }
 
   .head-decor {
-    display: flex;
     margin-bottom: 60px;
-    align-items: flex-end;
     position: relative;
-    height: 368px;
+    height: 248px;
   }
   .wt-decor {
     display: block;
     position: absolute; /* Використовується для точної позиції */
     right: 0; /* Прикріплює до правого краю */
-    top: 0; /* Якщо потрібно прикріпити до верхнього краю */
+    top: -120px; /* Якщо потрібно прикріпити до верхнього краю */
     width: 336px;
     height: 260px;
   }
@@ -348,15 +346,12 @@
   }
 
   .head-decor {
-    display: flex;
-    gap: 117px;
-    margin-bottom: 36px;
-    align-items: flex-end;
+    margin-bottom: 80px;
   }
 
   .wt-decor {
-    display: block;
-    position: relative;
+    right: 0; /* Прикріплює до правого краю */
+    top: -116px; /* Якщо потрібно прикріпити до верхнього краю */
     width: 526px;
     height: 408px;
   }

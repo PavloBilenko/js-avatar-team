@@ -1,5 +1,5 @@
 // Прокрутка хедера
-const header = document.querySelector('.header-wrapper');
+const header = document.querySelector('.header');
 function checkScroll() {
   if (window.scrollY > 50) {
     header.classList.add('scrolled');

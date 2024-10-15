@@ -1,22 +1,16 @@
-@media (max-width: 320px) {
-  .modal-container {
-    width: 320px;
-  }
-}
-
 .body-no-scroll {
   overflow: hidden;
   height: 100%;
 }
 
-.header-wrapper {
+.header {
   position: sticky;
   z-index: 100;
   top: 0;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.header-wrapper.scrolled {
+.header.scrolled {
   border-bottom: 1px solid #0c0c0c1a;
   background-color: inherit;
 }
@@ -155,7 +149,6 @@ body.dark-theme .icon-moon {
 }
 
 .mobile-menu {
-  position: relative;
   background-color: #f0f0f0;
   background-image: url(../img/mob-menu/mob-menu-bg1.png);
   background-size: cover;

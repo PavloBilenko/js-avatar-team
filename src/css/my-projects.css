@@ -1,3 +1,6 @@
+.my-projects{
+  padding-top: 80px;
+}
 .my-projects-main-title{
   font-family: "Impact", sans-serif;
   font-weight: 400;
@@ -172,6 +175,9 @@ transition: background-color 0.3s ease;
 
 
 @media screen and (min-width: 768px){
+  .my-projects{
+    padding-top: 124px;
+  }
 .my-projects-main-title{
 font-size: 108px;
 line-height: 1.15;
@@ -219,6 +225,9 @@ gap: 20px;
 }
 
 @media screen and (min-width: 1024px){
+  .my-projects{
+    padding-top: 226px;
+  }
   .my-projects-main-title{
 margin-bottom: 80px;
   }

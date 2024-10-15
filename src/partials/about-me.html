@@ -2,20 +2,13 @@
     <h2 class="about-content">ABOUT <span class="highlight">ME</span></h2>
   <div class="bio-attachment">
   
-      <img
-      class="img-man-about"
-      src="./img/about.img/img-desk.jpg"
-      alt="image-man"
-      srcset="
-        ./img/about.img/img-mob.jpg,  
-        ./img/about.img/img-desk.jpg
-      "
-      sizes="
-        (max-width: 320px) 320px,
-        (max-width: 768px) 768px,
-        100vw
-      "
-    />
+    <picture>
+      <source srcset="./img/about-desk.jpg 1x, ./img/max-screen/about-desk-2.jpg 2x" media="(min-width: 1280px)">
+      <source srcset="./img/about-tab.jpg 1x, ./img/about-tab-2.jpg 2x" media="(min-width: 768px)">
+      <source srcset="./img/about-mob.jpg 1x, ./img/about-mob-2.jpg 2x" media="(min-width: 320px)">
+      <img class="img-man-about" src="./img/kartka-desk.jpg" alt="man-about">
+    </picture>
+    
     
     <div class="bio-text">
       <h3 class="title">BIO</h3>

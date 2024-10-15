@@ -1,4 +1,21 @@
 /* ----------------------------COMMON STYLES */
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+      --header-height: 104px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+:root {
+    --header-height: 104px;
+  }
+}
+
 :root footer{
   border-top: 1px solid #e4e5e6;
 }
@@ -73,6 +90,10 @@ footer {
 
 @media screen and (min-width: 768px) {
 
+  .footer-wrap{
+    margin-bottom: 40px;
+  }
+  
   .footer-logo {
     margin-bottom: 32px;
   }
@@ -80,7 +101,7 @@ footer {
   .footer-list {
     display: flex;
     gap: 40px;
-    margin-bottom: 40px;
+    align-items: center;
   }
 
   .footer-copyright {
@@ -90,9 +111,6 @@ footer {
   .break {
     display: inline;
   }
-  /* .footer-animation {
-  animation: footer-copyright 5000ms ease;
-  } */
 
   .footer-animation {
     animation-name: footer-copyright;
@@ -113,9 +131,9 @@ footer {
     justify-content: space-between;
   }
 
-  /* .footer-animation {
-    animation: footer-copyright 6500ms ease;
-  } */
+  .footer-logo {
+    margin-bottom: 0px;
+  }
 
   .footer-animation {
     animation-name: footer-copyright;

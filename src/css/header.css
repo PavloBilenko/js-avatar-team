@@ -149,7 +149,6 @@ body.dark-theme .icon-moon {
 }
 
 .mobile-menu {
-  position: relative;
   background-color: #f0f0f0;
   background-image: url(../img/mob-menu/mob-menu-bg1.png);
   background-size: cover;

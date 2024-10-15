@@ -9,14 +9,16 @@
   height: 100%;
 }
 
-.header-wrapper {
+.header {
   position: sticky;
   z-index: 100;
   top: 0;
   transition: background-color 0.3s ease, color 0.3s ease;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-.header-wrapper.scrolled {
+.header.scrolled {
   border-bottom: 1px solid #0c0c0c1a;
   background-color: inherit;
 }
@@ -25,8 +27,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .header-nav {

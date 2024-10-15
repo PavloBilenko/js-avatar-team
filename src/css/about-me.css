@@ -18,9 +18,7 @@
     word-spacing: 10px;
   }
 
-  .highlight {
-    color: #00b068;
-  }
+ 
 
   .bio-attachment {
     display: flex;
@@ -133,10 +131,6 @@
     color: #292929;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     word-spacing: 10px;
-  }
-
-  .highlight {
-    color: #00b068;
   }
 
   .bio-text {
@@ -295,6 +289,14 @@
       text-transform: uppercase;
   }
 
+  .text {
+    margin-bottom: 24px;
+  }
+
+  .decor-element {
+    display: none;
+  }
+
   .education-column {
       margin-bottom: 40px;
   }
@@ -339,10 +341,6 @@
     margin-bottom: 40px;
     text-align: left;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  }
-
-  .highlight {
-    color: #00b068;
   }
 
   .bio-attachment {
@@ -412,7 +410,7 @@
   .text {
     font-size: 16px;
     text-align: left;
-    margin-bottom: 12px;
+    margin-bottom: 24px;
   }
 
   .text-bio {
@@ -420,10 +418,6 @@
     color: #292929;
     text-align: left;
     margin-bottom: 24px;
-  }
-
-  .decor-element {
-    display: none;
   }
   
 }

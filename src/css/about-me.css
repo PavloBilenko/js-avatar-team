@@ -24,7 +24,6 @@
 
   .bio-attachment {
     display: flex;
-    position: relative; 
     justify-content: space-between;
     align-items: flex-start;
   }
@@ -104,6 +103,7 @@
   .img-man-about {
     display: flex;
     border-radius: 16px;
+    margin-top: 312px;
   }
 
   .decor {

@@ -3,8 +3,8 @@
   const body = document.body;
   const favicon = document.getElementById('favicon');
 
-  const faviconLight = '../public/favicon-light.svg';
-  const faviconDark = '../public/favicon-dark.svg';
+  const faviconLight = '/public/favicon-light.svg';
+  const faviconDark = '/public/favicon-dark.svg';
 
   const savedTheme = localStorage.getItem('theme');
 

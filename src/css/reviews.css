@@ -3,7 +3,9 @@
 
 }
 
-
+.reviews-section {
+    padding-bottom: 80px;
+}
 
 .reviews-title {
     text-align: center;
@@ -18,6 +20,7 @@
 
 .swiper-wrapper {
     display: flex;
+    margin-bottom: 24px;
 
 }
 
@@ -32,7 +35,7 @@
 }
 
 .comment-container {
-    margin-bottom: 24px;
+   
     width: 100%;
     border-radius: 16px;
     background-color: #E4E5E6;
@@ -101,7 +104,9 @@
 
 @media (min-width: 768px) {
  
-
+.reviews-section {
+        padding-bottom: 124px;
+    }
 
 
     .reviews-title {
@@ -112,6 +117,11 @@
 }
 
 @media (min-width: 1280px) {
+
+.reviews-section {
+        padding-bottom: 164px;
+    }
+
     .swiper-slide {
         flex: 0 0 calc(50% - 16px);
         display: flex;

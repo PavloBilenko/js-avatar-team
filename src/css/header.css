@@ -129,7 +129,7 @@ body.dark-theme .icon-moon {
 }
 
 .modal-container {
-  display: flex;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -140,12 +140,11 @@ body.dark-theme .icon-moon {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .modal-container.show {
-  visibility: visible;
+  display: flex;
 }
 
 .mobile-menu {

@@ -2,7 +2,7 @@
 .benefits {
     padding-bottom: 80px;
     padding-top: 80px;
-    min-width: 360px;
+    min-width: 320px;
     @media screen and (min-width: 768px) {
         padding-bottom: 124px;
         padding-top: 124px;

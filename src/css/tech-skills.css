@@ -1,19 +1,105 @@
-.badges-list {
+.marquee {
+  /* margin-bottom: 80px; */
+  padding: 0;
+  max-width: none;
+}
+.text-wrapper {
+  height: 244px;
+  overflow: hidden;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 32px;
+  position: relative;
 }
-.badges-link {
-  display: block;
-  padding: 8px 16px;
-  border: 1px solid;
-  border-radius: 8px;
-  transition: 200ms ease-in;
+.marquee__inner {
+  display: flex;
+  min-height: 104px;
+  width: 100%;
+  position: relative;
 }
-.badges-link:hover,
-.badges-link:focus {
-  transform: scale(1.06);
-  color: #747bff;
+.marquee__line {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  height: 104px;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 40px;
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.upper {
+  background-color: #bcdfd1;
+  color: var(--text-color);
+  margin-bottom: 7px;
+  z-index: 2;
+  position: relative;
+}
+
+.dark-theme .upper {
+  background-color: #204136;
+}
+
+.lower {
+  background-color: #e4e5e6;
+  margin-bottom: 29px;
+  z-index: 1;
+  position: relative;
+  transform: skewY(2deg);
+  overflow: hidden;
+}
+
+.dark-theme .lower {
+  background-color: #2a2d32;
+}
+
+.another-color-black {
+  color: var(--text-color);
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .marquee {
+    /* margin-bottom: 124px; */
+  }
+  .marquee__line {
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: 0.01em;
+  }
+  .text-wrapper {
+    height: 280px;
+  }
+  .marquee__inner {
+    min-height: 128px;
+  }
+  .upper {
+    margin-bottom: 0;
+  }
+  .lower {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .marquee {
+    /* margin-bottom: 164px; */
+  }
+}
+@media screen and (max-width: 767px) {
+  .marquee {
+    font-size: 40px;
+  }
 }

@@ -55,15 +55,17 @@
   }
   
   .decor-element {
-    margin-top: 20px;
+
     display: flex;
     justify-content: center;
     position: relative;
+    
   }
   
   .decor {
     max-width: 100%;
     height: auto;
+
   }
   
   .education {

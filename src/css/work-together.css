@@ -1,7 +1,17 @@
 /*-----------head--------------*/
-.container-wt {
+.contacts-section {
   padding-bottom: 80px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 124px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 164px;
+  }
 }
+
+/* .container-wt {
+  padding-bottom: 80px;
+} */
 
 .head-work {
   font-family: 'Impact', sans-serif;
@@ -267,9 +277,9 @@
 /* ----------------------------TABLET MEDIA----------------------------*/
 
 @media only screen and (min-width: 768px) {
-  .container-wt {
+  /* .container-wt {
     padding-bottom: 124px;
-  }
+  } */
 
   .head-work {
     font-size: 108px;
@@ -333,9 +343,9 @@
 /* ----------------------------DESKTOP MEDIA----------------------------*/
 
 @media only screen and (min-width: 1280px) {
-  .container-wt {
+  /* .container-wt {
     padding-bottom: 164px;
-  }
+  } */
 
   .head-work {
     width: 527px;

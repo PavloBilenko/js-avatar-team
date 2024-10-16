@@ -16,49 +16,38 @@ document.addEventListener('DOMContentLoaded', () => {
   const iconMenu = document.querySelector('.header-button-icon');
   const iconClose = document.querySelector('.header-close-icon');
   const menuLinks = document.querySelectorAll('.mobile-menu a');
+
+  const toggleMenu = isOpen => {
+    menu.classList.toggle('show', isOpen);
+    iconMenu.style.display = isOpen ? 'none' : 'block';
+    iconClose.style.display = isOpen ? 'block' : 'none';
+    document.body.classList.toggle('body-no-scroll', isOpen);
+    document.documentElement.classList.toggle('body-no-scroll', isOpen);
+  };
+
   let isMenuOpen = false;
 
   menuToggleButton.addEventListener('click', () => {
     isMenuOpen = !isMenuOpen;
-
-    if (isMenuOpen) {
-      menu.classList.add('show');
-      iconMenu.style.display = 'none';
-      iconClose.style.display = 'block';
-      document.body.classList.add('body-no-scroll');
-      document.documentElement.classList.add('body-no-scroll');
-    } else {
-      menu.classList.remove('show');
-      iconMenu.style.display = 'block';
-      iconClose.style.display = 'none';
-      document.body.classList.remove('body-no-scroll');
-      document.documentElement.classList.remove('body-no-scroll');
-    }
+    toggleMenu(isMenuOpen);
   });
 
   menuLinks.forEach(link => {
     link.addEventListener('click', () => {
-      menu.classList.remove('show');
-      iconMenu.style.display = 'block';
-      iconClose.style.display = 'none';
-      document.body.classList.remove('body-no-scroll');
-      document.documentElement.classList.remove('body-no-scroll');
       isMenuOpen = false;
+      toggleMenu(isMenuOpen);
     });
   });
 
-  // Закриваємо меню, якщо клацнути поза ним
+  // Закриття меню при кліку поза ним
   document.addEventListener('click', event => {
     if (
+      isMenuOpen &&
       !menu.contains(event.target) &&
-      !menuToggleButton.contains(event.target) &&
-      isMenuOpen
+      !menuToggleButton.contains(event.target)
     ) {
-      menu.classList.remove('show');
-      iconMenu.style.display = 'block';
-      iconClose.style.display = 'none';
-      document.body.classList.remove('body-no-scroll');
       isMenuOpen = false;
+      toggleMenu(isMenuOpen);
     }
   });
 });

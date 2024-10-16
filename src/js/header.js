@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const menu = document.getElementById('modal-container');
   const iconMenu = document.querySelector('.header-button-icon');
   const iconClose = document.querySelector('.header-close-icon');
+  const menuLinks = document.querySelectorAll('.mobile-menu a');
   let isMenuOpen = false;
 
   menuToggleButton.addEventListener('click', () => {
@@ -35,17 +36,29 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('show');
+      iconMenu.style.display = 'block';
+      iconClose.style.display = 'none';
+      document.body.classList.remove('body-no-scroll');
+      document.documentElement.classList.remove('body-no-scroll');
+      isMenuOpen = false;
+    });
+  });
+
   // Закриваємо меню, якщо клацнути поза ним
   document.addEventListener('click', event => {
     if (
       !menu.contains(event.target) &&
-      !menuToggleButton.contains(event.target)
+      !menuToggleButton.contains(event.target) &&
+      isMenuOpen
     ) {
       menu.classList.remove('show');
       iconMenu.style.display = 'block';
       iconClose.style.display = 'none';
-      isMenuOpen = false;
       document.body.classList.remove('body-no-scroll');
+      isMenuOpen = false;
     }
   });
 });

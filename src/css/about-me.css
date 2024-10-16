@@ -69,6 +69,8 @@
   }
   
   .education {
+    margin-right: 240px;
+    margin-left: 136px;
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
@@ -77,7 +79,9 @@
   
   .about-list {
     list-style: none;
-   
+    word-wrap: break-word;
+    max-width: 384px;
+    gap: 16px;
   }
   
   .about-list li {
@@ -103,7 +107,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .about-section {
-    display: block;
+  
     flex-direction: column;
     margin-bottom: 80px;
   }
@@ -181,7 +185,7 @@
   .about-section {
     margin-right: 20px;
     padding: 40px 20px;
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -189,6 +193,7 @@
   }
 
   .about-content {
+    
     font-size: 40px;
     margin-bottom: 40px;
     text-align: left;
@@ -196,7 +201,7 @@
   }
 
   .bio-attachment {
-    display: flex;
+    
     flex-direction: column;
     align-items: center;
   }
@@ -215,6 +220,7 @@
   }
 
   .education {
+    display: block;
     align-items: center;
     margin-top: 40px;
   }

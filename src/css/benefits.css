@@ -17,7 +17,7 @@
 .benefits-container-caption{
     margin-bottom: 40px;
     height: 192px;
-    width: 320px;
+    /* min-width: 320px; */
     @media screen and (min-width: 768px) {
         height: 372px;
         width: 704px;

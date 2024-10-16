@@ -1,12 +1,4 @@
-body{
-  background-image: url('light-background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.dark-theme body{
-  background-image: url('dark-background.jpg');
-}
+
 
 /* Стилі для темної теми */
 @media (prefers-color-scheme: dark) {

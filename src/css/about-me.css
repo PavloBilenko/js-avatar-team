@@ -1,7 +1,7 @@
 .about-section {
   padding-bottom: 80px;
   padding-top: 80px;
-  min-width: 320px;
+
   @media screen and (min-width: 768px) {
     padding-bottom: 124px;
     padding-top: 124px;
@@ -14,15 +14,10 @@
 
 .about-me-container {
   position: relative;
-  min-width: 360px;
-  @media screen and (min-width: 768px) {
-    min-width: 768px;
-  }
   @media screen and (min-width: 1280px) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    min-width: 1280px;
   }
 }
 

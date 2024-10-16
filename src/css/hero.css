@@ -33,7 +33,7 @@
   background-position: top;
   block-size: auto;
   background-size: 320px 735px;
-  min-width: 360px;
+  /* min-width: 360px; */
   @media screen and (min-width: 768px) {
     background-image: url('../img/hero-img/bg-hero-tab.png');
     min-width: 768px;

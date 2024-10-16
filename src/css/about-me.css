@@ -58,6 +58,7 @@
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    position: relative;
   }
   
   .decor {
@@ -68,7 +69,6 @@
   .education {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
     margin-top: 40px;
   }
   
@@ -178,9 +178,11 @@
 @media (min-width: 320px) and (max-width: 767px) {
   .about-section {
     margin-right: 20px;
-    padding: 0 10px;
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 80px;
   }
 

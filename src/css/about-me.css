@@ -9,21 +9,16 @@
   .about-content {
     font-size: 108px;
     text-transform: uppercase;
-    color: #292929;
     margin-bottom: 40px;
     margin-left: 32px;
    
-  }
-  
-  .common-span {
-    color: #00b068; /* Зелёный цвет для выделения слова "ME" */
   }
   
   .bio-attachment {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap; /* Для адаптивности */
+    flex-wrap: wrap; 
     gap: 40px;
   }
   
@@ -36,7 +31,6 @@
   .title {
     font-size: 32px;
     font-weight: bold;
-    color: #292929;
     margin-bottom: 20px;
     text-transform: uppercase;
   }
@@ -44,7 +38,7 @@
   .text {
     font-size: 16px;
     line-height: 1.6;
-    color: #292929;
+    
   }
   
   .text-gap {
@@ -89,7 +83,6 @@
     margin-bottom: 10px;
     padding-left: 20px;
     position: relative;
-    color: #292929;
   }
   
   .about-list li::before {
@@ -120,7 +113,6 @@
     margin: 0;
     letter-spacing: 0.02em;
     line-height: 1.4;
-    color: #292929;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     word-spacing: 10px;
   }

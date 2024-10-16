@@ -1,3 +1,10 @@
+.text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
 .about-section {
   padding-bottom: 80px;
   padding-top: 80px;
@@ -65,7 +72,7 @@
     margin-bottom: 0px;
   }
   @media screen and (min-width: 1280px) {
-    margin-left: 240px;
+    margin-left: 208px;
     margin-top: 272px;
     width: 384px;
     height: 448px;
@@ -120,7 +127,7 @@
     gap: 32px;
   }
   @media screen and (min-width: 1280px) {
-    margin-left: 240px;
+    margin-left: 208px;
     gap: 136px;
   }
 }
@@ -165,8 +172,8 @@
   @media screen and (min-width: 768px) {
     display: flex;
     position: absolute; /* Меняем на абсолютное позиционирование */
-    right: 32px; /* Выравнивание по правому краю */
-    bottom: 280px; /* Отступ сверху */
+    right: 40px; /* Выравнивание по правому краю */
+    bottom: 148px; /* Отступ сверху */
     filter: blur(3px);
     max-width: 336px;
     height: 252px;
@@ -175,13 +182,7 @@
   @media screen and (min-width: 1280px) {
     width: 384px;
     height: 288px;
-    bottom: 234px;
+    right: 64px;
+    bottom: 225px;
   }
-}
-
-.text {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.5px;
 }

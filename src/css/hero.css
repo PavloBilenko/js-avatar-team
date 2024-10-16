@@ -259,6 +259,11 @@
   background-color: var(--bgcolor-social-link);
 }
 
+.test-container {
+  width: 100%;
+  padding: 0;
+}
+
 .hero-link-section{
   padding-top: 32px;
   padding-bottom: 32px;

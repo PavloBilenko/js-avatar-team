@@ -89,11 +89,11 @@
     margin-bottom: 24px;
   }
 }
-@media screen and (min-width: 1280px) {
+/* @media screen and (min-width: 1280px) {
   .tech-skills .container {
     max-width: 100%;
   }
-}
+} */
 
 @media screen and (max-width: 767px) {
   .marquee {

@@ -1,6 +1,4 @@
-import { setupThemeSwitcher } from './js/theme-switcher';
-
-setupThemeSwitcher();
+import './js/theme-switcher.js';
 
 import './js/header.js';
 

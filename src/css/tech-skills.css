@@ -1,5 +1,4 @@
 .marquee {
-  margin-bottom: 80px;
   padding: 0;
   max-width: none;
 }
@@ -54,7 +53,7 @@
 }
 
 .dark-theme .lower {
-  background-color: #2A2D32;
+  background-color: #2a2d32;
 }
 
 .another-color-black {
@@ -72,9 +71,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .marquee {
-    margin-bottom: 124px;
-  }
   .marquee__line {
     font-size: 36px;
     line-height: 1.33;
@@ -93,11 +89,12 @@
     margin-bottom: 24px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .marquee {
-    margin-bottom: 164px;
+/* @media screen and (min-width: 1280px) {
+  .tech-skills .container {
+    max-width: 100%;
   }
-}
+} */
+
 @media screen and (max-width: 767px) {
   .marquee {
     font-size: 40px;

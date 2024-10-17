@@ -5,46 +5,44 @@
     display: flex;
     flex-direction: column;
   }
-  
+
   .about-content {
     font-size: 108px;
     text-transform: uppercase;
     margin-bottom: 40px;
     margin-left: 32px;
-   
   }
-  
+
   .bio-attachment {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     gap: 40px;
   }
-  
+
   .bio-text {
     max-width: 500px;
     display: flex;
     flex-direction: column;
   }
-  
+
   .title {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 20px;
     text-transform: uppercase;
   }
-  
+
   .text {
     font-size: 16px;
     line-height: 1.6;
-    
   }
-  
+
   .text-gap {
     margin-bottom: 24px;
   }
-  
+
   .img-man-about {
     width: 320px;
     border-radius: 16px;
@@ -53,21 +51,18 @@
     margin-left: 240px;
     margin-right: 136px;
   }
-  
-  .decor-element {
 
+  .decor-element {
     display: flex;
     justify-content: center;
     position: relative;
-    
   }
-  
+
   .decor {
     max-width: 100%;
     height: auto;
-
   }
-  
+
   .education {
     margin-right: 240px;
     margin-left: 136px;
@@ -75,22 +70,21 @@
     justify-content: space-between;
     margin-top: 40px;
   }
-  
-  
+
   .about-list {
     list-style: none;
     word-wrap: break-word;
     max-width: 384px;
     gap: 16px;
   }
-  
+
   .about-list li {
     font-size: 16px;
     margin-bottom: 10px;
     padding-left: 20px;
     position: relative;
   }
-  
+
   .about-list li::before {
     content: '';
     width: 6px;
@@ -102,20 +96,17 @@
     top: 50%;
     transform: translateY(-50%);
   }
-
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .about-section {
-  
     flex-direction: column;
     margin-bottom: 80px;
   }
 
   .about-content {
     display: flex;
-    width: 400;
+    width: 400px;
     font-size: 108px;
     margin: 0;
     letter-spacing: 0.02em;
@@ -133,12 +124,19 @@
 
 .bio-attachment {
   margin-bottom: 40px;
-  @media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 768px) {
+  .bio-attachment {
     display: flex;
     gap: 32px;
     margin-bottom: 60px;
   }
-  @media screen and (min-width: 1280px) {
+}
+
+@media screen and (min-width: 1280px) {
+  .bio-attachment {
+    margin-left: 208px;
     margin-bottom: 80px;
     gap: 136px;
   }
@@ -156,24 +154,16 @@
   }
 
   .about-content {
-    
     font-size: 40px;
     margin-bottom: 40px;
     text-align: left;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
-}
 
   .bio-attachment {
-    
     flex-direction: column;
     align-items: center;
   }
-  @media screen and (min-width: 1280px) {
-    margin-left: 208px;
-    gap: 136px;
-  }
-}
 
   .img-man-about {
     display: block;
@@ -186,56 +176,56 @@
     display: block;
     align-items: center;
     margin-top: 40px;
-
   }
-}
 
   .education-column {
     text-align: center;
     max-width: 100%;
     margin-bottom: 40px;
   }
-
-
-.about-list li::marker {
-  color: #00b068;
 }
 
 .about-list li::marker {
   color: #14c57c;
 }
 
-.about-first-list {
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .about-first-list {
     width: 336px;
   }
-  @media screen and (min-width: 1280px) {
+}
+
+@media screen and (min-width: 1280px) {
+  .about-first-list {
     width: 384px;
   }
 }
 
 .about-me-decor {
   display: none;
-  @media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 768px) {
+  .about-me-decor {
     display: flex;
-    position: absolute; /* Меняем на абсолютное позиционирование */
-    right: 40px; /* Выравнивание по правому краю */
-    bottom: 148px; /* Отступ сверху */
+    position: absolute;
+    right: 40px;
+    bottom: 148px;
     filter: blur(3px);
     max-width: 336px;
     height: 252px;
-    /* padding-right: 32px; */
   }
-  @media screen and (min-width: 1280px) {
+}
+
+@media screen and (min-width: 1280px) {
+  .about-me-decor {
     width: 384px;
     height: 288px;
     right: 64px;
     bottom: 225px;
   }
+}
 
-  .decor-element {
-    display: none;
-  }
-
-
+.decor-element {
+  display: none;
 }

@@ -1,8 +1,7 @@
-/* 
+
 .faq-section {
   padding-bottom: 80px;
   @media only screen and (min-width: 320px) and (max-width: 360px) {
-    padding: 0px 20px;
     padding-bottom: 80px;
   }
   @media screen and (min-width: 768px) {
@@ -12,7 +11,7 @@
     padding-bottom: 164px;
   }
 }
-
+/* 
 body {
   background-image: url('light-background.jpg');
   background-size: cover;
@@ -21,8 +20,8 @@ body {
 }
 .dark-theme body {
   background-image: url('dark-background.jpg');
-}
- */
+} */
+
 
 /* Стилі для темної теми */
 @media (prefers-color-scheme: dark) {
@@ -50,9 +49,6 @@ body {
 }
 .faq-title-container {
   top: 0;
-}
-
-.faq-container {
 }
 
 .question-element {

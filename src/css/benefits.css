@@ -2,7 +2,7 @@
 .benefits {
     padding-bottom: 80px;
     padding-top: 80px;
-    min-width: 360px;
+    min-width: 320px;
     @media screen and (min-width: 768px) {
         padding-bottom: 124px;
         padding-top: 124px;
@@ -17,7 +17,7 @@
 .benefits-container-caption{
     margin-bottom: 40px;
     height: 192px;
-    width: 320px;
+    /* min-width: 320px; */
     @media screen and (min-width: 768px) {
         height: 372px;
         width: 704px;
@@ -82,7 +82,7 @@
 
 
 .benefits-iteam{
-    width: 320px;
+    width: 100%;
     @media screen and (min-width: 768px) and (max-width: 1279px){
         width: 336px;
     }

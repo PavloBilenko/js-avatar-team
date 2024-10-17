@@ -104,6 +104,7 @@
   }
 
   }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .about-section {
@@ -128,56 +129,18 @@
     margin-left: 0;
     margin-bottom: 40px;
   }
+}
 
-  .bio-attachment {
+.bio-attachment {
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
     display: flex;
     gap: 32px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
-
-  .img-man-about {
-    width: 100%;
-    margin-top: 408px;
-    border-radius: 16px;
-  }
-
-  .education {
-    display: flex;
-    margin-top: 40px;
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .education-column {
-    margin-bottom: 40px;
-    width: 100%;
-  }
-
-  .about-list {
-    list-style-type: none;
-    padding-left: 0;
-  }
-
-  .about-list li {
-    position: relative;
-    margin-bottom: 8px;
-    line-height: 1.2;
-    padding-left: 20px;
-  }
-
-  .about-list li::before {
-    content: '';
-    width: 4px;
-    height: 4px;
-    background-color: #00b068;
-    border-radius: 50%;
-    position: absolute;
-    left: 0;
-    top: 50%;
-  }
-
-  .text {
-    margin-bottom: 24px;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 80px;
+    gap: 136px;
   }
 }
 
@@ -199,18 +162,18 @@
     text-align: left;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
+}
 
   .bio-attachment {
     
     flex-direction: column;
     align-items: center;
   }
-
-  .bio-text {
-    width: 100%;
-    font-size: 16px;
-    text-align: center;
+  @media screen and (min-width: 1280px) {
+    margin-left: 208px;
+    gap: 136px;
   }
+}
 
   .img-man-about {
     display: block;
@@ -223,7 +186,9 @@
     display: block;
     align-items: center;
     margin-top: 40px;
+
   }
+}
 
   .education-column {
     text-align: center;
@@ -231,44 +196,46 @@
     margin-bottom: 40px;
   }
 
-  .about-list {
-    list-style-type: none;
-  }
 
-  .about-list li {
-    position: relative;
-    margin-bottom: 8px;
-    line-height: 1.2;
-    padding-left: 20px;
-  }
+.about-list li::marker {
+  color: #00b068;
+}
 
-  .about-list li::before {
-    content: '';
-    width: 4px;
-    height: 4px;
-    background-color: #00b068;
-    border-radius: 50%;
-    position: absolute;
-    left: 0;
-    top: 50%;
-  }
+.about-list li::marker {
+  color: #14c57c;
+}
 
-  .title {
-    text-align: left;
-    font-weight: 500;
-    margin-bottom: 32px;
-    margin-top: 40px;
-    font-size: 32px;
+.about-first-list {
+  @media screen and (min-width: 768px) {
+    width: 336px;
   }
+  @media screen and (min-width: 1280px) {
+    width: 384px;
+  }
+}
 
-  .text {
-    font-size: 16px;
-    text-align: left;
-    margin-bottom: 24px;
+.about-me-decor {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    position: absolute; /* Меняем на абсолютное позиционирование */
+    right: 40px; /* Выравнивание по правому краю */
+    bottom: 148px; /* Отступ сверху */
+    filter: blur(3px);
+    max-width: 336px;
+    height: 252px;
+    /* padding-right: 32px; */
+  }
+  @media screen and (min-width: 1280px) {
+    width: 384px;
+    height: 288px;
+    right: 64px;
+    bottom: 225px;
   }
 
   .decor-element {
     display: none;
   }
+
 
 }

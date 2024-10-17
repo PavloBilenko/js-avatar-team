@@ -113,8 +113,7 @@ body {
   border-radius: 0 0 10px 10px;
   border-bottom: none;
   clip-path: inset(0 0 0 0); /* Видно повністю */
-  padding: 24px 24px 28px 24px;
-  /* transition-duration: 1000ms; */
+  padding: 24px 24px 28px 24px; 
 }
 
 .arrow {

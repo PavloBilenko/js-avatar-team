@@ -28,21 +28,21 @@
 .hero {
   padding-top: 112px;
   width: 100%;
-  background-image: url('../img/hero-img/bg-hero-mobile.png');
+  background-image: url('../img/hero-img/decor-bg-hero-mobile.png');
   background-repeat: no-repeat;
   background-position: top;
   block-size: auto;
   background-size: 320px 735px;
   /* min-width: 360px; */
   @media screen and (min-width: 768px) {
-    background-image: url('../img/hero-img/bg-hero-tab.png');
+    background-image: url('../img/hero-img/decor-bg-hero-table.png');
     min-width: 768px;
     padding-top: 72px;
     background-size: 704px 896px;
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: url('../img/hero-img/bg-hero-desctop.png');
+    background-image: url('../img/hero-img/decor-bg-hero-desctop.png');
     min-width: 1280px;
     background-size: 1216px 772px;
   }
@@ -76,19 +76,20 @@
 }
 
 .hero-caption {
+  /* min-width: 320px; */
   font-family: Impact Regular;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 64px;
   line-height: 1.25;
   letter-spacing: 1.8px;
   text-transform: uppercase;
-  height: 240px;
+  /* height: 240px; */
   margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     width: 555px;
     height: 444px;
-    font-weight: 400;
+    /* font-weight: 400; */
     font-size: 124px;
     line-height: 1.193;
     letter-spacing: 1.8px;
@@ -130,7 +131,7 @@
   display: flex;
   align-items: center;
   z-index: 1;
-  position: absolute;
+  /* position: absolute; */
   
   @media screen and (min-width: 768px) {
     font-size: 20px;
@@ -176,6 +177,11 @@
   left: 155px;
   z-index: -1;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  @media screen and (max-width: 359px) {
+    width: calc(50% - 13px);
+    /* transition: width 0.7s ease; */
+  }
   @media screen and (min-width: 768px) {
     width: 261px;
     height: 96px;

@@ -5,85 +5,80 @@
     display: flex;
     flex-direction: column;
   }
-  
+
   .about-content {
     font-size: 108px;
     text-transform: uppercase;
     margin-bottom: 40px;
     margin-left: 32px;
-   
   }
-  
+
   .bio-attachment {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     gap: 40px;
   }
-  
+
   .bio-text {
-    max-width: 500px;
+    width: 500px;
     display: flex;
     flex-direction: column;
+    position: relative;
   }
-  
+
   .title {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 20px;
     text-transform: uppercase;
   }
-  
+
   .text {
     font-size: 16px;
     line-height: 1.6;
-    
   }
-  
+
   .text-gap {
     margin-bottom: 24px;
   }
-  
+
   .img-man-about {
-    width: 320px;
+    width: 600px;
     border-radius: 16px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     margin-top: 312px;
     margin-left: 240px;
     margin-right: 136px;
   }
-  
+
   .decor-element {
-
-    display: flex;
-    justify-content: center;
-    position: relative;
-    
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
-  
+
   .decor {
-    max-width: 100%;
+    max-width: 150px;
     height: auto;
-
   }
-  
+
   .education {
     margin-right: 240px;
     margin-left: 136px;
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 80px;
   }
-  
-  
+
   .about-list {
     list-style: none;
     word-wrap: break-word;
     max-width: 384px;
     gap: 16px;
   }
-  
+
   .about-list li {
     font-size: 16px;
     margin-bottom: 10px;
@@ -91,7 +86,7 @@
     position: relative;
     line-height: 1.5;
   }
-  
+
   .about-list li::before {
     content: '';
     width: 6px;
@@ -102,10 +97,8 @@
     left: 0;
     top: 0.6em;
     transform: translateY(0);
-    
   }
-
-  }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .about-section {
@@ -126,18 +119,28 @@
   }
 
   .bio-text {
-    width: 100%;
-    margin-left: 0;
+    position: relative;
+    padding-left: 32px;
+    padding-right: 400px;
+    width: 336px;
+    height: 680px;
+  }
+  .decor-element {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 148px;
   }
 
   .bio-attachment {
     display: flex;
     gap: 32px;
-    
   }
 
   .img-man-about {
-    width: 100%;
+    width: 336px;
+    margin-right: 32px;
     margin-top: 408px;
     border-radius: 16px;
   }
@@ -182,8 +185,6 @@
   .text {
     margin-bottom: 24px;
   }
-
-  
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -203,7 +204,6 @@
   }
 
   .bio-attachment {
-    
     flex-direction: column;
     align-items: center;
   }
@@ -273,7 +273,6 @@
   .decor-element {
     display: none;
   }
-
 }
 
 .about-content {

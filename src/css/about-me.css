@@ -1,29 +1,188 @@
-.back-link {
-  position: relative;
-  display: inline-block;
-  padding: 4px 8px;
-  margin-top: 32px;
-  border: 1px solid;
-  border-radius: 8px;
+.text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
 }
-.back-link::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 16px;
-  height: 16px;
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath d='M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z'/%3E%3C/svg%3E");
-  transition: 300ms ease-in;
-  transition-property: opacity;
-  opacity: 0;
-  animation: slide 500ms linear infinite alternate-reverse both;
-  animation-play-state: paused;
+.about-section {
+  padding-bottom: 80px;
+  padding-top: 80px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 124px;
+    padding-top: 124px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 164px;
+    padding-bottom: 164px;
+  }
 }
-.back-link:hover::before {
-  opacity: 1;
-  animation-play-state: running;
+
+.about-me-container {
+  position: relative;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.bio-attachment {
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 80px;
+    gap: 136px;
+  }
+}
+
+.bio-text {
+  margin-bottom: 40px;
+  line-height: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1280px) {
+  }
+}
+
+.text-gap {
+  /* margin-bottom: 24px; */
+}
+
+.about-me-img {
+  border-radius: 16px;
+  margin-bottom: 40px;
+  @media screen and (min-width: 360px) {
+    width: 320px;
+    height: 374px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    height: 392px;
+    margin-top: 368px;
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 208px;
+    margin-top: 272px;
+    width: 384px;
+    height: 448px;
+  }
+}
+
+.about-content {
+  font-family: Impact Regular;
+  font-weight: 400;
+  font-size: 52px;
+  letter-spacing: 1.8px;
+  line-height: 64px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    font-size: 108px;
+    line-height: 124px;
+  }
+  @media screen and (min-width: 1280px) {
+  }
+}
+
+.about-me-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1280px) {
+  }
+}
+
+.bio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1280px) {
+  }
+}
+
+.education {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 208px;
+    gap: 136px;
+  }
+}
+
+.education-column {
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1280px) {
+  }
+}
+
+.about-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about-list li::marker {
+  color: #00b068;
+}
+
+.about-list li::marker {
+  color: #14c57c;
+}
+
+.about-first-list {
+  @media screen and (min-width: 768px) {
+    width: 336px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 384px;
+  }
+}
+
+.about-me-decor {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    position: absolute; /* Меняем на абсолютное позиционирование */
+    right: 40px; /* Выравнивание по правому краю */
+    bottom: 148px; /* Отступ сверху */
+    filter: blur(3px);
+    max-width: 336px;
+    height: 252px;
+    /* padding-right: 32px; */
+  }
+  @media screen and (min-width: 1280px) {
+    width: 384px;
+    height: 288px;
+    right: 64px;
+    bottom: 225px;
+  }
 }

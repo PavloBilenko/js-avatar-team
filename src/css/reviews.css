@@ -1,30 +1,46 @@
+* {
+    box-sizing: border-box;
+
+}
+
 .reviews-section {
-    margin-top: 80px;
+    padding-bottom: 80px;
 }
 
-.reviews-titel {
+.reviews-title {
     text-align: center;
+    font-size: 52px;
+    margin-bottom: 40px;
 }
 
-.swipper-wrapper {
-    display: flex;
+.swiper {
     overflow: hidden;
+
+}
+
+.swiper-wrapper {
+    display: flex;
+    margin-bottom: 24px;
+
 }
 
 .swiper-slide {
     flex: 0 0 100%;
+    justify-content: space-between;
+    display: flex;
+    gap: 32px;
     box-sizing: border-box;
-    
-    
+    margin: 0;
+
 }
 
 .comment-container {
-    margin-top: 60px;
-    margin-bottom: 64px;
-    max-width: 1216px;
+   
+    width: 100%;
     border-radius: 16px;
     background-color: #E4E5E6;
     padding: 32px;
+
 }
 
 .comment-user {
@@ -32,6 +48,7 @@
     display: flex;
     justify-content: flex-start;
     gap: 16px;
+    align-items: center;
 
 }
 
@@ -39,16 +56,14 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: solid 1px black;
+
 }
 
 .comment-user-name {
-    font-weight: 500;
+    font-family: Poppins Medium;
 }
 
-.hidden-comment {
-    display: none;
-}
+
 
 .reviews-buttons {
     display: flex;
@@ -60,23 +75,80 @@
     width: 40px;
     height: 40px;
     border-radius: 8px;
-    border: solid 1px black;
+    border: solid 1px #292929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .swiper-button-next {
     width: 40px;
     height: 40px;
     border-radius: 8px;
-    border: solid 1px black;
+    border: solid 1px #292929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
+
+
+.dark-theme .comment-container {
+    background-color: #2A2D32;
+}
+
+@media (min-width: 768px) {
+ 
+.reviews-section {
+        padding-bottom: 124px;
+    }
+
+
+    .reviews-title {
+        text-align: center;
+        font-size: 108px;
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 1280px) {
+
+.reviews-section {
+        padding-bottom: 164px;
+    }
+
+    .swiper-slide {
+        flex: 0 0 calc(50% - 16px);
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+    }
+
+
+
+    .reviews-title {
+        margin-bottom: 80px;
+    }
 }
 
 .comment-prev-btn {
-    fill: black;
+    stroke: #292929;
+    fill: none;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}    
+
+.dark-theme .comment-prev-btn {
+    stroke: #F0F0F0;
 }
 
-
-@media (min-width: 768px) {
-    .swiper-slide {
-        flex: 0 0 50%;
-    }
+.swiper-button-disabled {
+    opacity: 0.5;
+    pointer-events: none;
 }

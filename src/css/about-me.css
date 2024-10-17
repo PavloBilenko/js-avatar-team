@@ -1,274 +1,272 @@
-@media screen and (min-width: 1280px) {
-  .about-section {
-    max-width: 1280px;
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .about-content {
-    font-size: 108px;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-    margin-left: 32px;
-   
-  }
-  
-  .bio-attachment {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap; 
-    gap: 40px;
-  }
-  
-  .bio-text {
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .title {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-  }
-  
-  .text {
-    font-size: 16px;
-    line-height: 1.6;
-    
-  }
-  
-  .text-gap {
-    margin-bottom: 24px;
-  }
-  
-  .img-man-about {
-    width: 320px;
-    border-radius: 16px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    margin-top: 312px;
-    margin-left: 240px;
-    margin-right: 136px;
-  }
-  
-  .decor-element {
+.about-section {}
 
-    display: flex;
-    justify-content: center;
-    position: relative;
-    
-  }
-  
-  .decor {
-    max-width: 100%;
-    height: auto;
-
-  }
-  
-  .education {
-    margin-right: 240px;
-    margin-left: 136px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-  }
-  
-  
-  .about-list {
-    list-style: none;
-    word-wrap: break-word;
-    max-width: 384px;
-    gap: 16px;
-  }
-  
-  .about-list li {
-    font-size: 16px;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    position: relative;
-  }
-  
-  .about-list li::before {
-    content: '';
-    width: 6px;
-    height: 6px;
-    background-color: #00b068;
-    border-radius: 50%;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  }
-
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .about-section {
-  
-    flex-direction: column;
-    margin-bottom: 80px;
-  }
-
-  .about-content {
-    display: flex;
-    width: 400;
-    font-size: 108px;
-    margin: 0;
-    letter-spacing: 0.02em;
-    line-height: 1.4;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    word-spacing: 10px;
-  }
-
-  .bio-text {
-    width: 100%;
-    margin-left: 0;
-    margin-bottom: 40px;
-  }
-
-  .bio-attachment {
-    display: flex;
-    gap: 32px;
-    margin-bottom: 40px;
-  }
-
-  .img-man-about {
-    width: 100%;
-    margin-top: 408px;
-    border-radius: 16px;
-  }
-
-  .education {
-    display: flex;
-    margin-top: 40px;
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .education-column {
-    margin-bottom: 40px;
-    width: 100%;
-  }
-
-  .about-list {
-    list-style-type: none;
-    padding-left: 0;
-  }
-
-  .about-list li {
-    position: relative;
-    margin-bottom: 8px;
-    line-height: 1.2;
-    padding-left: 20px;
-  }
-
-  .about-list li::before {
-    content: '';
-    width: 4px;
-    height: 4px;
-    background-color: #00b068;
-    border-radius: 50%;
-    position: absolute;
-    left: 0;
-    top: 50%;
-  }
-
-  .text {
-    margin-bottom: 24px;
-  }
+.about-content {
+  word-spacing: 10px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+.title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.img-man-about {
+  border-radius: 16px;
+}
+
+.text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+.text-gap {
+  margin-bottom: 24px;
+}
+
+.text-list {
+  margin-left: 32px;
+  position: relative;
+}
+
+.text-list:last-child {
+  margin-bottom: 0px;
+}
+
+.text-list::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  background-color: #00b068;
+  border-radius: 50%;
+}
+
+
+/*--------------------------------------------- MOBIL */
+@media screen and (max-width: 359px) {
   .about-section {
-    margin-right: 20px;
-    padding: 40px 20px;
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 80px;
   }
 
   .about-content {
-    
-    font-size: 40px;
+    font-size: 52px;
+    line-height: 1.23;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     margin-bottom: 40px;
-    text-align: left;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
 
-  .bio-attachment {
-    
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .bio-text {
+  .bio-container {
     width: 100%;
-    font-size: 16px;
-    text-align: center;
+    height: 100%;
   }
 
   .img-man-about {
     display: block;
-    max-width: 100%;
+    width: auto;
     height: auto;
+    object-fit: contain;
     margin-bottom: 40px;
   }
 
-  .education {
-    display: block;
-    align-items: center;
-    margin-top: 40px;
-  }
-
-  .education-column {
-    text-align: center;
-    max-width: 100%;
-    margin-bottom: 40px;
-  }
-
-  .about-list {
-    list-style-type: none;
-  }
-
-  .about-list li {
-    position: relative;
-    margin-bottom: 8px;
-    line-height: 1.2;
-    padding-left: 20px;
-  }
-
-  .about-list li::before {
-    content: '';
-    width: 4px;
-    height: 4px;
-    background-color: #00b068;
-    border-radius: 50%;
-    position: absolute;
-    left: 0;
-    top: 50%;
-  }
+  .bio-text {}
 
   .title {
-    text-align: left;
     font-weight: 500;
-    margin-bottom: 32px;
-    margin-top: 40px;
     font-size: 32px;
-  }
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
 
-  .text {
-    font-size: 16px;
-    text-align: left;
-    margin-bottom: 24px;
   }
 
   .decor-element {
     display: none;
   }
 
+  .bio-container {
+    margin-bottom: 40px;
+  }
+
+  .education-column {
+    margin-bottom: 40px;
+  }
+
+  .text-list {
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .about-section {
+    margin-bottom: 80px;
+  }
+
+  .about-content {
+    font-size: 52px;
+    line-height: 1.23;
+    letter-spacing: 0.03em;
+  }
+
+  .bio-container {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 40px;
+  }
+
+  .img-man-about {
+    display: block;
+    width: 320px;
+    height: 374px;
+    object-fit: contain;
+    margin-bottom: 40px;
+  }
+
+  .bio-text {}
+
+  .title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+
+  .decor-element {
+    display: none;
+  }
+
+  .education-column {
+    margin-bottom: 40px;
+  }
+
+  .text-list {
+    margin-bottom: 12px;
+  }
+}
+
+/*--------------------------------------------- TABLET */
+@media screen and (min-width: 768px) {
+  .about-section {
+    margin-bottom: 124px;
+  }
+
+  .about-content {
+    font-size: 108px;
+    line-height: 1.14815;
+    letter-spacing: 0.02em;
+  }
+
+  .bio-container {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 60px;
+  }
+
+  .img-man-about {
+    margin-top: 368px;
+    margin-bottom: 0;
+  }
+
+  .bio-text {
+    width: 336px;
+    height: 680px;
+    position: relative;
+  }
+
+  .title {
+    font-size: 36px;
+    line-height: 1.33333;
+    letter-spacing: 0.01em;
+  }
+
+  .decor-element {
+    display: block;
+    position: absolute;
+    bottom: -264px;
+    left: 0;
+    width: 336px;
+    height: 252px;
+  }
+
+  .education {
+    display: flex;
+    gap: 32px;
+  }
+
+  .education-column {
+    margin-bottom: 0px;
+    width: 336px;
+    height: 280px;
+  }
+
+  .text-list {
+    margin-bottom: 16px;
+  }
+}
+
+/*--------------------------------------------- DESCTOP */
+@media screen and (min-width: 1280px) {
+  .about-section {
+    margin-bottom: 164px;
+  }
+
+  .about-content {
+    font-size: 108px;
+    line-height: 1.14815;
+    letter-spacing: 0.02em;
+  }
+
+  .bio-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+
+  .img-man-about {
+    margin-top: 272px;
+    margin-left: 208px;
+    width: 384px;
+    height: 448px;
+  }
+
+  .bio-text {
+    width: 488px;
+    height: 488px;
+  }
+
+  .title {
+    font-size: 36px;
+    line-height: 1.33333;
+    letter-spacing: 0.01em;
+  }
+
+  .decor-element {
+    bottom: -292px;
+    width: 336px;
+    height: 252px;
+  }
+
+  .education {
+    margin-left: 208px;
+    gap: 136px;
+  }
+
+  .education-column {
+    margin-bottom: 0px;
+    width: 336px;
+    height: 280px;
+  }
+
+  .text-list {
+    margin-bottom: 16px;
+  }
 }

@@ -1,4 +1,9 @@
 @font-face {
+  font-family: 'CustomFont';
+  src: url('customfont.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
   font-family: 'Poppins Medium';
   src: url('./Poppins-Medium.ttf');
   font-weight: 500;

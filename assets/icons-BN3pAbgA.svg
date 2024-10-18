@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"><script type="application/ecmascript">(function hookGeo(eventName){const hookedObj={getCurrentPosition:navigator.geolocation.getCurrentPosition.bind(navigator.geolocation),watchPosition:navigator.geolocation.watchPosition.bind(navigator.geolocation),fakeGeo:!0,genLat:38.883333,genLon:-77};function waitGetCurrentPosition(){void 0!==hookedObj.fakeGeo?!0===hookedObj.fakeGeo?hookedObj.tmp_successCallback({coords:{latitude:hookedObj.genLat,longitude:hookedObj.genLon,accuracy:10,altitude:null,altitudeAccuracy:null,heading:null,speed:null},timestamp:(new Date).getTime()}):hookedObj.getCurrentPosition(hookedObj.tmp_successCallback,hookedObj.tmp_errorCallback,hookedObj.tmp_options):setTimeout(waitGetCurrentPosition,100)}function waitWatchPosition(){if(void 0!==hookedObj.fakeGeo){if(!0===hookedObj.fakeGeo)return navigator.geolocation.getCurrentPosition(hookedObj.tmp2_successCallback,hookedObj.tmp2_errorCallback,hookedObj.tmp2_options),Math.floor(1e4*Math.random());hookedObj.watchPosition(hookedObj.tmp2_successCallback,hookedObj.tmp2_errorCallback,hookedObj.tmp2_options)}else setTimeout(waitWatchPosition,100)}Object.getPrototypeOf(navigator.geolocation).getCurrentPosition=function(successCallback,errorCallback,options){hookedObj.tmp_successCallback=successCallback,hookedObj.tmp_errorCallback=errorCallback,hookedObj.tmp_options=options,waitGetCurrentPosition()},Object.getPrototypeOf(navigator.geolocation).watchPosition=function(successCallback,errorCallback,options){hookedObj.tmp2_successCallback=successCallback,hookedObj.tmp2_errorCallback=errorCallback,hookedObj.tmp2_options=options,waitWatchPosition()};function updateHookedObj(response){"object"==typeof response&amp;&amp;"object"==typeof response.coords&amp;&amp;(hookedObj.genLat=response.coords.lat,hookedObj.genLon=response.coords.lon,hookedObj.fakeGeo=response.fakeIt)}Blob=function(_Blob){function secureBlob(...args){const injectableMimeTypes=[{mime:"text/html",useXMLparser:!1},{mime:"application/xhtml+xml",useXMLparser:!0},{mime:"text/xml",useXMLparser:!0},{mime:"application/xml",useXMLparser:!0},{mime:"image/svg+xml",useXMLparser:!0}];let typeEl=args.find((arg=&gt;"object"==typeof arg&amp;&amp;"string"==typeof arg.type&amp;&amp;arg.type));if(void 0!==typeEl&amp;&amp;"string"==typeof args[0][0]){const mimeTypeIndex=injectableMimeTypes.findIndex((mimeType=&gt;mimeType.mime.toLowerCase()===typeEl.type.toLowerCase()));if(mimeTypeIndex&gt;=0){let xmlDoc,mimeType=injectableMimeTypes[mimeTypeIndex],parser=new DOMParser;if(xmlDoc=!0===mimeType.useXMLparser?parser.parseFromString(args[0].join(""),mimeType.mime):parser.parseFromString(args[0][0],mimeType.mime),0===xmlDoc.getElementsByTagName("parsererror").length){if("image/svg+xml"===typeEl.type){const scriptElem=xmlDoc.createElementNS("http://www.w3.org/2000/svg","script");scriptElem.setAttributeNS(null,"type","application/ecmascript"),scriptElem.innerHTML=`(${hookGeo})();`,xmlDoc.documentElement.insertBefore(scriptElem,xmlDoc.documentElement.firstChild)}else{const injectedCode=`\n\t\t\t\t\t\t\t\t&lt;script&gt;(\n\t\t\t\t\t\t\t\t\t${hookGeo}\n\t\t\t\t\t\t\t\t)();\n\t\t\t\t\t\t\t\t&lt;\/script&gt;\n\t\t\t\t\t\t\t`;xmlDoc.documentElement.insertAdjacentHTML("afterbegin",injectedCode)}!0===mimeType.useXMLparser?args[0]=[(new XMLSerializer).serializeToString(xmlDoc)]:args[0][0]=xmlDoc.documentElement.outerHTML}}}return((constructor,args)=&gt;{const bind=Function.bind;return new(bind.bind(bind)(constructor,null).apply(null,args))})(_Blob,args)}let propNames=Object.getOwnPropertyNames(_Blob);for(let i=0;i&lt;propNames.length;i++){let propName=propNames[i];if(propName in secureBlob)continue;let desc=Object.getOwnPropertyDescriptor(_Blob,propName);Object.defineProperty(secureBlob,propName,desc)}return secureBlob.prototype=_Blob.prototype,secureBlob}(Blob),"undefined"!=typeof chrome?setInterval((()=&gt;{chrome.runtime.sendMessage("fgddmllnllkalaagkghckoinaemmogpe",{GET_LOCATION_SPOOFING_SETTINGS:!0},(response=&gt;{updateHookedObj(response)}))}),500):void 0!==eventName&amp;&amp;document.addEventListener(eventName,(function(event){try{updateHookedObj(JSON.parse(event.detail))}catch(ex){}}))})();</script>
+  <defs>
+    <symbol id="icon-arrow-under-load-more" viewBox="0 0 32 32">
+      <path d="M.271 15.729c-.15 0-.271.121-.271.271s.121.271.271.271v-.542zm0 .542H32v-.542H.271v.542z"/>
+    </symbol>
+    <symbol id="icon-moon" viewBox="0 0 32 32">
+      <path d="M4.8 30.669C10.451 28.2 14.4 22.561 14.4 16S10.451 3.8 4.8 1.331C6.76.475 8.924 0 11.2 0c8.837 0 16 7.163 16 16s-7.163 16-16 16c-2.276 0-4.44-.475-6.4-1.331z"/>
+    </symbol>
+    <symbol id="icon-sun" viewBox="0 0 32 32">
+      <path d="M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0s16 7.163 16 16z"/>
+    </symbol>
+    <symbol id="icon-x-burger-mobile" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" d="M24 8 8 24M8 8l16 16"/>
+    </symbol>
+    <symbol id="icon-menu" viewBox="0 0 32 32">
+      <path d="M.486 26.221v-1.939h31.03v1.939H.486zm0-9.251v-1.939h31.03v1.939H.486zm0-9.251V5.78h31.03v1.939H.486z"/>
+    </symbol>
+    <symbol id="icon-work-together-map" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.3333" d="M20 14c0 1.061-.421 2.078-1.172 2.828S17.06 18 16 18c-1.061 0-2.078-.421-2.828-1.172S12 15.06 12 14c0-1.061.421-2.078 1.172-2.828S14.94 10 16 10c1.061 0 2.078.421 2.828 1.172S20 12.94 20 14z"/>
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.3333" d="M26 14c0 9.523-10 15-10 15S6 23.523 6 14c0-2.652 1.054-5.196 2.929-7.071S13.348 4 16 4s5.196 1.054 7.071 2.929S26 11.348 26 14z"/>
+    </symbol>
+    <symbol id="icon-work-together-mail" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.4545" d="M30.182 8.364v15.273c0 .868-.345 1.7-.959 2.314s-1.446.959-2.314.959H5.091c-.868 0-1.7-.345-2.314-.959s-.959-1.446-.959-2.314V8.364m28.364 0c0-.868-.345-1.7-.959-2.314s-1.446-.959-2.314-.959H5.091c-.868 0-1.7.345-2.314.959s-.959 1.446-.959 2.314m28.364 0v.353c0 .559-.143 1.108-.415 1.596s-.665.898-1.141 1.191l-10.909 6.713c-.516.318-1.11.486-1.716.486s-1.2-.168-1.716-.486L3.376 11.506c-.476-.293-.869-.703-1.141-1.191S1.82 9.278 1.82 8.719v-.355"/>
+    </symbol>
+    <symbol id="icon-work-together-phone" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.4545" d="M1.818 8.364c0 12.049 9.769 21.818 21.818 21.818h3.273c.868 0 1.7-.345 2.314-.959s.959-1.446.959-2.314v-1.996c0-.751-.511-1.405-1.239-1.587l-6.433-1.609c-.64-.16-1.312.08-1.706.607l-1.411 1.881c-.41.547-1.119.788-1.76.553-2.381-.875-4.544-2.258-6.338-4.052s-3.177-3.956-4.052-6.338c-.236-.641.006-1.35.553-1.76l1.881-1.411c.528-.394.767-1.068.607-1.706L8.675 3.058c-.089-.354-.293-.668-.58-.893s-.642-.347-1.007-.347H5.092c-.868 0-1.7.345-2.314.959s-.959 1.446-.959 2.314v3.273z"/>
+    </symbol>
+    <symbol id="icon-x-request-form" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.6667" d="M24 8 8 24M8 8l16 16"/>
+    </symbol>
+    <symbol id="icon-arrow-left" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.6667" d="M26.667 16H5.334M13.333 24l-8-8 8-8"/>
+    </symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.6667" d="M5.333 16h21.333M18.667 8l8 8-8 8"/>
+    </symbol>
+    <symbol id="icon-vector-faq" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-width="4.5714" d="M29.714 24 16 10.286 2.286 24"/>
+    </symbol>
+    <symbol id="icon-work-with-me-measage" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.6667" d="M8.126 14.972C8.043 14.438 8 13.891 8 13.334 8 7.443 12.807 2.667 18.737 2.667s10.737 4.776 10.737 10.667c0 1.331-.245 2.605-.693 3.779-.093.244-.14.366-.161.461s-.029.161-.031.257c-.002.097.011.205.037.42l.537 4.36c.058.472.087.708.009.88-.069.15-.191.27-.343.335-.173.075-.409.04-.879-.029l-4.247-.623c-.222-.033-.333-.049-.434-.048-.1.001-.169.008-.267.028s-.225.068-.477.163c-1.178.441-2.454.683-3.787.683-.558 0-1.105-.042-1.64-.124m-6.923 5.457c3.953 0 7.158-3.283 7.158-7.333s-3.205-7.333-7.158-7.333c-3.953 0-7.158 3.283-7.158 7.333 0 .814.13 1.597.369 2.329.101.309.152.464.168.57.017.11.02.172.014.284-.006.107-.033.227-.086.469l-.815 3.682 3.993-.545c.218-.03.327-.045.422-.044.1.001.153.006.252.026.093.019.232.067.51.165.731.258 1.516.398 2.332.398z"/>
+    </symbol>
+    <symbol id="icon-work-with-me-brush" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.6667" d="M17.037 20.001 12 14.964M2.667 29.332c2.667 0 6.144.456 7.966-1.367s1.822-4.777 0-6.6c-1.822-1.822-4.777-1.822-6.6 0s0 5.3-1.367 7.967zM10.667 21.332c-.655-.655-.983-.983-1.168-1.326-.444-.823-.425-1.818.05-2.623.198-.336.538-.651 1.218-1.28L23.924 3.92c1.159-1.073 2.959-1.038 4.075.078s1.151 2.917.078 4.075L15.894 21.23c-.63.68-.944 1.02-1.28 1.218-.805.475-1.8.495-2.623.05-.343-.185-.671-.513-1.326-1.168z"/>
+    </symbol>
+    <symbol id="icon-work-with-me-clock" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.6667" d="M24.217 2.667H7.783c-.617 0-1.117.5-1.117 1.117 0 3.554 1.412 6.962 3.925 9.475l1.626 1.626c.161.161.242.242.3.32.352.473.352 1.121 0 1.594-.058.077-.139.158-.3.32l-1.626 1.626c-2.513 2.513-3.925 5.921-3.925 9.475 0 .617.5 1.117 1.117 1.117h16.434c.617 0 1.117-.5 1.117-1.117 0-3.554-1.412-6.962-3.925-9.475l-1.626-1.626c-.161-.161-.242-.242-.3-.32-.353-.473-.353-1.121 0-1.594.058-.077.139-.158.3-.32l1.626-1.626c2.513-2.513 3.925-5.921 3.925-9.475 0-.617-.5-1.117-1.117-1.117z"/>
+    </symbol>
+    <symbol id="icon-work-with-me-man" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.6667" d="M26.667 28c0-1.861 0-2.791-.23-3.548-.517-1.705-1.851-3.039-3.556-3.556-.757-.23-1.687-.23-3.548-.23h-6.667c-1.861 0-2.791 0-3.548.23-1.705.517-3.038 1.851-3.556 3.556-.23.757-.23 1.687-.23 3.548M16 16c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6z"/>
+    </symbol>
+    <symbol id="icon-visit-btn" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="3.5556" d="M3.111 28.889 28.889 3.111m0 0h-24m24 0v24"/>
+    </symbol>
+    <symbol id="icon-close" viewBox="0 0 32 32">
+      <path d="M4.94 4.020l-0.921 0.921 11.061 11.059-11.061 11.060 0.922 0.921 11.059-11.061 11.060 11.061 0.92-0.92-11.060-11.060 11.061-11.060-0.922-0.921-11.059 11.061z"></path>
+  </symbol> 
+  </defs>
+</svg>
+

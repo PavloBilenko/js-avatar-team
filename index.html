@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      id="favicon"
+      rel="icon"
+      type="image/svg+xml"
+      href="/js-avatar-team/favicon-light.svg"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/accordion-js/dist/accordion.js"></script>
+    <title>Avatar</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <script type="module" crossorigin src="/js-avatar-team/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/js-avatar-team/assets/vendor-I1I71QQ2.js">
+    <link rel="stylesheet" crossorigin href="/js-avatar-team/assets/vendor-DnveWo0P.css">
+    <link rel="stylesheet" crossorigin href="/js-avatar-team/assets/index-DiAvjSGI.css">
+  </head>
+  <body>
+    <header class="header" id="header">
+  <div class="header header-container container">
+    <a class="header-logo" href="./index.html"
+      >Lloyd<span class="common-span">Jefferson.</span></a
+    >
+    <nav class="header-nav">
+      <button aria-label="theme switcher" id="theme-toggle" class="theme-toggle">
+        <svg class="icon-sun" width="20" height="20">
+          <use href="/js-avatar-team/assets/icons-BN3pAbgA.svg#icon-sun"></use>
+        </svg>
+        <svg class="icon-moon" width="14" height="20">
+          <use href="/js-avatar-team/assets/icons-BN3pAbgA.svg#icon-moon"></use>
+        </svg>
+      </button>
+      <ul class="header-list">
+        <li class="header-item"><a href="#about-me">About me</a></li>
+        <li class="header-item"><a href="#projects">Projects</a></li>
+        <li class="header-item"><a href="#contacts">Contacts</a></li>
+      </ul>
+      <button aria-label="burger menu" type="button" id="header-button" class="header-button">
+        <svg class="header-button-icon" width="32" height="32">
+          <use href="/js-avatar-team/assets/icons-BN3pAbgA.svg#icon-menu"></use>
+        </svg>
+        <svg class="header-close-icon" width="32" height="32">
+          <use href="/js-avatar-team/assets/header-BhjBOUg9.svg#icon-close"></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
+
+  <div class="modal-container" id="modal-container">
+    <div class="mobile-menu">
+      <ul class="header-list-mobile">
+        <li class="header-item"><a href="#about-me">About me</a></li>
+        <li class="header-item"><a href="#projects">Projects</a></li>
+        <li class="header-item"><a href="#contacts">Contacts</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+
+    <main>
+      <!-- Loads the specified .html file -->
+      <section class="hero">
+  <div class="container container-height">
+    <div class="container-hero">
+      <div class="container-hero-caption">
+        <h1 class="hero-caption">
+          Hello, I am <span class="common-span">Fullstack developer</span>
+        </h1>
+        <div class="hero-container-order">
+          <a class="hero-order-link" href="#contacts">
+            <svg class="hero-link-icon" width="28" height="13">
+              <use
+                href="/js-avatar-team/assets/symbol-defs-DiEKd6o_.svg#icon-Arrow-order"
+              ></use></svg
+            >Order the project
+            <div class="rectangle dark-theme"></div>
+          </a>
+        </div>
+      </div>
+      <div class="container-hero-img">
+        <img
+          class="hero-img is-hidden"
+          srcset="/js-avatar-team/assets/hero-img-x1-AviIBBf_.jpg 1x, /js-avatar-team/assets/hero-img-x2-CZTP48Av.jpg 2x"
+          src="../img/hero-img/hero-img-x1.jpg"
+          alt="Our hero"
+        />
+        <p class="hero-text">
+          I work with people all over the world to create
+          <span class="common-span">impressive</span> and
+          <span class="common-span">functional websites</span> that reflect each
+          client’s unique personality.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container-bg-color dark-theme">
+    <div class="container-link dark-theme">
+      <ul class="hero-list">
+        <li class="hero-iteam">
+          <a
+            target="_blank"
+            class="hero-iteam-social-link"
+            href="https://www.instagram.com/goitclub/"
+            >Insragram</a
+          >
+        </li>
+        <li class="hero-iteam">
+          <a
+            target="_blank"
+            class="hero-iteam-social-link"
+            href="https://www.facebook.com/goITclub/"
+            >Facebook</a
+          >
+        </li>
+        <li class="hero-iteam">
+          <a
+            target="_blank"
+            class="hero-iteam-social-link"
+            href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+            >Linkedin</a
+          >
+        </li>
+        <li class="hero-iteam">
+          <a
+            target="_blank"
+            class="hero-iteam-social-link"
+            href="https://pavlobilenko.github.io/js-avatar-team/"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="about-section" id="about-me">
+  <div class="container section-container">
+    <h2 class="about-content">ABOUT <span class="common-span">ME</span></h2>
+    <div class="bio-attachment">
+      <picture>
+        <source
+          srcset="/js-avatar-team/assets/about-me-img-1x-CL9QSezC.jpg 1x, /js-avatar-team/assets/about-me-img-2x-BCb3ybPo.jpg 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="/js-avatar-team/assets/about-me-img-1x-CL9QSezC.jpg 1x, /js-avatar-team/assets/about-me-img-2x-BCb3ybPo.jpg 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="/js-avatar-team/assets/about-me-img-1x-CL9QSezC.jpg 1x, /js-avatar-team/assets/about-me-img-2x-BCb3ybPo.jpg 2x"
+        />
+        <img class="img-man-about" src="./img/about-desk.jpg" alt="man-about" />
+      </picture>
+
+      <div class="bio-text">
+        <h3 class="title">BIO</h3>
+        <div class="bio-text-container">
+          <p class="text text-gap">
+            I'm Lloyd Jefferson, a talented programmer specializing in software
+            development. My expertise spans various programming languages and
+            technologies, and I am dedicated to continually enhancing my skills.
+            I thrive on seeking unconventional and creative solutions to
+            problems, leveraging a high level of analytical skills to
+            effectively tackle even the most challenging tasks.
+          </p>
+          <p class="text text-gap">
+            Adaptable to both independent and team-oriented work, I collaborate
+            seamlessly with colleagues, exchanging ideas and finding optimal
+            solutions. My professional maturity enables me to navigate
+            challenges and stressful situations with a calm demeanor,
+            maintaining a consistently high quality of work. Committed to
+            self-improvement, I actively engage in studying new technologies and
+            practices to stay current with the latest innovations in the field.
+          </p>
+        </div>
+
+        <div class="decor-element">
+          <img
+            src="/js-avatar-team/assets/decor-ab-D4CiR4OF.png"
+            alt="decoration"
+            class="decor"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="education">
+      <div class="education-column">
+        <h3 class="title">EDUCATION</h3>
+        <ul class="about-list">
+          <li class="text">
+            2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
+          </li>
+          <li class="text">
+            2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
+            New York
+          </li>
+          <li class="text">
+            2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+          </li>
+        </ul>
+      </div>
+
+      <div class="education-column">
+        <h3 class="title">ROLE</h3>
+        <ul class="about-list">
+          <li class="text">Frontend development</li>
+          <li class="text">HeadlessCMS, Wordpress</li>
+          <li class="text">Blender (enjoy)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="tech-skills">
+  <div class="container marquee">
+    <h2 class="hidden" hidden>Tech Skills</h2>
+    <div class="text-wrapper">
+      <div class="marquee__inner upper">
+        <p class="marquee__line">
+          <span class="another-color-green common-span">&bull;</span> HTML/CSS
+          <span class="another-color-green common-span">&bull;</span>
+          JAVASCRIPT
+          <span class="another-color-green common-span">&bull;</span> REACT
+          <span class="another-color-green common-span">&bull;</span> NODE.JS
+          <span class="another-color-green common-span">&bull;</span> REACT
+          NATIVE
+          <span class="another-color-green common-span">&bull;</span>
+          TYPESCRIPT
+        </p>
+        <p class="marquee__line">
+          <span class="another-color-green common-span">&bull;</span> HTML/CSS
+          <span class="another-color-green common-span">&bull;</span>
+          JAVASCRIPT
+          <span class="another-color-green common-span">&bull;</span> REACT
+          <span class="another-color-green common-span">&bull;</span> NODE.JS
+          <span class="another-color-green common-span">&bull;</span> REACT
+          NATIVE
+          <span class="another-color-green common-span">&bull;</span>
+          TYPESCRIPT
+        </p>
+        <p class="marquee__line">
+          <span class="another-color-green common-span">&bull;</span> HTML/CSS
+          <span class="another-color-green common-span">&bull;</span>
+          JAVASCRIPT
+          <span class="another-color-green common-span">&bull;</span> REACT
+          <span class="another-color-green common-span">&bull;</span> NODE.JS
+          <span class="another-color-green common-span">&bull;</span> REACT
+          NATIVE
+          <span class="another-color-green common-span">&bull;</span>
+          TYPESCRIPT
+        </p>
+      </div>
+      <div class="marquee__inner lower rotated">
+        <p class="marquee__line common-span">
+          <span class="another-color-black">&bull;</span> HTML/CSS
+          <span class="another-color-black">&bull;</span>
+          JavaScript
+          <span class="another-color-black">&bull;</span> React
+          <span class="another-color-black">&bull;</span> Node.js
+          <span class="another-color-black">&bull;</span> REACT NATIVE
+          <span class="another-color-black">&bull;</span>
+          TYPESCRIPT
+        </p>
+        <p class="marquee__line common-span">
+          <span class="another-color-black">&bull;</span> HTML/CSS
+          <span class="another-color-black">&bull;</span>
+          JavaScript
+          <span class="another-color-black">&bull;</span> React
+          <span class="another-color-black">&bull;</span> Node.js
+          <span class="another-color-black">&bull;</span> REACT NATIVE
+          <span class="another-color-black">&bull;</span>
+          TYPESCRIPT
+        </p>
+        <p class="marquee__line common-span">
+          <span class="another-color-black">&bull;</span> HTML/CSS
+          <span class="another-color-black">&bull;</span>
+          JavaScript
+          <span class="another-color-black">&bull;</span> React
+          <span class="another-color-black">&bull;</span> Node.js
+          <span class="another-color-black">&bull;</span> REACT NATIVE
+          <span class="another-color-black">&bull;</span>
+          TYPESCRIPT
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="my-projects" id="projects">
+    <div class="container my-projects-container">
+    <h2 class="my-projects-main-title">My&nbsp;<span class="common-span">projects</span></h2>
+    <ul class="my-projects-list">
+        <li class="my-projects-link">
+            <img class="my-projects-img" loading="lazy" src="/js-avatar-team/assets/project-6-2x-Bje55MHr.jpg" srcset="/js-avatar-team/assets/project-6-1x-B1HZIuYL.jpg 1x, /js-avatar-team/assets/project-6-2x-Bje55MHr.jpg 2x"  alt="power pulse webservice">
+            <div class="my-projects-info-wrapper">
+                <p class="my-projects-paragraph">React, JavaScript, Node JS, Git</p>
+                <div class="my-projects-text-and-btn">
+                    <h3 class="my-projects-title">Wallet webservice </h3>
+                    <a href="https://github.com/PavloBilenko/js-avatar-team" class="my-projects-btn" target="_blank">Visit
+                        <svg class="icon-visit" width="18" height="18">
+                            <use href="/js-avatar-team/assets/my-projects-icons-B2p-icyh.svg#icon-visit"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </li>
+        <li class="my-projects-link">
+            <img class="my-projects-img" loading="lazy" src="/js-avatar-team/assets/project-9-2x-BKKFpGsW.jpg" srcset="/js-avatar-team/assets/project-9-1x-JhmGoZut.jpg 1x, /js-avatar-team/assets/project-9-2x-BKKFpGsW.jpg 2x"  alt="mimino website">
+            <div class="my-projects-info-wrapper">
+            <p class="my-projects-paragraph">React, JavaScript, Node JS, Git</p>
+            <div class="my-projects-text-and-btn">
+            <h3 class="my-projects-title">green harvest online store</h3>
+            <a href="https://github.com/PavloBilenko/js-avatar-team" class="my-projects-btn" target="_blank">Visit
+                <svg class="icon-visit" width="18" height="18">
+                    <use href="/js-avatar-team/assets/my-projects-icons-B2p-icyh.svg#icon-visit"></use>
+                </svg>
+            </a>
+            </div>
+            </div>
+        </li>
+        <li class="my-projects-link">
+            <img class="my-projects-img" loading="lazy" src="/js-avatar-team/assets/project-2-2x-D_UCmZD9.jpg" srcset="/js-avatar-team/assets/project-2-1x-DCuG7ItC.jpg 1x, /js-avatar-team/assets/project-2-2x-D_UCmZD9.jpg 2x"  alt="vyshyvanka vibes Landing Page">
+            <div class="my-projects-info-wrapper">
+            <p class="my-projects-paragraph">React, JavaScript, Node JS, Git</p>
+            <div class="my-projects-text-and-btn">
+            <h3 class="my-projects-title">English excellence webservice</h3>
+            <a href="https://github.com/PavloBilenko/js-avatar-team" class="my-projects-btn" target="_blank">Visit
+                <svg class="icon-visit" width="18" height="18">
+                    <use href="/js-avatar-team/assets/my-projects-icons-B2p-icyh.svg#icon-visit"></use>
+                </svg>
+            </a>
+            </div>
+            </div>
+        </li>
+        <li class="my-projects-link">
+            <img class="my-projects-img" loading="lazy" src="/js-avatar-team/assets/project-10-2x-mywvv0cJ.jpg" srcset="/js-avatar-team/assets/project-10-1x-Fww95F1J.jpg 1x, /js-avatar-team/assets/project-10-2x-mywvv0cJ.jpg 2x"  alt="green harvest online store">
+            <div class="my-projects-info-wrapper">
+            <p class="my-projects-paragraph">React, JavaScript, Node JS, Git</p>
+            <div class="my-projects-text-and-btn">
+            <h3 class="my-projects-title">power pulse webservice</h3>
+            <a href="https://github.com/PavloBilenko/js-avatar-team" class="my-projects-btn" target="_blank">Visit
+                <svg class="icon-visit" width="18" height="18">
+                    <use href="/js-avatar-team/assets/my-projects-icons-B2p-icyh.svg#icon-visit"></use>
+                </svg>
+            </a>
+            </div>
+            </div>
+        </li>
+        <li class="my-projects-link">
+            <img class="my-projects-img" loading="lazy" src="/js-avatar-team/assets/project-8-2x-Cda9-ebG.jpg" srcset="/js-avatar-team/assets/project-8-1x-DxN2odVS.jpg 1x, /js-avatar-team/assets/project-8-2x-Cda9-ebG.jpg 2x"  alt="wallet webservice">
+            <div class="my-projects-info-wrapper">
+            <p class="my-projects-paragraph">React, JavaScript, Node JS, Git</p>
+            <div class="my-projects-text-and-btn">
+            <h3 class="my-projects-title">mimino website</h3>
+            <a href="https://github.com/PavloBilenko/js-avatar-team" class="my-projects-btn" target="_blank">Visit
+                <svg class="icon-visit" width="18" height="18">
+                    <use href="/js-avatar-team/assets/my-projects-icons-B2p-icyh.svg#icon-visit"></use>
+                </svg>
+            </a>
+                </div>
+            </div>
+        </li>
+        <li class="my-projects-link">
+            <img class="my-projects-img" loading="lazy" src="/js-avatar-team/assets/project-7-2x-DPoVSB5Q.jpg" srcset="/js-avatar-team/assets/project-7-1x-CEcGoooa.jpg 1x, /js-avatar-team/assets/project-7-2x-DPoVSB5Q.jpg 2x"  alt="chego jewelry website">
+            <div class="my-projects-info-wrapper">
+            <p class="my-projects-paragraph">React, JavaScript, Node JS, Git</p>
+            <div class="my-projects-text-and-btn">
+            <h3 class="my-projects-title">vyshyvanka vibes Landing Page</h3>
+            <a href="https://github.com/PavloBilenko/js-avatar-team" class="my-projects-btn" target="_blank">Visit
+                <svg class="icon-visit" width="18" height="18">
+                    <use href="/js-avatar-team/assets/my-projects-icons-B2p-icyh.svg#icon-visit"></use>
+                </svg>
+            </a>
+            </div>
+            </div>
+        </li>
+        <li class="my-projects-link">
+            <img class="my-projects-img" loading="lazy" src="/js-avatar-team/assets/project-5-2x-qMfuGWzT.jpg" srcset="/js-avatar-team/assets/project-5-1x-DAPApIl8.jpg 1x, /js-avatar-team/assets/project-5-2x-qMfuGWzT.jpg 2x"  alt="energy flow webservice">
+            <div class="my-projects-info-wrapper">
+            <p class="my-projects-paragraph">React, JavaScript, Node JS, Git</p>
+            <div class="my-projects-text-and-btn">
+            <h3 class="my-projects-title">chego jewelry website</h3>
+            <a href="https://github.com/PavloBilenko/js-avatar-team" class="my-projects-btn" target="_blank">Visit
+                <svg class="icon-visit" width="18" height="18">
+                    <use href="/js-avatar-team/assets/my-projects-icons-B2p-icyh.svg#icon-visit"></use>
+                </svg>
+            </a>
+            </div>
+            </div>
+        </li>
+        <li class="my-projects-link">
+            <img class="my-projects-img" loading="lazy" src="/js-avatar-team/assets/project-4-2x-135sHb3J.jpg" srcset="/js-avatar-team/assets/project-4-1x-8UPNHidz.jpg 1x, /js-avatar-team/assets/project-4-2x-135sHb3J.jpg 2x"  alt="fruitbox online store">
+            <div class="my-projects-info-wrapper">
+            <p class="my-projects-paragraph">React, JavaScript, Node JS, Git</p>
+            <div class="my-projects-text-and-btn">
+            <h3 class="my-projects-title">energy flow webservice </h3>
+            <a href="https://github.com/PavloBilenko/js-avatar-team" class="my-projects-btn" target="_blank">Visit
+                <svg class="icon-visit" width="18" height="18">
+                    <use href="/js-avatar-team/assets/my-projects-icons-B2p-icyh.svg#icon-visit"></use>
+                </svg>
+            </a>
+            </div>
+            </div>
+        </li>
+        <li class="my-projects-link">
+            <img class="my-projects-img" loading="lazy" src="/js-avatar-team/assets/project-3-2x-MzqbzosW.jpg" srcset="/js-avatar-team/assets/project-3-1x-xkayJYwa.jpg 1x, /js-avatar-team/assets/project-3-2x-MzqbzosW.jpg 2x"  alt="English excellence webservice">
+            <div class="my-projects-info-wrapper">
+            <p class="my-projects-paragraph">React, JavaScript, Node JS, Git</p>
+            <div class="my-projects-text-and-btn">
+            <h3 class="my-projects-title">fruitbox online store</h3>
+            <a href="https://github.com/PavloBilenko/js-avatar-team" class="my-projects-btn" target="_blank">Visit
+                <svg class="icon-visit" width="18" height="18">
+                    <use href="/js-avatar-team/assets/my-projects-icons-B2p-icyh.svg#icon-visit"></use>
+                </svg>
+            </a>
+            </div>
+            </div>
+        </li>
+        <li class="my-projects-link">
+            <img class="my-projects-img" loading="lazy" src="/js-avatar-team/assets/project-1-1x-DfQwEs-w.jpg" srcset="/js-avatar-team/assets/project-1-1x-DfQwEs-w.jpg 1x, /js-avatar-team/assets/project-1-2x-Bna-RX6I.jpg 2x"  alt="starlight studio landing page"> 
+            <div class="my-projects-info-wrapper">
+            <p class="my-projects-paragraph">React, JavaScript, Node JS, Git</p>
+            <div class="my-projects-text-and-btn">
+            <h3 class="my-projects-title">starlight studio landing page</h3>
+            <a href="https://github.com/PavloBilenko/js-avatar-team" class="my-projects-btn" target="_blank">Visit
+                <svg class="icon-visit" width="18" height="18">
+                    <use href="/js-avatar-team/assets/my-projects-icons-B2p-icyh.svg#icon-visit"></use>
+                </svg>
+            </a>
+            </div>
+            </div>
+        </li>
+    </ul>  
+    <button id="load-more-btn" class="load-more-btn" type="button">Load more</button>
+</div>  
+</section>
+      <section class="benefits">
+  <div class="container">
+    <div class="benefits-container-caption">
+      <h2 class="benefits-caption">
+        <span class="common-span">Benefits</span> of working with me
+      </h2>
+      <img
+        srcset="/js-avatar-team/assets/bg-benefitsX1-B6hqdbny.png 1x, /js-avatar-team/assets/bg-benefitsX2-DG6iwvsl.png 2x"
+        src="/js-avatar-team/assets/bg-benefitsX1-B6hqdbny.png"
+        alt="Benefits Decor"
+        class="benefits-decor"
+        loading="lazy"
+      />
+    </div>
+    <div class="benefits-container-list">
+      <ul class="benefits-list">
+        <li class="benefits-iteam">
+          <div class="benefits-iteam-wrap dark-theme">
+            <svg class="benefits-iteam-icon" width="24" height="24">
+              <use href="/js-avatar-team/assets/icons-BN3pAbgA.svg#icon-work-with-me-man"></use>
+            </svg>
+          </div>
+          <h3 class="benefits-iteam-caption">Expertise</h3>
+          <p class="benefits-iteam-text">
+            With extensive experience in development, I have a deep
+            understanding of programming and website development.
+          </p>
+        </li>
+        <li class="benefits-iteam">
+          <div class="benefits-iteam-wrap dark-theme">
+            <svg class="benefits-iteam-icon" width="24" height="24">
+              <use href="/js-avatar-team/assets/icons-BN3pAbgA.svg#icon-work-with-me-measage"></use>
+            </svg>
+          </div>
+          <h3 class="benefits-iteam-caption">Communication</h3>
+          <p class="benefits-iteam-text">
+            Understanding your needs and wants is my priority and I am always
+            available for discussions and open to corrections.
+          </p>
+        </li>
+        <li class="benefits-iteam">
+          <div class="benefits-iteam-wrap dark-theme">
+            <svg class="benefits-iteam-icon" width="24" height="24">
+              <use href="/js-avatar-team/assets/icons-BN3pAbgA.svg#icon-work-with-me-brush"></use>
+            </svg>
+          </div>
+          <h3 class="benefits-iteam-caption">Art</h3>
+          <p class="benefits-iteam-text">
+            Thanks to my creative nature, I am ready to accept challenges and
+            help you bring your ideas to life.
+          </p>
+        </li>
+        <li class="benefits-iteam">
+          <div class="benefits-iteam-wrap dark-theme">
+            <svg class="benefits-iteam-icon" width="24" height="24">
+              <use href="/js-avatar-team/assets/icons-BN3pAbgA.svg#icon-work-with-me-clock"></use>
+            </svg>
+          </div>
+          <h3 class="benefits-iteam-caption">Urgent execution</h3>
+          <p class="benefits-iteam-text">
+            I understand how important time is to you. Ready to work quickly and
+            efficiently, without reducing the quality of work.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="faq-section" id="faq">
+  <div class="container faq-container">
+    <div class="faq-title-container">
+      <h2 class="faq-title">
+        FREQUENTLY ASKED <span class="common-span">QUESTIONS</span>
+      </h2>
+      <img
+        src="/js-avatar-team/assets/FAQ-decor_1x-C5sx1pk0.png"
+        srcset="/js-avatar-team/assets/FAQ-decor_1x-C5sx1pk0.png 1x, /js-avatar-team/assets/FAQ-decor_2x-De2Zjw86.png 2x"
+        alt="FAQ Decor"
+        class="faq-decor"
+        loading="lazy"
+      />
+    </div>
+    <div class="question-container">
+      <ul class="accordion">
+        <li class="question-element">
+          <div class="question-box">
+            <p class="question expanded" id="first-question">
+              What programming languages are most often used in your project?
+            </p>
+            <svg
+              class="arrow-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 16.5l6-6-1.41-1.41L12 13.67l-4.59-4.59L6 10.5l6 6z"
+              />
+            </svg>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="answer">
+            <p class="answer-text">
+              In the field of web development, there are various technologies
+              and programming languages. Typically, this includes a combination
+              of frontend (client side) and backend (server side) languages.
+            </p>
+          </div>
+        </li>
+        <li class="question-element">
+          <div class="question-box">
+            <h3 class="question">What are the deadlines for the project?</h3>
+            <svg
+              class="arrow-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 16.5l6-6-1.41-1.41L12 13.67l-4.59-4.59L6 10.5l6 6z"
+              />
+            </svg>
+
+            <span class="arrow">▼</span>
+          </div>
+          <div class="answer">
+            <p class="answer-text">
+              The terms of project implementation depend to a large extent on a
+              number of factors, such as the scope of the project, its
+              complexity, and the availability of resources. Determining exact
+              deadlines is a difficult task, and it usually occurs during the
+              planning phase of the project.
+            </p>
+          </div>
+        </li>
+        <li class="question-element">
+          <div class="question-box">
+            <h3 class="question">What payment methods do you accept?</h3>
+            <svg
+              class="arrow-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 16.5l6-6-1.41-1.41L12 13.67l-4.59-4.59L6 10.5l6 6z"
+              />
+            </svg>
+          </div>
+          <div class="answer">
+            <p class="answer-text">
+              Payment through credit and debit cards such as Visa, MasterCard,
+              specialized electronic payment systems such as PayPal, as well as
+              payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+            </p>
+          </div>
+        </li>
+        <li class="question-element">
+          <div class="question-box">
+            <h3 class="question">How can I contact you?</h3>
+            <svg
+              class="arrow-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 16.5l6-6-1.41-1.41L12 13.67l-4.59-4.59L6 10.5l6 6z"
+              />
+            </svg>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="answer">
+            <p class="answer-text">
+              In the field of web development, there are various technologies
+              and programming languages. Typically, this includes a combination
+              of frontend (client side) and backend (server side) languages.
+            </p>
+          </div>
+        </li>
+        <li class="question-element">
+          <div class="question-box">
+            <h3 class="question">Do you provide advice or support?</h3>
+            <svg
+              class="arrow-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 16.5l6-6-1.41-1.41L12 13.67l-4.59-4.59L6 10.5l6 6z"
+              />
+            </svg>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="answer">
+            <p class="answer-text">
+              The terms of project implementation depend to a large extent on a
+              number of factors, such as the scope of the project, its
+              complexity, and the availability of resources. Determining exact
+              deadlines is a difficult task, and it usually occurs during the
+              planning phase of the project.
+            </p>
+          </div>
+        </li>
+        <li class="question-element">
+          <div class="question-box">
+            <h3 class="question">
+              What does the process of developing a software product look like
+              from idea to implementation?
+            </h3>
+            <svg
+              class="arrow-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 16.5l6-6-1.41-1.41L12 13.67l-4.59-4.59L6 10.5l6 6z"
+              />
+            </svg>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="answer">
+            <p class="answer-text">
+              Payment through credit and debit cards such as Visa, MasterCard,
+              specialized electronic payment systems such as PayPal, as well as
+              payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="reviews-section">
+    <div class="container">
+        <h2 class="reviews-title">REVIEWS</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper" id="comments-list">
+                <!-- Slides will be added dynamically -->
+            </div>
+
+
+            <div class="reviews-buttons">
+                <div class="swiper-button-prev">
+                    <svg class="comment-prev-btn" width="24" height="24">
+                        <use href="/js-avatar-team/assets/icons-BN3pAbgA.svg#icon-arrow-left" class="reviews-btn-svg"></use>
+                    </svg>
+                </div>
+                <div class="swiper-button-next">
+                    <svg class="comment-prev-btn" width="24" height="24" style="transform: scale(-1, 1);">
+                        <use href="/js-avatar-team/assets/icons-BN3pAbgA.svg#icon-arrow-left" class="reviews-btn-svg"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="error-message" style="display: none;">Not found</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+   
+      <section class="contacts-section" id="contacts">
+  <div class="container container-wt">
+    <div class="head-decor">
+      <h2 class="head-work">
+        let’s
+        <span class="common-span">work together</span>
+      </h2>
+      <picture>
+        <source
+          srcset="/js-avatar-team/assets/wt-decor_1x_d-DcNUiC18.png 1x, /js-avatar-team/assets/wt-decor_2x_d-C0hU9mB9.png 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="/js-avatar-team/assets/wt-decor_1x_t-BgyeE7yj.png 1x, /js-avatar-team/assets/wt-decor_2x_t-CKpEMvU6.png 2x"
+          media="(min-width: 768px)"
+        />
+        <img
+          src="/js-avatar-team/assets/wt-decor_1x_d-DcNUiC18.png"
+          alt="Decor"
+          class="wt-decor"
+        />
+      </picture>
+    </div>
+    <div class="form-wrap">
+      <ul class="form-colomn">
+        <li>
+          <p class="text-idea">
+            Contact me to transform your ideas into exceptional solutions.
+          </p>
+        </li>
+        <li>
+          <div class="address">
+            <ul class="address-menu">
+              <li>
+                <div class="icon-text">
+                  <svg class="title-icon" width="24" height="24">
+                    <use
+                      href="/js-avatar-team/assets/symbol-defs-Ce7yfScV.svg#icon-phone"
+                    ></use>
+                  </svg>
+                  <a
+                    class="link-address"
+                    href="tel:+380503247690"
+                    target="_blank"
+                    >+38 050 324 76 90</a
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="icon-text">
+                  <svg class="title-icon" width="24" height="24">
+                    <use
+                      href="/js-avatar-team/assets/symbol-defs-Ce7yfScV.svg#icon-e-mail"
+                    ></use>
+                  </svg>
+                  <a
+                    class="link-address"
+                    href="mailto:info@goit.ua"
+                    target="_blank"
+                    >info@goit.ua</a
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="icon-text">
+                  <svg class="title-icon" width="24" height="24">
+                    <use
+                      href="/js-avatar-team/assets/symbol-defs-Ce7yfScV.svg#icon-adress"
+                    ></use>
+                  </svg>
+                  <a
+                    class="link-address"
+                    href="https://www.google.com/maps/search/?api=1&query=Київ+Ю.Іллєнка+12"
+                    target="_blank"
+                  >
+                    м. Київ, вул. Ю. Іллєнка, 12
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="form-div">
+        <form class="feedback-form" id="contactForm" autocomplete="off">
+          <label for="email" class="visualy-hidden"></label>
+          <input
+            class="input"
+            id="email"
+            type="email"
+            placeholder="Your email*"
+            name="email"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            autocomplete="email"
+          />
+          <label for="message" class="visually-hidden"></label>
+          <textarea
+            class="input txt-ar"
+            id="message"
+            placeholder="Message"
+            name="message"
+            rows="8"
+            autocomplete="off"
+          ></textarea>
+          <button class="btn" type="submit" id="sendMessage">
+            SEND MESSAGE
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Модальне вікно -->
+  <div class="backdrop" id="backdrop">
+    <div class="modal" id="successModal">
+      <button type="button" class="modal-close" id="closeModal">
+        <svg class="modal-icon" width="12" height="12">
+          <use
+            href="/js-avatar-team/assets/symbol-defs-Ce7yfScV.svg#icon-modal-close"
+          ></use>
+        </svg>
+      </button>
+      <h2 class="modalTitle common-span" id="jsTitle"></h2>
+      <p class="modalText" id="jsText"></p>
+    </div>
+  </div>
+  <!-- <script type="module" src="../js/work-together.js"></script> -->
+</section>
+
+    </main>
+
+    <footer id="footer">
+  <div class="container container-footer">
+    <div class="footer-wrap">
+      <a class="footer-logo" href="./index.html">
+        lloyd<span class="footer-logo-part common-span">jefferson.</span>
+      </a>
+      <ul class="footer-list">
+        <li class="footer-item">
+          <a
+            class="footer-item-link line"
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram</a
+          >
+        </li>
+        <li class="footer-item">
+          <a
+            class="footer-item-link line"
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Facebook</a
+          >
+        </li>
+        <li class="footer-item">
+          <a
+            class="footer-item-link line"
+            href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Linkedin</a
+          >
+        </li>
+        <li class="footer-item">
+          <a
+            class="footer-item-link line"
+            href="https://github.com/PavloBilenko/js-avatar-team/tree/main"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="wrap-animation">
+      <p class="footer-copyright footer-animation">
+        © Copyright 2024. <span class="break">Made by LloydJefferson</span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+  </body>
+</html>

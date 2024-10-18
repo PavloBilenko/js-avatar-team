@@ -23,7 +23,6 @@
 @media screen and (min-width: 1280px) {
   .section-container {
     max-width: 1280px;
-    padding: 0 20px;
     display: flex;
     flex-direction: column;
   }
@@ -38,7 +37,6 @@
   .bio-attachment {
     display: flex;
     align-items: flex-start;
-    flex-wrap: wrap;
     gap: 136px;
   }
 

@@ -45,10 +45,12 @@ html{
 
 .dark-theme footer{
   border-top: 1px solid #f0f0f0;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 footer {
   border-top: 1px solid #000;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .container-footer{

@@ -1,3 +1,6 @@
+import faviconLight from '/img/favicons-img/favicon-light.svg';
+import faviconDark from '/img/favicons-img/favicon-light.svg';
+
 // export function setupThemeSwitcher() {
   const themeToggleButton = document.getElementById('theme-toggle');
   const body = document.body;

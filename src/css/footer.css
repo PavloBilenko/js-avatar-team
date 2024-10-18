@@ -4,6 +4,29 @@ html{
   scroll-padding-top: var(--header-height);
 }
 
+.container-footer {
+  position: relative;
+  overflow: hidden;
+}
+
+@media (hover: hover) {
+  .highlight {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(20, 197, 124, 0.5);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .container-footer:hover .highlight {
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 767px) {
   :root {
       --header-height: 104px;
@@ -23,7 +46,6 @@ html{
 .dark-theme footer{
   border-top: 1px solid #f0f0f0;
 }
-
 
 footer {
   border-top: 1px solid #000;

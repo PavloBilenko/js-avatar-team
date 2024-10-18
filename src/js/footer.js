@@ -21,3 +21,14 @@ let Visible = function (target) {
 window.addEventListener('scroll', function() {
   Visible (elementFooter);
 });
+
+const highlight = document.createElement("div");
+highlight.className = "highlight";
+
+const container = document.querySelector(".container-footer");
+container.append(highlight);
+
+container.addEventListener("mousemove", function (e) {
+    highlight.style.left = e.clientX - container.getBoundingClientRect().left + "px";
+    highlight.style.top = e.clientY - container.getBoundingClientRect().top + "px";
+});

@@ -19,7 +19,7 @@
     body.classList.toggle('dark-theme');
 
     if (body.classList.contains('dark-theme')) {
-      favicon.href = faviconDark;
+      // favicon.href = faviconDark;
       localStorage.setItem('theme', 'dark');
     } else {
       favicon.href = faviconLight;

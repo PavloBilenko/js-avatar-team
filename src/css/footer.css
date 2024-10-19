@@ -219,3 +219,26 @@ footer {
   width: 100%;
 }
 
+#scrollToTopBtn {
+    display: none; /* Приховуємо кнопку спочатку */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100; /* Щоб кнопка була поверх контенту */
+    background-color: #e4e5e6; /* Колір кнопки */
+    color: #292929;
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    transition: opacity 0.3s ease; /* Анімація при появі/зникненні */
+}
+
+.dark-theme #scrollToTopBtn {
+  color: #f0f0f0;
+  background-color: #2a2d32;
+}

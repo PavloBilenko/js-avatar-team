@@ -1,0 +1,32 @@
+.universal-link-style:hover, .universal-link-style:focus {
+    color: #00b068;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+.highlight {
+    width: 20px;
+    height: 20px;
+}
+
+.load-more-btn:hover::after,
+.load-more-btn:focus::after {
+    width: 116px;
+    transition: transform 0.3s ease;
+}
+
+
+.universal-btn-style:hover,
+.universal-btn-style:focus {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.mouse {
+    position: relative;
+    overflow: hidden;
+}
+

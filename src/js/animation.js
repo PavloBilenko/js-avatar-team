@@ -21,6 +21,7 @@ listItemsHeader.forEach(item => {
 });
 
 listItemsMyProjects.classList.add('universal-link-style');
+
 listItemsFooter.forEach(item => {
   item.classList.add('universal-link-style');
 });

@@ -1,9 +1,3 @@
-
-
-
-
-
-
 /* Стилі для темної теми */
 @media (prefers-color-scheme: dark) {
   .open .question-box {
@@ -169,7 +163,7 @@
 
   .faq-title-container {
     height: 192px;
-  
+    
   }
 
   .question-container {

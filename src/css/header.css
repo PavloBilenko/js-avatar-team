@@ -1,11 +1,16 @@
-.header {
-  /* position: fixed;
-  z-index: 99;
-  top: 0;
-  transition: background-color 0.3s ease, color 0.3s ease; */
+.body-no-scroll {
+  overflow: hidden;
+  height: 100%;
 }
 
-.header-container.scrolled {
+.header {
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header.scrolled {
   border-bottom: 1px solid #0c0c0c1a;
   background-color: inherit;
 }
@@ -16,10 +21,6 @@
   justify-content: space-between;
   padding-top: 32px;
   padding-bottom: 32px;
-  position: sticky;
-  z-index: 100;
-  top: 0;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .header-nav {
@@ -31,9 +32,9 @@
 .header-logo {
   font-family: Impact, sans-serif;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 24px;
   line-height: 40px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
@@ -128,7 +129,7 @@ body.dark-theme .icon-moon {
 }
 
 .modal-container {
-  display: flex;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -139,16 +140,14 @@ body.dark-theme .icon-moon {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .modal-container.show {
-  visibility: visible;
+  display: flex;
 }
 
 .mobile-menu {
-  position: relative;
   background-color: #f0f0f0;
   background-image: url(../img/mob-menu/mob-menu-bg1.png);
   background-size: cover;
@@ -179,10 +178,13 @@ body.dark-theme .mobile-menu {
 
 .header-close-icon {
   display: none;
-  fill: #3a3b3d;
 }
 
 @media screen and (min-width: 768px) {
+  .header-logo {
+    font-size: 32px;
+  }
+
   .header-nav {
     display: flex;
     align-items: center;

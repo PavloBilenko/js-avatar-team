@@ -69,8 +69,6 @@
 }
 
 
-
-
 .open .question-box {
   background-color: #bcdfd1; /* Зелений фон при відкритті */
   border-radius: 10px 10px 0 0;
@@ -108,6 +106,7 @@
   opacity: 1; 
   animation: slideDown 0.7s ease forwards; /* Add animation */
 }
+
 
 
 
@@ -176,12 +175,12 @@
 
   .question-box {
     max-width: 320px; /* Повна ширина для мобільних пристроїв */
-    
   }
 
   .answer {
     max-width: 320px;
   }
+
 
 
 .open .answer {
@@ -199,7 +198,7 @@
     width: 24px; /* Зменшена іконка */
     height: 24px;
     margin-left: 20px; /* Менший відступ між текстом та іконкою */
-   
+
   }
 
   .faq-decor {
@@ -211,7 +210,9 @@
 @media screen and (min-width: 768px) {
   .faq-container {
     width: 768px;
+
     padding-bottom: 124px;
+
     min-height: 1120px;
   }
 
@@ -249,7 +250,9 @@
   .answer {
     width: 704px;
   }
+
  
+
   .answer-text {
     font-size: 16px;
     width: 656px;
@@ -294,7 +297,9 @@
   .faq-container {
     display: flex;
     gap: 104px;
+
     padding-bottom: 164px;
+
     min-height: 1020px;
   }
 
@@ -366,4 +371,3 @@
   animation: slideIn 0.9s forwards; /* Apply the animation */
   
 }
-

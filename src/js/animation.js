@@ -12,12 +12,12 @@ const btnWorkTogether = document.querySelector('.btn')
 const listItemsWT = document.querySelectorAll('.link-address');
 
 listItemsHero.forEach(item => {
-  item.classList.add('line', 'universal-link-style');
+  item.classList.add('lower-line', 'universal-link-style');
 });
 
 
 listItemsHeader.forEach(item => {
-  item.classList.add('line', 'universal-link-style');
+  item.classList.add('lower-line', 'universal-link-style');
 });
 
 listItemsMyProjects.classList.add('universal-link-style');
@@ -43,7 +43,7 @@ btnReviewsNext.forEach(item => {
 btnWorkTogether.classList.add('universal-btn-style');
 
 listItemsWT.forEach(item => {
-  item.classList.add('line', 'universal-link-style');
+  item.classList.add('lower-line', 'universal-link-style');
 });
 
 

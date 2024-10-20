@@ -25,8 +25,32 @@
     opacity: 1;
 }
 
-.mouse {
+.lower-line {
     position: relative;
-    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
+.lower-line:hover,
+.lower-line:focus-within {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.lower-line:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 2px;
+    width: 0%;
+   
+    background: #00b068;
+    transition: width 0.3s;
+}
+
+.lower-line:hover:after,
+.lower-line:focus-within:after {
+    content: '';
+    cursor: pointer;
+    width: 100%;
+}
